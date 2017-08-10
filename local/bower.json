@@ -1,0 +1,25 @@
+{
+  "name": "smartlinksv2",
+  "description": "",
+  "main": "",
+  "authors": [
+    "QUANG_CTY <nnduyquang@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "bootstrap": "^3.3.7",
+    "slick-carousel": "^1.6.0",
+    "animate.css": "^3.5.2",
+    "wow": "wowjs#^1.1.2",
+    "nivo-slider": "*"
+  }
+}
