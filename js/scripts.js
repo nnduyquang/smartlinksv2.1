@@ -2,7 +2,9 @@ var plugins = {
     // owlCarousel: $("#slider"),
     menu: $('.sidebar'),
     slider1: $('#slider1'),
-    memberCarousel: $('.member-carousel')
+    memberCarousel: $('.member-carousel'),
+    footer1:$('.backToTop')
+
 };
 $(document).ready(function () {
     function runSlider1() {
@@ -58,6 +60,12 @@ $(document).ready(function () {
         });
     }
     sidebar();
+    function footer1BackTopTop(){
+        plugins.footer1.click(function(){
+            $('html, body').animate({scrollTop:0}, 'slow');
+            return false;
+        });
+    }
     if (plugins.memberCarousel.length) {
         memberCarousel();
     }
@@ -83,4 +91,7 @@ $(document).ready(function () {
     }, function () {
         $('div', this).stop().slideUp(100);
     });
+    if(plugins.footer1.length){
+        footer1BackTopTop();
+    }
 });

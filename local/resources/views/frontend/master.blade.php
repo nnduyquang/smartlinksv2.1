@@ -27,7 +27,7 @@
 </div>
 @include('frontend.common.m-sidebar')
 <div class="footer">
-    {{--@include('frontend.footer.footer')--}}
+    @include('frontend.common.footer')
 </div>
 {{ Html::script('js/core.common.js') }}
 {{ Html::script('js/core.frontend.js') }}
