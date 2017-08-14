@@ -17,3 +17,9 @@ Route::get('/', function () {
 Route::get('/category', function () {
     return view('frontend.common.m-category');
 });
+Route::get('/google-adwords', function () {
+    return view('frontend.trangcon.google');
+});
+Route::get('/thiet-ke-website', function () {
+    return view('frontend.trangcon.website');
+});

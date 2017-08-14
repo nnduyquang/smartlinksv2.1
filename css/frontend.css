@@ -34,6 +34,10 @@ table {
   border-spacing: 0;
 }
 
+a, a:hover {
+  text-decoration: none;
+}
+
 .heading-text {
   text-align: center;
   margin-bottom: 54px;
@@ -1471,6 +1475,266 @@ This class is added to the container
     -webkit-filter: url(#blurLogo);
     filter: url(#blurLogo);
     filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='1');
+  }
+}
+
+.wpLoiIch {
+  padding: 40px 0 0 0;
+  float: left;
+}
+
+.wpLoiIch img {
+  width: 100%;
+  height: 100%;
+}
+
+.wpLoiIch .textDescribeLoiIch {
+  margin: 0 0 0 40px;
+}
+
+.wpLoiIch .textDescribeLoiIch ul {
+  padding: 20px 0 0 0;
+  counter-reset: li;
+}
+
+.wpLoiIch .textDescribeLoiIch ul li {
+  margin: 0 0 40px 2em;
+  padding: 4px 8px 4px 15px;
+  position: relative;
+}
+
+.wpLoiIch .textDescribeLoiIch ul li::before {
+  content: counter(li);
+  counter-increment: li;
+  border: solid 2px #26b7e7;
+  position: absolute;
+  background-color: #eeeded;
+  width: 40px;
+  height: 40px;
+  top: -2px;
+  left: -40px;
+  margin: 0 8px 0 0;
+  text-align: center;
+  font-weight: bold;
+  padding: 8px;
+}
+
+.wpLoiIch .slogun {
+  text-align: center;
+  margin: 40px 0 40px 0;
+}
+
+.wpLoiIch .slogun h1 {
+  text-transform: uppercase;
+  font-size: 36px;
+}
+
+.wpContainHeader .dvBanner {
+  height: 500px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.wpContainHeader .wpTextHeader {
+  text-align: center;
+}
+
+.wpContainHeader .wpTextHeader h1 {
+  text-transform: uppercase;
+  font-size: 36px;
+}
+
+.wpContainHeader .wpTextHeader h1::after {
+  content: "";
+  display: block;
+  width: 44px;
+  height: 4px;
+  background: #44dd61;
+  margin: 31px auto 29px;
+  border-radius: 2px;
+}
+
+.wpContainHeader .wpTextHeader .subTextHeading {
+  font-size: 16px;
+}
+
+.wpTheManh {
+  padding: 40px 40px 40px 40px;
+  min-height: 650px;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: relative;
+}
+
+.wpTheManh img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: 100% 100%;
+  z-index: -1;
+}
+
+.wpTheManh h1 {
+  text-transform: uppercase;
+  color: white;
+  font-size: 60px;
+}
+
+.wpTheManh h5 {
+  color: white;
+  font-size: 24px;
+  font-family: 'Roboto', sans-serif;
+  margin: 40px 0 40px 0;
+}
+
+.wpTheManh .textDescribeTheManh h3 {
+  color: white;
+  font-size: 36px;
+  margin-top: 27px;
+  margin-bottom: 18px;
+}
+
+.wpTheManh .textDescribeTheManh ul li {
+  color: white;
+  margin: 0 0 20px 20px;
+  list-style: circle;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}
+
+.wpHieuSuat {
+  margin: 40px 0 40px 0;
+  float: left;
+  width: 100%;
+}
+
+.wpHieuSuat .wpOneHieuSuat {
+  text-align: center;
+}
+
+.wpHieuSuat .wpOneHieuSuat img {
+  padding: 0 0 20px 0;
+  width: 122px;
+  height: 114px;
+}
+
+.wpHieuSuat .wpOneHieuSuat .contentHieuSuat .numberHieuSuat {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.wpHieuSuat .wpOneHieuSuat .contentHieuSuat .numberHieuSuat.hs1 {
+  color: #6da7e9;
+}
+
+.wpHieuSuat .wpOneHieuSuat .contentHieuSuat .numberHieuSuat.hs2 {
+  color: #60bdef;
+}
+
+.wpHieuSuat .wpOneHieuSuat .contentHieuSuat .numberHieuSuat.hs3 {
+  color: #58d4a9;
+}
+
+.wpHieuSuat .wpOneHieuSuat .contentHieuSuat .numberHieuSuat.hs4 {
+  color: #9fc73d;
+}
+
+@media screen and (max-width: 1023px) {
+  .wpHieuSuat {
+    float: none !important;
+  }
+}
+
+.wpTaiSao {
+  padding: 100px 20px 40px 20px;
+  margin: 0 0 80px 0;
+  background: url("../images/temps/thietkeweb_taisao_bg.png") no-repeat center center fixed;
+  background-size: cover;
+  float: left;
+  width: 100%;
+}
+
+.wpTaiSao img.dvWebTaiSaoImageLeft {
+  margin-left: -20px;
+  width: 100%;
+  height: 100%;
+}
+
+.wpTaiSao .textDescribeTaiSao ul li {
+  position: relative;
+  padding: 4px 8px 4px 15px;
+}
+
+.wpTaiSao .textDescribeTaiSao ul li::before {
+  content: '';
+  position: absolute;
+  background: url(../images/temps/dvthietkewebsite_taisao_stick.png) center bottom;
+  top: 14px;
+  left: -20px;
+  width: 20px;
+  height: 24px;
+}
+
+.containerChatLuong .groupChatLuong {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.containerChatLuong .swapOneItemChatLuong {
+  padding: 0 0 40px 0;
+}
+
+.containerChatLuong .swapOneItemChatLuong .imgChatLuong {
+  width: 170px;
+  height: 170px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.containerChatLuong .swapOneItemChatLuong h4 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 28px;
+  margin-bottom: 12px;
+}
+
+.containerChatLuong .swapOneItemChatLuong .descriptionChatLuong {
+  text-align: center;
+}
+
+@media screen and (max-width: 1023px) {
+  .containerChatLuong .groupChatLuong {
+    display: block;
+  }
+}
+
+.containerQuyTrinh {
+  position: relative;
+  width: 100%;
+}
+
+.containerQuyTrinh .bgQuyTrinh {
+  width: 100%;
+  height: 100%;
+}
+
+.containerQuyTrinh .swapHeaderQuyTrinh {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  top: 55px;
+}
+
+@media screen and (max-width: 1023px) {
+  .containerQuyTrinh {
+    margin-top: 140px;
+  }
+  .containerQuyTrinh .swapHeaderQuyTrinh {
+    top: -120px;
   }
 }
 

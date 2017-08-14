@@ -20,7 +20,7 @@
 <div id="blurrMe">
     @include('frontend.common.m-menu')
     @include('menu.menu')
-    @include('slider.slider')
+    @yield('slider')
     <div id="wrap-container">
         @yield('container')
     </div>

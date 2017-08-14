@@ -2,7 +2,7 @@
     <div class="container">
         <div class="top-bar-left top-bar-custom">
             <ul class="links hidden-sm hidden-xs">
-                <li class="home-link"><a href="/">Trang Chủ</a></li>
+                <li class="home-link"><a href="{{URL::to('/')}}">Trang Chủ</a></li>
                 </li>
             </ul>
         </div>
@@ -32,8 +32,8 @@
                             </li>
                             <li class="has-item-down"><a href="/bridesmaids/" class="">Dịch Vụ</a>
                                 <ul>
-                                    <li><a href="#">Demo Facebook</a></li>
-                                    <li><a href="#">Sub Menu 2</a></li>
+                                    <li><a href="{{URL::to('google-adwords')}}">Google Adwords</a></li>
+                                    <li><a href="{{URL::to('thiet-ke-website')}}">Thiết Kế Website</a></li>
                                     <li><a href="#">Sub Menu 3</a></li>
                                     <li class="has-item-right"><a href="#">Sub Menu 4</a>
                                         {{--<ul>--}}

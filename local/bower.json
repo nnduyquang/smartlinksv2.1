@@ -20,6 +20,8 @@
     "slick-carousel": "^1.6.0",
     "animate.css": "^3.5.2",
     "wow": "wowjs#^1.1.2",
-    "nivo-slider": "*"
+    "nivo-slider": "*",
+    "waypoints": "^4.0.1",
+    "countUp.js": "^1.8.5"
   }
 }

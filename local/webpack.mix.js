@@ -30,7 +30,9 @@ mix.styles([
         'bower_components/nivo-slider/jquery.nivo.slider.pack.js',
         'bower_components/owl.carousel/dist/owl.carousel.min.js',
         'bower_components/slick-carousel/slick/slick.js',
-        'bower_components/wow/dist/wow.min.js'
+        'bower_components/wow/dist/wow.min.js',
+        'bower_components/waypoints/lib/noframework.waypoints.min.js',
+        'bower_components/countUp.js/dist/countUp.min.js',
     ], '../js/core.frontend.js')
 
     //CSS CORE FRONTEND
