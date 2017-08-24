@@ -46,8 +46,14 @@ mix.styles([
     ], '../css/core.frontend.css')
     .sass('resources/assets/sass/frontend.scss', '../../css/frontend.css').options({processCssUrls: false})
 
+    .sass('resources/assets/sass/loading-waiting.scss', '../../css/loading-waiting.css').options({processCssUrls: false})
+
     //JS CONTROL FRONTEND
     .styles('resources/assets/js/scripts.js', '../js/scripts.js')
+
+    .styles('resources/assets/js/fe.pagespeedinsight.js', '../js/fe.pagespeedinsight.js')
+
+
     .copy([
         'bower_components/bootstrap/fonts/**',
         'bower_components/font-awesome/fonts/**'

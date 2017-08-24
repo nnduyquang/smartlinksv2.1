@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3d88bf8821d6b18b2e883028859e35a6",
-    "content-hash": "ff46d37b1a8e0acf10fd24a24f604239",
+    "hash": "479c51728f4830360c06308ed70419ad",
+    "content-hash": "23c541cb913454d2dd53a158aa3a8634",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -150,6 +150,187 @@
             "time": "2017-05-14 14:47:48"
         },
         {
+            "name": "guzzlehttp/guzzle",
+            "version": "6.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/guzzle.git",
+                "reference": "f4db5a78a5ea468d4831de7f0bf9d9415e348699"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/f4db5a78a5ea468d4831de7f0bf9d9415e348699",
+                "reference": "f4db5a78a5ea468d4831de7f0bf9d9415e348699",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/promises": "^1.0",
+                "guzzlehttp/psr7": "^1.4",
+                "php": ">=5.5"
+            },
+            "require-dev": {
+                "ext-curl": "*",
+                "phpunit/phpunit": "^4.0 || ^5.0",
+                "psr/log": "^1.0"
+            },
+            "suggest": {
+                "psr/log": "Required for using the Log middleware"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "6.2-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/functions_include.php"
+                ],
+                "psr-4": {
+                    "GuzzleHttp\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "Guzzle is a PHP HTTP client library",
+            "homepage": "http://guzzlephp.org/",
+            "keywords": [
+                "client",
+                "curl",
+                "framework",
+                "http",
+                "http client",
+                "rest",
+                "web service"
+            ],
+            "time": "2017-06-22 18:50:49"
+        },
+        {
+            "name": "guzzlehttp/promises",
+            "version": "v1.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/promises.git",
+                "reference": "a59da6cf61d80060647ff4d3eb2c03a2bc694646"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/promises/zipball/a59da6cf61d80060647ff4d3eb2c03a2bc694646",
+                "reference": "a59da6cf61d80060647ff4d3eb2c03a2bc694646",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\Promise\\": "src/"
+                },
+                "files": [
+                    "src/functions_include.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "Guzzle promises library",
+            "keywords": [
+                "promise"
+            ],
+            "time": "2016-12-20 10:07:11"
+        },
+        {
+            "name": "guzzlehttp/psr7",
+            "version": "1.4.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/psr7.git",
+                "reference": "f5b8a8512e2b58b0071a7280e39f14f72e05d87c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/f5b8a8512e2b58b0071a7280e39f14f72e05d87c",
+                "reference": "f5b8a8512e2b58b0071a7280e39f14f72e05d87c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "psr/http-message": "~1.0"
+            },
+            "provide": {
+                "psr/http-message-implementation": "1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\Psr7\\": "src/"
+                },
+                "files": [
+                    "src/functions_include.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                },
+                {
+                    "name": "Tobias Schultze",
+                    "homepage": "https://github.com/Tobion"
+                }
+            ],
+            "description": "PSR-7 message implementation that also provides common utility methods",
+            "keywords": [
+                "http",
+                "message",
+                "request",
+                "response",
+                "stream",
+                "uri",
+                "url"
+            ],
+            "time": "2017-03-20 17:10:46"
+        },
+        {
             "name": "jakub-onderka/php-console-color",
             "version": "0.1",
             "source": {
@@ -238,20 +419,20 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.4.32",
+            "version": "v5.4.34",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "b8300578d159199b1195413b67318c79068cd24d"
+                "reference": "eaa09c998b315af9fbec04ad29ecfbfd2aa88aeb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/b8300578d159199b1195413b67318c79068cd24d",
-                "reference": "b8300578d159199b1195413b67318c79068cd24d",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/eaa09c998b315af9fbec04ad29ecfbfd2aa88aeb",
+                "reference": "eaa09c998b315af9fbec04ad29ecfbfd2aa88aeb",
                 "shasum": ""
             },
             "require": {
-                "doctrine/inflector": "~1.1.0",
+                "doctrine/inflector": "~1.1",
                 "erusev/parsedown": "~1.6",
                 "ext-mbstring": "*",
                 "ext-openssl": "*",
@@ -363,7 +544,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2017-08-03 12:59:42"
+            "time": "2017-08-23 20:31:28"
         },
         {
             "name": "laravel/tinker",
@@ -838,6 +1019,56 @@
                 "random"
             ],
             "time": "2017-03-13 16:27:32"
+        },
+        {
+            "name": "psr/http-message",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-message.git",
+                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/f6561bf28d520154e4b0ec72be95418abe6d9363",
+                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP messages",
+            "homepage": "https://github.com/php-fig/http-message",
+            "keywords": [
+                "http",
+                "http-message",
+                "psr",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "time": "2016-08-06 14:39:51"
         },
         {
             "name": "psr/log",
@@ -1526,16 +1757,16 @@
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "v1.4.0",
+            "version": "v1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "f29dca382a6485c3cbe6379f0c61230167681937"
+                "reference": "7c8fae0ac1d216eb54349e6a8baa57d515fe8803"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/f29dca382a6485c3cbe6379f0c61230167681937",
-                "reference": "f29dca382a6485c3cbe6379f0c61230167681937",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/7c8fae0ac1d216eb54349e6a8baa57d515fe8803",
+                "reference": "7c8fae0ac1d216eb54349e6a8baa57d515fe8803",
                 "shasum": ""
             },
             "require": {
@@ -1547,7 +1778,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.4-dev"
+                    "dev-master": "1.5-dev"
                 }
             },
             "autoload": {
@@ -1581,7 +1812,7 @@
                 "portable",
                 "shim"
             ],
-            "time": "2017-06-09 14:24:12"
+            "time": "2017-06-14 15:44:48"
         },
         {
             "name": "symfony/process",
@@ -1998,29 +2229,31 @@
         },
         {
             "name": "fzaninotto/faker",
-            "version": "v1.6.0",
+            "version": "v1.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fzaninotto/Faker.git",
-                "reference": "44f9a286a04b80c76a4e5fb7aad8bb539b920123"
+                "reference": "d3ed4cc37051c1ca52d22d76b437d14809fc7e0d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/44f9a286a04b80c76a4e5fb7aad8bb539b920123",
-                "reference": "44f9a286a04b80c76a4e5fb7aad8bb539b920123",
+                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/d3ed4cc37051c1ca52d22d76b437d14809fc7e0d",
+                "reference": "d3ed4cc37051c1ca52d22d76b437d14809fc7e0d",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.3.3|^7.0"
+                "php": "^5.3.3 || ^7.0"
             },
             "require-dev": {
                 "ext-intl": "*",
-                "phpunit/phpunit": "~4.0",
-                "squizlabs/php_codesniffer": "~1.5"
+                "phpunit/phpunit": "^4.0 || ^5.0",
+                "squizlabs/php_codesniffer": "^1.5"
             },
             "type": "library",
             "extra": {
-                "branch-alias": []
+                "branch-alias": {
+                    "dev-master": "1.8-dev"
+                }
             },
             "autoload": {
                 "psr-4": {
@@ -2042,7 +2275,7 @@
                 "faker",
                 "fixtures"
             ],
-            "time": "2016-04-29 12:21:54"
+            "time": "2017-08-15 16:48:10"
         },
         {
             "name": "hamcrest/hamcrest-php",
@@ -2094,12 +2327,12 @@
             "version": "0.9.9",
             "source": {
                 "type": "git",
-                "url": "https://github.com/padraic/mockery.git",
+                "url": "https://github.com/mockery/mockery.git",
                 "reference": "6fdb61243844dc924071d3404bb23994ea0b6856"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/padraic/mockery/zipball/6fdb61243844dc924071d3404bb23994ea0b6856",
+                "url": "https://api.github.com/repos/mockery/mockery/zipball/6fdb61243844dc924071d3404bb23994ea0b6856",
                 "reference": "6fdb61243844dc924071d3404bb23994ea0b6856",
                 "shasum": ""
             },

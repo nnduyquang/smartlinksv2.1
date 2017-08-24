@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Smartlinks</title>
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
@@ -31,6 +32,13 @@
 </div>
 {{ Html::script('js/core.common.js') }}
 {{ Html::script('js/core.frontend.js') }}
+<script type="text/javascript">
+    $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        }
+    });
+</script>
 @yield('scripts')
 {{ Html::script('js/scripts.js') }}
 </body>

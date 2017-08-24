@@ -23,3 +23,5 @@ Route::get('/google-adwords', function () {
 Route::get('/thiet-ke-website', function () {
     return view('frontend.trangcon.website');
 });
+Route::get('/phan-tich-website','PageSpeedInsightController@resultInfo')->name('analytic.info');
+Route::post('/phan-tich-website','PageSpeedInsightController@resultAnalytics');

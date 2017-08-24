@@ -1,9 +1,11 @@
 {
   "/mix.js": "/mix.js",
   "/../../css/frontend.css": "/../../css/frontend.css",
+  "/../../css/loading-waiting.css": "/../../css/loading-waiting.css",
   "../js/core.common.js": "../js/core.common.js",
   "../css/core.common.css": "../css/core.common.css",
   "../js/core.frontend.js": "../js/core.frontend.js",
   "../css/core.frontend.css": "../css/core.frontend.css",
-  "../js/scripts.js": "../js/scripts.js"
+  "../js/scripts.js": "../js/scripts.js",
+  "../js/fe.pagespeedinsight.js": "../js/fe.pagespeedinsight.js"
 }
