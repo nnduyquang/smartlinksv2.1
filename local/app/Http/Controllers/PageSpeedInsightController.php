@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use GuzzleHttp\Client;
+use GuzzleHttp;
 use Illuminate\Http\Request;
 
 class PageSpeedInsightController extends Controller
@@ -12,7 +13,8 @@ class PageSpeedInsightController extends Controller
         $res = $client->request('GET', 'https://www.googleapis.com/pagespeedonline/v2/runPagespeed?url=http://'.$request->input('website').'&strategy=mobile&key=AIzaSyBgs4pfBrI0cGQlAmCKqNd-bRcH4zBICHs');
 //        https://www.googleapis.com/pagespeedonline/v2/runPagespeed?url=http://smartlinks.vn&strategy=mobile&key=AIzaSyBgs4pfBrI0cGQlAmCKqNd-bRcH4zBICHs
 
-        echo $res->getBody();
+        $data=json_decode($res->getBody());
+        echo $data->title;
         return response()->json([
             'success' => true,
             'data'=>$data

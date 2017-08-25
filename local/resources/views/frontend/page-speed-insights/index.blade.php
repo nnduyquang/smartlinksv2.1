@@ -13,15 +13,15 @@
     {{ Form::hidden('hd-website-receive', $hdWebsiteReceive )}}
     {{ Form::hidden('hd-phone-number-receive', $hdPhoneNumberReceive) }}
     {{ Form::hidden('hd-email-customer-receive', $hdEmailCustomerReceive) }}
-    <div class="module6 col-lg-12">
+    <div class="module6 col-lg-12" style="float: inherit">
         <div class="row">
             <div class="wpContainHeader">
                 {{ Html::image('images/temps/ss_adwords.png','',array('class'=>'dvBanner')) }}
                 <div class="wpTextHeader">
                     <div class="textHeader">
-                        <h1> Google PageSpeed Insight Đang Phân Tích Website Quý Khách...</h1>
+                        <h1> Đang Phân Tích...</h1>
                         <div class="subTextHeading">
-                            Mang lại lượng khách hàng tiềm năng đến với doanh nghiệp của bạn
+                            Chúng Tôi Phân Tích Dựa Trên Hệ Thống Đánh Giá Của Google
                         </div>
                     </div>
                 </div>
