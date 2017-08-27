@@ -10,6 +10,10 @@ p {
   color: #7E7E7E;
 }
 
+#analyzing {
+  margin-bottom: 80px;
+}
+
 #loader-wrapper {
   top: 0;
   left: 0;

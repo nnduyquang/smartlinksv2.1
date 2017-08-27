@@ -4,7 +4,8 @@ var plugins = {
     slider1: $('#slider1'),
     memberCarousel: $('.member-carousel'),
     module7: $('#hieuSuat'),
-    footer1:$('.backToTop')
+    footer1:$('.backToTop'),
+    module12:$('#btnSendMail'),
 
 };
 $(document).ready(function () {
@@ -101,6 +102,83 @@ $(document).ready(function () {
             offset: '85%'
         })
     }
+    function getBaseURL() {
+        var url = location.href;  // entire url including querystring - also: window.location.href;
+        var baseURL = url.substring(0, url.indexOf('/', 14));
+        if (baseURL.indexOf('http://localhost') != -1) {
+            // Base Url for localhost
+            var url = location.href;  // window.location.href;
+            var pathname = location.pathname;  // window.location.pathname;
+            var index1 = url.indexOf(pathname);
+            var index2 = url.indexOf("/", index1 + 1);
+            var baseLocalUrl = url.substr(0, index2);
+            return baseLocalUrl + "/";
+        }
+        else {
+            // Root Url for domain name
+            return baseURL + "/";
+        }
+
+    }
+    function runModule12(){
+        $('.loadingSending').css('display','inline-block');
+        $('.errorEmail').css('display','none');
+        $('.errorName').css('display','none');
+        $('.errorInfo').css('display','none');
+        var data = new FormData($(this).get(0));
+        data.append('name', $("input[name='name']").val());
+        data.append('email', $("input[name='email']").val());
+        data.append('phone', $("input[name='phone']").val());
+        data.append('website', $("input[name='website']").val());
+        data.append('keyword', $("textarea[name='keyword']").val());
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+        $.ajax({
+            type: "POST",
+            url: getBaseURL() + "sendmail",
+            dataType: 'json',
+            processData: false,
+            contentType: false,
+            data: data,
+            success: function (data) {
+                if (data.success) {
+                    $('.loadingSending').css('display','none');
+                    $('.successSending').css('display','inline-block');
+                    $('.successSending').fadeIn(500);
+                    setTimeout("$('.successSending').fadeOut(1500);", 3000);
+                    $("input[name='name']").val("");
+                    $("input[name='email']").val("");
+                    $("input[name='phone']").val("");
+                    $("input[name='website']").val("");
+                    $("textarea[name='keyword']").val("");
+                }
+                else {
+                    alert('fail');
+                }
+            },
+            error: function(data){
+                $('.loadingSending').css('display','none');
+                var errors = $.parseJSON(data.responseText);
+                if(errors.hasOwnProperty('email')){
+                    $('.errorEmail').css('display','inline-block');
+                    $('.errorEmail').attr('data-original-title',errors['email']);
+                }
+                if(errors.hasOwnProperty('name')){
+                    $('.errorName').css('display','inline-block');
+                    $('.errorName').attr('data-original-title',errors['name']);
+                }
+                if(errors.hasOwnProperty('keyword')){
+                    $('.errorInfo').css('display','inline-block');
+                    $('.errorInfo').attr('data-original-title',errors['keyword']);
+                }
+                // console.log((errors.hasOwnProperty('email'))?errors['email']:'Không có lỗi email');
+                // Render the errors with js ...
+            }
+        });
+    }
     if (plugins.memberCarousel.length) {
         memberCarousel();
     }
@@ -109,6 +187,12 @@ $(document).ready(function () {
     }
     if (plugins.module7.length) {
         runModule7();
+    }
+    if(plugins.module12.length){
+        $("[rel=popover]").tooltip();
+        plugins.module12.click(function(){
+            runModule12();
+        });
     }
     new WOW().init();
 

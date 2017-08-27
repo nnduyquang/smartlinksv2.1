@@ -7,25 +7,27 @@
     </div>
     <div class="container">
         <div class="member-carousel">
+            @foreach ($emps as $key => $data)
             <div class="one-member">
                 <div class="avarta-member">
-                    {{ Html::image('images/members/team_04.png','',array('class'=>'style-member')) }}
+                    {{ Html::image($data->emp_image,'',array('class'=>'style-member')) }}
                 </div>
                 <div class="introduce-member">
                     <h6 class="name-member">
-                        Quang Nguyễn
+                        {{$data->emp_name}}
                     </h6>
                     <div class="job-member">
-                        Thiết Kế Website
+                        {{$data->emp_duty}}
                     </div>
                     <div class="call-member">
-                        0907468264
+                        {{$data->emp_phone}}
                     </div>
                     <div class="email-member">
-                        nnduyquang@gmail.com
+                        {{$data->emp_email}}
                     </div>
                 </div>
             </div>
+            @endforeach
             <div class="one-member">
                 <div class="avarta-member">
                     {{ Html::image('images/members/team_04.png','',array('class'=>'style-member')) }}

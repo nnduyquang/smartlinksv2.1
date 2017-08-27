@@ -39,7 +39,7 @@ M95 100 Q 100 15 105 100 Z" fill="#59b3c5" stroke="#59b3c5">
         </div>
         <div class="container">
             <div class="wrap-input-analysis col-lg-12">
-                {!! Form::open(array('route' => 'analytic.info','method'=>'GET')) !!}
+                {!! Form::open(array('route' => 'analytic.info','method'=>'POST')) !!}
                 <div class="col-lg-3 col-xs-12">
                     {{Form::text('website','',array('class'=>'form-control input-no-border','placeholder'=>'http://'))}}
                 </div>

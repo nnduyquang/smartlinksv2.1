@@ -27,15 +27,17 @@
                 <div class="menu-wrapper">
                     <div class="menu-all-pages-container">
                         <ul class="menu left-menu">
-                            <li class="menu-full-width"><a href="https://anyabridal.com/bridal-collections.html"
-                                                           class=" act">Giới Thiệu</a>
+                            <li class="menu-full-width"><a href="#" class="act">Giới Thiệu</a>
                             </li>
                             <li class="has-item-down"><a href="/bridesmaids/" class="">Dịch Vụ</a>
                                 <ul>
                                     <li><a href="{{URL::to('google-adwords')}}">Google Adwords</a></li>
                                     <li><a href="{{URL::to('thiet-ke-website')}}">Thiết Kế Website</a></li>
-                                    <li><a href="#">Sub Menu 3</a></li>
-                                    <li class="has-item-right"><a href="#">Sub Menu 4</a>
+                                    <li><a href="{{URL::to('bao-tri')}}">Facebook Ads</a></li>
+                                    <li><a href="{{URL::to('bao-tri')}}">Youtube Ads</a></li>
+                                    <li><a href="{{URL::to('bao-tri')}}">Thiết Kế Logo</a></li>
+                                    <li><a href="{{URL::to('bao-tri')}}">Tư Vấn Chiến Lược Marketing</a></li>
+                                    {{--<li class="has-item-right"><a href="#">Sub Menu 4</a>--}}
                                         {{--<ul>--}}
                                         {{--<li class="has-item-right"><a href="#">Deep Menu 1</a>--}}
                                         {{--<ul>--}}
@@ -47,17 +49,17 @@
                                         {{--</li>--}}
                                         {{--<li><a href="#">Deep Menu 2</a></li>--}}
                                         {{--</ul>--}}
-                                    </li>
-                                    <li><a href="#">Sub Menu 5</a></li>
+                                    {{--</li>--}}
+                                    {{--<li><a href="#">Sub Menu 5</a></li>--}}
                                 </ul>
                             </li>
-                            <li><a href="/menswear/" class="">Menswear</a></li>
+                            <li><a href="{{URL::to('bao-tri')}}" class="">Tin Tức</a></li>
                         </ul>
                         <ul class="menu right-menu">
-                            <li class="menu-full-width"><a href="/location">Tin Tức</a>
+                            <li class="menu-full-width"><a href="{{URL::to('lien-he')}}">Báo Giá</a>
                             </li>
-                            <li class=""><a href="/blog/">Báo Giá</a></li>
-                            <li class="menu-full-width"><a href="#">Liên Hệ</a>
+                            <li class=""><a href="/blog/">Tuyển Dụng</a></li>
+                            <li class="menu-full-width"><a href="{{URL::to('lien-he')}}">Liên Hệ</a>
                             </li>
                         </ul>
                     </div>

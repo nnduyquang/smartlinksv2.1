@@ -8,7 +8,7 @@
                         <div class="contactMenu">
                             <div class="col-md-7" style="text-align: center">
                                 <div class="menu-item">
-                                    <a>4043 n ravenswood ave, suite 316, chicago, il 60613</a>
+                                    <a>20/13 Nguyễn Trường Tộ, P.12, Quận 4, TPHCM</a>
                                 </div>
                             </div>
                             <div class="col-md-3" style="text-align: center">
@@ -18,7 +18,7 @@
                             </div>
                             <div class="col-md-2" style="text-align: center">
                                 <div class="menu-item"><a
-                                            href="https://www.orbitmedia.com/contact/">Liên Hệ</a></div>
+                                            href="{{URL::to('lien-he')}}">Liên Hệ</a></div>
                             </div>
                         </div>
                     </div>
@@ -30,12 +30,8 @@
                         </div>
                         <div class="col-md-4">
                             <div class="footer__bcorp">
-                                <p>Orbit is a proud member of the Chicago community. We strive to educate and
-                                    collaborate
-                                    with
-                                    like-minded businesses to make a difference environmentally and socially. Let’s
-                                    collaborate.</p>
-                                <p><a href="https://www.orbitmedia.com/about/b-corp/">Learn About Our BCorp Values</a>
+                                <p>Smartlinks Đem Lại Hiệu Quả Cao Cho Khách Hàng Bằng Cách Sử Dụng Kỹ Thuật Công Nghệ Mới Nhất Trong Lĩnh Vực Marketing Online</p>
+                                <p><a href="#"></a>
                                 </p>
                             </div>
                         </div>

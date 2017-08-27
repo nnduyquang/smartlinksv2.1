@@ -159,4 +159,5 @@
             </div>
         </div>
     </div>
+    @include('frontend.common.LienHeBaoGia')
 @stop

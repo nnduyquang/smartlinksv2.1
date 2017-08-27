@@ -1,4 +1,7 @@
 @extends('frontend.master')
+@section('styles')
+    {{ Html::style('css/themes/default/default.css') }}
+@stop
 @section('slider')
     @include('slider.slider')
 @stop
