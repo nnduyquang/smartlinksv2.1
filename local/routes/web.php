@@ -28,9 +28,13 @@ Route::get('/bao-tri', function () {
     return view('frontend.update.index');
 });
 
+//PHÂN TÍCH WEBSITE
+
 Route::post('/phan-tich-website','PageSpeedInsightController@resultInfo')->name('analytic.info');
+Route::post('/phan-tich-website-online/','PageSpeedInsightController@redirectInfo')->name('analytic.index');
 Route::post('/phan-tich-website-mobile','PageSpeedInsightController@resultAnalyticsMobile');
 Route::post('/phan-tich-website-desktop','PageSpeedInsightController@resultAnalyticsDesktop');
+//END
 
 Route::get('/sml_login', function () {
     return view('backend.login.login1');

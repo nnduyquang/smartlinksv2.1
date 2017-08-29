@@ -602,6 +602,22 @@ a, a:hover {
   border: none;
   height: 60px;
   font-size: 20px;
+  position: relative;
+}
+
+.container-analysis .wrap-input-analysis [rel="popover"] {
+  position: absolute;
+  cursor: pointer;
+  display: inline-block;
+  left: -5px;
+  top: 50%;
+}
+
+.container-analysis .wrap-input-analysis .errorWebsite, .container-analysis .wrap-input-analysis .errorPhone, .container-analysis .wrap-input-analysis .errorEmail {
+  display: none;
+  color: red;
+  -webkit-animation: blinker 1s linear 3;
+          animation: blinker 1s linear 3;
 }
 
 .container-analysis .wrap-input-analysis .btn-analysis {

@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\PageSpeedInsightRequest;
 use App\PageInsight;
 use GuzzleHttp\Client;
 use GuzzleHttp;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redirect;
 
 class PageSpeedInsightController extends Controller
 {
@@ -51,11 +53,26 @@ class PageSpeedInsightController extends Controller
         ]);
     }
 
-    public function resultInfo(Request $request)
+    public function resultInfo(PageSpeedInsightRequest $request)
     {
         $hdWebsiteReceive = $request->input('website');
         $hdPhoneNumberReceive = $request->input('phone_number');
         $hdEmailCustomerReceive = $request->input('email_return');
+        //return view('frontend.page-speed-insights.index', compact(['hdWebsiteReceive', 'hdPhoneNumberReceive', 'hdEmailCustomerReceive']));
+        return response()->json([
+            'success' => true,
+//            'data' => route('analytic.index', ['hdWebsiteReceive' => $hdWebsiteReceive,'hdPhoneNumberReceive'=>$hdPhoneNumberReceive,'hdEmailCustomerReceive'=>$hdEmailCustomerReceive])
+            'hdWebsiteReceive' => $hdWebsiteReceive,
+            'hdPhoneNumberReceive' => $hdPhoneNumberReceive,
+            'hdEmailCustomerReceive'=>$hdEmailCustomerReceive
+        ]);
+    }
+
+    public function redirectInfo(Request $request)
+    {
+        $hdWebsiteReceive = $request->input('hdWebsiteReceive');
+        $hdPhoneNumberReceive = $request->input('hdPhoneNumberReceive');
+        $hdEmailCustomerReceive = $request->input('hdEmailCustomerReceive');
         return view('frontend.page-speed-insights.index', compact(['hdWebsiteReceive', 'hdPhoneNumberReceive', 'hdEmailCustomerReceive']));
     }
 }
