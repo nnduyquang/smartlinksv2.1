@@ -3,10 +3,10 @@
 namespace App\Http\Requests;
 
 use GuzzleHttp\Client;
-use GuzzleHttp\Exception\ConnectException;
+use GuzzleHttp\Exception\ClientException;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Facades\Input;
-use League\Flysystem\Exception;
+use Illuminate\Validation\Factory;
 
 class PageSpeedInsightRequest extends FormRequest
 {
@@ -19,6 +19,7 @@ class PageSpeedInsightRequest extends FormRequest
     {
         return true;
     }
+
 
     /**
      * Get the validation rules that apply to the request.
@@ -62,23 +63,26 @@ class PageSpeedInsightRequest extends FormRequest
 
     public function withValidator($validator)
     {
-        if ($this->method() == 'POST') {
-            $validator->after(function ($validator) {
-                if (!$this->checkURLValid()) {
-                    $validator->errors()->add('website', 'Website Không Tồn Tại');
-                }
-            });
-        }
+        $validator->after(function ($validator) {
+            if (!$this->checkURLValid()) {
+                $validator->errors()->add('website', 'Website Không Tồn Tại');
+            }
+        });
     }
+    
 
     public function checkURLValid()
     {
         $url = Input::get('website');
-        $client = new Client(['verify' => false]);
-        try {
-            $client->request('GET', $url);
-            return 1 == 1;
-        } catch (ConnectException $e) {
+        if ($url) {
+            $client = new Client(['verify' => false]);
+            try {
+                $client->request('GET', $url);
+                return 1 == 1;
+            } catch (ClientException $e) {
+                return 0 == 1;
+            }
+        } else {
             return 0 == 1;
         }
     }
