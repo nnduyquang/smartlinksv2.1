@@ -5,6 +5,7 @@
 @stop
 @section('scripts')
     {{ Html::script('js/bootstrap-toggle.min.js',array('async' => 'async') ) }}
+    {{ Html::script('js/ulti.js',array('async' => 'async') ) }}
     {{ Html::script('js/be.emp.js',array('async' => 'async') ) }}
 @stop
 @section('container')
@@ -86,7 +87,7 @@
                     <div class="form-inline">
                         <span>Hình Đại Diện: </span>
                         {!! Form::text('emp_image', url('/').'/'.$emp->emp_image, array('class' => 'form-control','id'=>'path')) !!}
-                        {!! Form::button('Browses', array('id' => 'btnBrowse','class'=>'btn btn-primary')) !!}
+                        {!! Form::button('Browses', array('id' => 'btnBrowseImageEmp','class'=>'btn btn-primary')) !!}
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12">

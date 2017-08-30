@@ -20,7 +20,7 @@
                     <h5 class="entry-title">Google Adwords</h5>
                 </header>
                 <div class="description-item">
-                    Chuyên nghiệp và đúng với yêu cầu khách hàng
+                    Tiếp Cận Nguồn Khách Hàng Tìm Kiếm Khổng Lồ
                 </div>
             </div>
         </div>
@@ -34,7 +34,7 @@
                     <h5 class="entry-title">Quảng Cáo Facebook</h5>
                 </header>
                 <div class="description-item">
-                    Chuyên nghiệp và đúng với yêu cầu khách hàng
+                    Đúng Đối Tượng Khách Hàng Cần Quảng Cáo
                 </div>
             </div>
         </div>
@@ -47,7 +47,7 @@
                     <h5 class="entry-title">Thiết Kế Website</h5>
                 </header>
                 <div class="description-item">
-                    Chuyên nghiệp và đúng với yêu cầu khách hàng
+                    Chuyên Nghiệp Và Đáp Ứng Với Tiêu Chuẩn Mới Hiện Nay
                 </div>
             </div>
         </div>
@@ -60,7 +60,7 @@
                     <h5 class="entry-title">Thiết Kế Logo</h5>
                 </header>
                 <div class="description-item">
-                    Chuyên nghiệp và đúng với yêu cầu khách hàng
+                    Tạo Nên Thương Hiệu Riêng Cho Từng Khách Hàng
                 </div>
             </div>
         </div>
@@ -73,7 +73,7 @@
                     <h5 class="entry-title">Phân Tích Website</h5>
                 </header>
                 <div class="description-item">
-                    Chuyên nghiệp và đúng với yêu cầu khách hàng
+                    Đánh Giá Website Và Đưa Ra Gợi Ý Để Nâng Cao Hiệu Quả Kinh Doanh
                 </div>
             </div>
         </div>
@@ -87,7 +87,7 @@
                     <h5 class="entry-title">Quảng Cáo Youtube</h5>
                 </header>
                 <div class="description-item">
-                    Chuyên nghiệp và đúng với yêu cầu khách hàng
+                    Giới Thiệu Trực Quan Hình Ảnh Và Sản Phẩm Doanh Nghiệp
                 </div>
             </div>
         </div>

@@ -113,6 +113,7 @@ mix.styles([
         'resources/assets/js/ulti.js',
         'resources/assets/js/login1.js',
     ], '../js/login.js')
+    .styles('resources/assets/js/ulti.js','../js/ulti.js')
 
     //LOGIN 1 CSS
     .styles([

@@ -1,9 +1,11 @@
 @extends('backend.admin.master')
 @section('styles')
     {{ Html::style('css/be.emp.css') }}
+    {{ Html::style('css/bootstrap-toggle.min.css') }}
 @stop
 @section('scripts')
     {{ Html::script('js/bootstrap-toggle.min.js',array('async' => 'async') ) }}
+    {{ Html::script('js/ulti.js',array('async' => 'async') ) }}
     {{ Html::script('js/be.emp.js',array('async' => 'async') ) }}
 @stop
 @section('container')

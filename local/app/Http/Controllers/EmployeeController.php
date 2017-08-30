@@ -14,7 +14,7 @@ class EmployeeController extends Controller
      */
     public function index(Request $request)
     {
-        $emps = Employee::orderBy('id', 'DESC')->paginate(5);
+        $emps = Employee::orderBy('emp_order', 'DESC')->paginate(5);
         return view('backend.admin.employee.index', compact('emps'))
             ->with('i', ($request->input('page', 1) - 1) * 5);
     }

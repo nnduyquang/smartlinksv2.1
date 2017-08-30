@@ -13,7 +13,7 @@
                             </div>
                             <div class="col-md-3" style="text-align: center">
                                 <div class="menu-item">
-                                    <a href="tel:+1-773-348-4581">0907.468.264</a>
+                                    <a href="tel:02866830091">(028)66 83 00 91</a>
                                 </div>
                             </div>
                             <div class="col-md-2" style="text-align: center">

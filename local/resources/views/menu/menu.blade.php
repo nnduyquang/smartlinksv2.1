@@ -29,7 +29,7 @@
                         <ul class="menu left-menu">
                             <li class="menu-full-width"><a href="#" class="act">Giới Thiệu</a>
                             </li>
-                            <li class="has-item-down"><a href="/bridesmaids/" class="">Dịch Vụ</a>
+                            <li class="has-item-down"><a href="#" class="">Dịch Vụ</a>
                                 <ul>
                                     <li><a href="{{URL::to('google-adwords')}}">Google Adwords</a></li>
                                     <li><a href="{{URL::to('thiet-ke-website')}}">Thiết Kế Website</a></li>

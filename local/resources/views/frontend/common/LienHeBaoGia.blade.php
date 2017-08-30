@@ -2,7 +2,7 @@
     <div class="contain-swap col-lg-12">
         <div class="col-lg-12">
             <div class="heading-text">
-                <h5 class="sub-heading in">Bạn Cần Báo Giá Từ Khóa? Hãy Gửi Cho Chúng Tôi Module 12</h5>
+                <h5 class="sub-heading in">Bạn Cần Báo Giá Dịch Vụ? Hãy Gửi Cho Chúng Tôi</h5>
                 <h3 class="heading in">Liên Hệ Báo Giá</h3>
                 <hr class="heading-line in">
 

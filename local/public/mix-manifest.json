@@ -20,6 +20,7 @@
   "../js/bootstrap-toggle.min.js": "../js/bootstrap-toggle.min.js",
   "../js/be.config.slider.js": "../js/be.config.slider.js",
   "../js/login.js": "../js/login.js",
+  "../js/ulti.js": "../js/ulti.js",
   "../css/login.css": "../css/login.css",
   "../js/fe.pagespeedinsight.js": "../js/fe.pagespeedinsight.js"
 }

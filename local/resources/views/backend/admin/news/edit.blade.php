@@ -3,6 +3,7 @@
     {{ Html::style('css/be.news.css') }}
 @stop
 @section('scripts')
+    {{ Html::script('js/ulti.js',array('async' => 'async') ) }}
     {{ Html::script('js/be.news.js',array('async' => 'async') ) }}
 @stop
 @section('container')
