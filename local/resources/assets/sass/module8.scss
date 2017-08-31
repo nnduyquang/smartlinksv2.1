@@ -42,3 +42,35 @@
     }
   }
 }
+@media screen and(min-width: 576px) {
+  .wpTheManh {
+    h1 {
+      font-size: 20px;
+      line-height: 2;
+    }
+    h5{
+      line-height:1.5
+    }
+    .textDescribeTheManh {
+      h3 {
+        font-size: 25px;
+      }
+    }
+  }
+}
+@media screen and(min-width: 992px) {
+  .wpTheManh {
+    h1 {
+      font-size: 20px;
+      line-height: 2;
+    }
+    h5{
+      line-height:1.5
+    }
+    .textDescribeTheManh {
+      h3 {
+        font-size: 25px;
+      }
+    }
+  }
+}

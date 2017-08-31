@@ -68,3 +68,25 @@
     }
   }
 }
+@media screen and(min-width: 576px) {
+  .wpLoiIch {
+    .slogun {
+      h1 {
+        font-size: 20px;
+        line-height: 1.5;
+      }
+    }
+
+  }
+}
+@media screen and(min-width: 992px) {
+  .wpLoiIch {
+    .slogun {
+      h1 {
+        font-size: 40px;
+        line-height: 1.5;
+      }
+    }
+
+  }
+}

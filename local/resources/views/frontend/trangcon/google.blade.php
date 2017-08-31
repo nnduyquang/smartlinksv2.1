@@ -9,7 +9,7 @@
                 {{ Html::image('images/temps/ss_adwords.png','',array('class'=>'dvBanner')) }}
                 <div class="wpTextHeader">
                     <div class="textHeader">
-                        <h1> Google Adwords Module 6</h1>
+                        <h1> Google Adwords</h1>
                         <div class="subTextHeading">
                             Mang lại lượng khách hàng tiềm năng đến với doanh nghiệp của bạn
                         </div>
@@ -28,11 +28,11 @@
                     <div class="textDescribeLoiIch">
                         <h3>Lợi Ích Quảng Cáo Google Adwords</h3>
                         <ul>
-                            <li class="wow fadeInRight" data-wow-delay="0.5s">Nhắm Đúng Đối Tượng Khách Hàng</li>
-                            <li class="wow fadeInRight" data-wow-delay="1s">Thu Hút Lượng Khách Hàng Tiềm Năng</li>
-                            <li class="wow fadeInRight" data-wow-delay="1.5s">Tăng Doanh Số Bán Hàng</li>
-                            <li class="wow fadeInRight" data-wow-delay="2s">Chi phí thấp hiệu quả cao</li>
-                            <li class="wow fadeInRight" data-wow-delay="2.5s">Quảng cáo trên nhiều nền tảng</li>
+                            <li class="wow bounceIn" data-wow-delay="0.5s">Nhắm Đúng Đối Tượng Khách Hàng</li>
+                            <li class="wow bounceIn" data-wow-delay="1s">Thu Hút Lượng Khách Hàng Tiềm Năng</li>
+                            <li class="wow bounceIn" data-wow-delay="1.5s">Tăng Doanh Số Bán Hàng</li>
+                            <li class="wow bounceIn" data-wow-delay="2s">Chi phí thấp hiệu quả cao</li>
+                            <li class="wow bounceIn" data-wow-delay="2.5s">Quảng cáo trên nhiều nền tảng</li>
                         </ul>
                     </div>
                 </div>
@@ -102,7 +102,7 @@
                     {{ Html::image('images/temps/customer.png') }}
                     <div class="contentHieuSuat">
                         <div id="hs1" class="numberHieuSuat hs1">0</div>
-                        <div class="textHieuSuat">Khách Hàng Thân Thiết Module7</div>
+                        <div class="textHieuSuat">Khách Hàng Thân Thiết</div>
                     </div>
                 </div>
             </div>
@@ -111,7 +111,7 @@
                     {{ Html::image('images/temps/icon-klipstarts.png') }}
                     <div class="contentHieuSuat">
                         <div id="hs2" class="numberHieuSuat hs2">0</div>
-                        <div class="textHieuSuat">Chiến Dịch Thực Hiện - Cài JS countUp</div>
+                        <div class="textHieuSuat">Chiến Dịch Thực Hiện</div>
                     </div>
                 </div>
             </div>
@@ -120,7 +120,7 @@
                     {{ Html::image('images/temps/eco-green-growth.png') }}
                     <div class="contentHieuSuat">
                         <div id="hs3" class="numberHieuSuat hs3">0</div>
-                        <div class="textHieuSuat">Tăng Doanh Thu Khách Hàng - Cài Waypoint</div>
+                        <div class="textHieuSuat">Tăng Doanh Thu Khách Hàng</div>
                     </div>
                 </div>
             </div>
@@ -129,7 +129,7 @@
                     {{ Html::image('images/temps/customer.png') }}
                     <div class="contentHieuSuat">
                         <div id="hs4" class="numberHieuSuat hs4">0</div>
-                        <div class="textHieuSuat">Khách Hàng Thân Thiết</div>
+                        <div class="textHieuSuat">Đối Tác Liên Kết</div>
                     </div>
                 </div>
             </div>

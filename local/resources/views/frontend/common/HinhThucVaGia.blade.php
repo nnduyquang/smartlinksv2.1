@@ -44,7 +44,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4">
-                    <div class="one-price bg-color3 wow bounceInRight">
+                    <div class="one-price bg-color3 wow bounceInLeft">
                         <div class="price-header">
                             <h3 class="price"><span></span>THEO CLICK</h3>
                             <h5 class="pricing-title"></h5>
