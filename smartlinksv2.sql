@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 27, 2017 at 06:28 PM
+-- Generation Time: Aug 31, 2017 at 05:45 AM
 -- Server version: 10.1.16-MariaDB
 -- PHP Version: 5.6.24
 
@@ -100,8 +100,10 @@ CREATE TABLE `employees` (
 --
 
 INSERT INTO `employees` (`id`, `emp_name`, `emp_phone`, `emp_email`, `emp_skype`, `emp_duty`, `emp_note`, `emp_order`, `emp_is_work`, `emp_image`, `created_at`, `updated_at`) VALUES
-(1, 'Nguyễn Như Duy Quang', '0907468264', 'nnduyquang@gmail.com', 'nnduyquang', 'Chuyên Viên Kỹ Thuật', '<p>Đẹp Trai</p>', 1, 1, 'images/uploads/images/Emps/16601688_10206450883149807_3202604677948432802_o.jpg', '2017-08-27 03:09:40', '2017-08-27 03:09:40'),
-(2, 'Nguyễn Đặng Anh Thư', '0914348131', 'athunguyen.dn@gmail.com', 'athunguyen.dn', 'Chuyên Viên Kinh Doanh', '<p>Đẹp l&agrave; được</p>', 2, 1, 'images/uploads/images/Emps/20746243_10211678195704646_1083256869000324251_o.jpg', '2017-08-27 03:12:42', '2017-08-27 03:14:06');
+(1, 'Mr. Quang', '0907468264', 'nnduyquang@gmail.com', 'nnduyquang', 'Chuyên Viên Kỹ Thuật', '<p>Đẹp Trai</p>', 4, 1, 'images/uploads/images/Emps/16601688_10206450883149807_3202604677948432802_o.jpg', '2017-08-27 03:09:40', '2017-08-30 02:26:55'),
+(2, 'Ms. Thư', '0914348131', 'athunguyen.dn@gmail.com', 'athunguyen.dn', 'Chuyên Viên Kinh Doanh', '<p>Đẹp l&agrave; được</p>', 3, 1, 'images/uploads/images/Emps/20746243_10211678195704646_1083256869000324251_o.jpg', '2017-08-27 03:12:42', '2017-08-30 02:26:40'),
+(3, 'Ms. Yến', '0911177131', 'yenvtn.sml@gmail.com', 'sale02_slm', 'Chuyên Viên Kinh Doanh', NULL, 1, 1, 'images/uploads/images/Emps/team_04.png', '2017-08-30 02:23:01', '2017-08-30 02:49:02'),
+(4, 'Ms. Trang', '(028)66 83 00 91', 'trangnh.sml@gmail.com', 'sale01_slm', 'Chuyên Viên CSKH', NULL, 2, 1, 'images/uploads/images/Emps/team_04.png', '2017-08-30 02:26:25', '2017-08-30 08:12:14');
 
 -- --------------------------------------------------------
 
@@ -297,8 +299,8 @@ CREATE TABLE `sliders` (
 --
 
 INSERT INTO `sliders` (`id`, `slider_order`, `slider_is_active`, `slider_image`, `created_at`, `updated_at`) VALUES
-(1, 1, 1, 'images/uploads/images/Slider/00-best-backgrounds-and-wallpaper-apps-for-android.jpg', '2017-08-27 04:25:46', '2017-08-27 04:37:26'),
-(2, 2, 1, 'images/uploads/images/Slider/dreamy-beach-wallpaper_preview.jpg', '2017-08-27 04:38:07', '2017-08-27 04:38:07');
+(1, 1, 1, 'images/uploads/images/Slider/googleadwords.jpg', '2017-08-27 04:25:46', '2017-08-30 02:18:29'),
+(2, 2, 1, 'images/uploads/images/Slider/google_adwords_html5_picture1.png', '2017-08-27 04:38:07', '2017-08-30 02:16:19');
 
 -- --------------------------------------------------------
 
@@ -426,7 +428,7 @@ ALTER TABLE `configs`
 -- AUTO_INCREMENT for table `employees`
 --
 ALTER TABLE `employees`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT for table `migrations`
 --

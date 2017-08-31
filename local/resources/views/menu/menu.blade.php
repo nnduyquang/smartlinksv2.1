@@ -10,7 +10,7 @@
             <ul class="links hidden-sm hidden-xs">
                 <li class="location-link"><a title="Location" href="/location">20/13 Nguyễn Trường Tộ, P.12, Quận 4,
                         TPHCM</a></li>
-                <li class="phone-link"><a title="Phone" itemprop="telephone" href="callto:404-699-4655">0907468264</a>
+                <li class="phone-link"><a title="Phone" itemprop="telephone" href="tel:02866830091">(028)66 83 00 91</a>
                 </li>
             </ul>
         </div>

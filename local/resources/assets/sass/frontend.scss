@@ -5,6 +5,15 @@ body {
   line-height: 1.6;
   webkit-font-smoothing: antialiased;
 }
+#wrap-container{
+  margin-top: 80px;
+}
+@media screen and(max-width: 415px) {
+  #wrap-container{
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+}
 @import "reset";
 @import "common";
 @import "menu";
@@ -18,5 +27,6 @@ body {
 @import "module9";
 @import "module10";
 @import "module11";
+@import "fe.phoneanimation";
 @import "pagespeedinsight";
 @import "footer";

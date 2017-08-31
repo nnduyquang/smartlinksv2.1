@@ -208,8 +208,95 @@
     opacity: 1;
   }
 }
+
 //END Service Smartlinks
-@media screen and(max-width: 768px) {
+@media screen and(max-width: 768px) and (min-width: 415px) {
+  .container-service {
+    padding-bottom: 0;
+    .wp-service {
+      .bg-services {
+        display: none;
+      }
+    }
+    .service-item {
+      .icon-item {
+        width: 127px !important;
+        height: 127px !important;
+        border: none !important;
+        float: none !important;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+      }
+      .content-item {
+        //padding-left: 20px !important;
+        padding-right: 0 !important;
+        margin-top: 0 !important;
+      }
+      &.item1 {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        .move-item {
+          //float: left !important;
+        }
+        .text-item {
+          text-align: center !important;
+        }
+      }
+      &.item2 {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        .move-item {
+          //float: left !important;
+        }
+        .text-item {
+          text-align: center !important;
+        }
+      }
+      &.item3 {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        .move-item {
+          //float: left !important;
+        }
+        .text-item {
+          text-align: center !important;
+        }
+      }
+      &.item4 {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        .move-item {
+          //float: left !important;
+        }
+        .text-item {
+          text-align: center !important;
+        }
+      }
+      &.item5 {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        .move-item {
+          //float: left !important;
+        }
+        .text-item {
+          text-align: center !important;
+        }
+      }
+      &.item6 {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        .move-item {
+          //float: left !important;
+        }
+        .text-item {
+          text-align: center !important;
+        }
+      }
+    }
+  }
+}
+@media screen and(max-width: 415px) {
   .container-service {
     padding-bottom: 0;
     .wp-service {

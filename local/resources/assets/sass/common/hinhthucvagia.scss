@@ -140,7 +140,6 @@
         border-radius: 0 !important;
       }
     }
-
   }
 }
 @media screen and(max-width: 768px) {
@@ -152,6 +151,9 @@
       &::after {
         border-radius: 0 !important;
       }
+    }
+    .price{
+      font-size: 30px!important;
     }
 
   }

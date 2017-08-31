@@ -78,7 +78,7 @@
             </div>
         </div>
 
-        <div class="col-lg-6 col-xs-12 col-sm-6 col-md-6 service-item item6">
+        <div class="col-sm-6 col-xs-12 col-lg-5 col-md-5 service-item item6">
             <div class="icon-item bg-item6 move-item wow flip">
                 {{ Html::image('images/temps/icon-youtube.png','',array('class'=>'style-icon-services6')) }}
             </div>
