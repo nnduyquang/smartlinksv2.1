@@ -45,7 +45,7 @@
     <div class="phone_animation">
         <div class="phone_animation_circle"></div>
         <div class="phone_animation_circle_fill"></div>
-        <a href="tel:0947790808" class="phone_animation_circle_fill_img"><i class="fa fa-phone" aria-hidden="true"></i></a>
+        <a href="tel:02866830091" class="phone_animation_circle_fill_img"><i class="fa fa-phone" aria-hidden="true"></i></a>
     </div>
 </div>
 <!--Start of Tawk.to Script-->
