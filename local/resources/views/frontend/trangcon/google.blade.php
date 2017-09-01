@@ -21,10 +21,10 @@
     <div class="container">
         <div class="row">
             <div class="wpLoiIch">
-                <div class="col-lg-6">
+                <div class="col-md-6">
                     {{ Html::image('images/temps/loiich_left.png','',array('class'=>'wow fadeInLeft')) }}
                 </div>
-                <div class="col-lg-6">
+                <div class="col-md-6">
                     <div class="textDescribeLoiIch">
                         <h3>Lợi Ích Quảng Cáo Google Adwords</h3>
                         <ul>
@@ -36,7 +36,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-12">
+                <div class="col-md-12">
                     <div class="slogun">
                         <h1>
                             <span style="color: #1fb8f1">Smartlinks</span> giúp bạn tiếp cận hàng triệu khách hàng<br>
@@ -95,41 +95,43 @@
             </div>
         </div>
     </div>
-    <div class="module7 col-lg-12">
-        <div id="hieuSuat" class="wpHieuSuat">
-            <div class="col-lg-3">
-                <div class="wpOneHieuSuat">
-                    {{ Html::image('images/temps/customer.png') }}
-                    <div class="contentHieuSuat">
-                        <div id="hs1" class="numberHieuSuat hs1">0</div>
-                        <div class="textHieuSuat">Khách Hàng Thân Thiết</div>
+    <div class="module7 col-md-12">
+        <div class="row">
+            <div id="hieuSuat" class="wpHieuSuat">
+                <div class="col-md-3">
+                    <div class="wpOneHieuSuat">
+                        {{ Html::image('images/temps/customer.png') }}
+                        <div class="contentHieuSuat">
+                            <div id="hs1" class="numberHieuSuat hs1">0</div>
+                            <div class="textHieuSuat">Khách Hàng Thân Thiết</div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="wpOneHieuSuat">
-                    {{ Html::image('images/temps/icon-klipstarts.png') }}
-                    <div class="contentHieuSuat">
-                        <div id="hs2" class="numberHieuSuat hs2">0</div>
-                        <div class="textHieuSuat">Chiến Dịch Thực Hiện</div>
+                <div class="col-md-3">
+                    <div class="wpOneHieuSuat">
+                        {{ Html::image('images/temps/icon-klipstarts.png') }}
+                        <div class="contentHieuSuat">
+                            <div id="hs2" class="numberHieuSuat hs2">0</div>
+                            <div class="textHieuSuat">Chiến Dịch Thực Hiện</div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="wpOneHieuSuat">
-                    {{ Html::image('images/temps/eco-green-growth.png') }}
-                    <div class="contentHieuSuat">
-                        <div id="hs3" class="numberHieuSuat hs3">0</div>
-                        <div class="textHieuSuat">Tăng Doanh Thu Khách Hàng</div>
+                <div class="col-md-3">
+                    <div class="wpOneHieuSuat">
+                        {{ Html::image('images/temps/eco-green-growth.png') }}
+                        <div class="contentHieuSuat">
+                            <div id="hs3" class="numberHieuSuat hs3">0</div>
+                            <div class="textHieuSuat">Tăng Doanh Thu Khách Hàng</div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="wpOneHieuSuat">
-                    {{ Html::image('images/temps/customer.png') }}
-                    <div class="contentHieuSuat">
-                        <div id="hs4" class="numberHieuSuat hs4">0</div>
-                        <div class="textHieuSuat">Đối Tác Liên Kết</div>
+                <div class="col-md-3">
+                    <div class="wpOneHieuSuat">
+                        {{ Html::image('images/temps/customer.png') }}
+                        <div class="contentHieuSuat">
+                            <div id="hs4" class="numberHieuSuat hs4">0</div>
+                            <div class="textHieuSuat">Đối Tác Liên Kết</div>
+                        </div>
                     </div>
                 </div>
             </div>

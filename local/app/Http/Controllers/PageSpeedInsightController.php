@@ -17,8 +17,7 @@ class PageSpeedInsightController extends Controller
         $check_website = parse_url($website);
         if (empty($check_website['scheme'])) {
             $website = 'http://' . ltrim($website, '/');
-        } else
-            echo $website;
+        }
         $client = new Client(['verify' => false]);
         $pageInsight = new PageInsight();
         $res_mobile = $client->request('GET', 'https://www.googleapis.com/pagespeedonline/v2/runPagespeed?url=' . $website . '&strategy=mobile&screenshot=true&pageStats=htmlResponseBytes,textResponseBytes&key=AIzaSyBgs4pfBrI0cGQlAmCKqNd-bRcH4zBICHs');
@@ -28,7 +27,6 @@ class PageSpeedInsightController extends Controller
         return response()->json([
             'success' => true,
             'data' => $pageInsight
-
         ]);
     }
 
@@ -38,8 +36,7 @@ class PageSpeedInsightController extends Controller
         $check_website = parse_url($website);
         if (empty($check_website['scheme'])) {
             $website = 'http://' . ltrim($website, '/');
-        } else
-            echo $website;
+        }
         $client = new Client(['verify' => false]);
         $pageInsight = new PageInsight();
         $res_desktop = $client->request('GET', 'https://www.googleapis.com/pagespeedonline/v2/runPagespeed?url=' . $website . '&strategy=desktop&screenshot=true&pageStats=htmlResponseBytes,textResponseBytes&key=AIzaSyBgs4pfBrI0cGQlAmCKqNd-bRcH4zBICHs');

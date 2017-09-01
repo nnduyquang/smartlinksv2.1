@@ -3,6 +3,7 @@
 namespace App\Http\Requests;
 
 use GuzzleHttp\Client;
+use GuzzleHttp\Exception\BadResponseException;
 use GuzzleHttp\Exception\ClientException;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Facades\Input;
@@ -69,17 +70,17 @@ class PageSpeedInsightRequest extends FormRequest
             }
         });
     }
-    
+
 
     public function checkURLValid()
     {
         $url = Input::get('website');
         if ($url) {
-            $client = new Client(['verify' => false]);
+            $client = new Client(['verify' => false,'http_errors' => false]);
             try {
-                $client->request('GET', $url);
+                $request = $client->get($url);
                 return 1 == 1;
-            } catch (ClientException $e) {
+            } catch (\Exception $e) {
                 return 0 == 1;
             }
         } else {

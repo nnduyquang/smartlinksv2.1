@@ -38,21 +38,21 @@ M95 100 Q 100 15 105 100 Z" fill="#59b3c5" stroke="#59b3c5">
             </div>
         </div>
         <div class="container">
-            <div class="wrap-input-analysis col-lg-12">
+            <div class="wrap-input-analysis col-md-12">
                 {{--{!! Form::open(array('route' => 'analytic.info','method'=>'POST')) !!}--}}
-                <div class="col-lg-3 col-xs-12">
+                <div class="col-md-3">
                     {{Form::text('website','',array('class'=>'form-control input-no-border','placeholder'=>'http://'))}}
                     <i class="fa fa-exclamation-circle errorWebsite" rel="popover" data-toggle="tooltip" data-placement="top" title="Tên Không Được Để Trống"></i>
                 </div>
-                <div class="col-lg-3 col-xs-12">
+                <div class="col-md-3">
                     {{Form::text('phone_number','',array('class'=>'form-control input-no-border','placeholder'=>'số điện thoại'))}}
                     <i class="fa fa-exclamation-circle errorPhone" rel="popover" data-toggle="tooltip" data-placement="top" title="Tên Không Được Để Trống"></i>
                 </div>
-                <div class="col-lg-4 col-xs-12">
+                <div class="col-md-4">
                     {{Form::text('email_return','',array('class'=>'form-control input-no-border','placeholder'=>'email'))}}
                     <i class="fa fa-exclamation-circle errorEmail" rel="popover" data-toggle="tooltip" data-placement="top" title="Tên Không Được Để Trống"></i>
                 </div>
-                <div class="col-lg-2 col-xs-12">
+                <div class="col-md-2">
                     <button id="btnAnalytic" type="submit" class="btn btn-analysis">PHÂN TÍCH</button>
                 </div>
                 {{--{!! Form::close() !!}--}}

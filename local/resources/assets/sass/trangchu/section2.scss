@@ -68,22 +68,14 @@
     }
   }
 }
-@media screen and(max-width: 480px) {
+@media screen and(max-width: 768px) {
   .wrap-input-analysis {
-    background-color: rgba(255, 255, 255, 0) !important;
+    background-color: rgba(255, 255, 255, 0)!important;
     .input-no-border {
       margin-bottom: 10px;
     }
   }
 }
-@media screen and(max-width: 980px) {
-  .wrap-input-analysis {
-    background-color: rgba(255, 255, 255, 0) !important;
-    .input-no-border {
-      margin-bottom: 10px;
-    }
-  }
-  //End Tại Sao Chọn Smartlinks
-}
+
 
 //END Phân Tích Website
