@@ -69,7 +69,6 @@ mix.styles([
 
     .styles([
         'resources/assets/js/be.news.js',
-        'resources/assets/js/be.config.email.js'
     ], '../js/be.news.js')
 
     .styles([

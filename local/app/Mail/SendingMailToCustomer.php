@@ -34,6 +34,6 @@ class SendingMailToCustomer extends Mailable
         $fromSender = Config::where('name', 'email-sender-from')->first();
         $signatures = Config::where('name', 'email-signatures')->first()->content;
         $content = Config::where('name', 'email-sender-content')->first()->content;
-        return $this->view('mail.mail-to-customer', ['signatures' => $signatures,'content'=>$content])->to($request->email)->subject($subjectSender->content)->from('nnduyquang@gmail.com', $fromSender->content);;
+        return $this->view('mail.mail-to-customer', ['signatures' => $signatures,'content'=>$content])->to($request->email)->subject($subjectSender->content)->from('nnduyquang@gmail.com', $fromSender->content);
     }
 }
