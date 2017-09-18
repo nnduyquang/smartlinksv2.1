@@ -1,13 +1,15 @@
 -- phpMyAdmin SQL Dump
--- version 4.5.1
--- http://www.phpmyadmin.net
+-- version 4.7.3
+-- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Aug 31, 2017 at 05:45 AM
--- Server version: 10.1.16-MariaDB
--- PHP Version: 5.6.24
+-- Máy chủ: localhost:3306
+-- Thời gian đã tạo: Th9 16, 2017 lúc 08:22 PM
+-- Phiên bản máy phục vụ: 5.6.37
+-- Phiên bản PHP: 5.6.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -17,13 +19,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `smartlinksv2`
+-- Cơ sở dữ liệu: `smaa7688_smartlinksv2`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `category_permissions`
+-- Cấu trúc bảng cho bảng `category_permissions`
 --
 
 CREATE TABLE `category_permissions` (
@@ -34,7 +36,7 @@ CREATE TABLE `category_permissions` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `category_permissions`
+-- Đang đổ dữ liệu cho bảng `category_permissions`
 --
 
 INSERT INTO `category_permissions` (`id`, `name`, `created_at`, `updated_at`) VALUES
@@ -47,7 +49,7 @@ INSERT INTO `category_permissions` (`id`, `name`, `created_at`, `updated_at`) VA
 -- --------------------------------------------------------
 
 --
--- Table structure for table `configs`
+-- Cấu trúc bảng cho bảng `configs`
 --
 
 CREATE TABLE `configs` (
@@ -62,7 +64,7 @@ CREATE TABLE `configs` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `configs`
+-- Đang đổ dữ liệu cho bảng `configs`
 --
 
 INSERT INTO `configs` (`id`, `name`, `content`, `description`, `order`, `user_id`, `created_at`, `updated_at`) VALUES
@@ -71,13 +73,13 @@ INSERT INTO `configs` (`id`, `name`, `content`, `description`, `order`, `user_id
 (3, 'email-sender-from', 'Smartlinks', 'Cấu Hình From Gửi Khách Hàng', 3, 1, '2017-08-26 06:53:21', '2017-08-26 07:20:55'),
 (4, 'email-receive-subject', 'BÁO GIÁ MỚI TỪ KHÁCH HÀNG', 'Cấu Hình Subject Nhận Báo Giá', 4, 1, '2017-08-26 06:53:21', '2017-08-26 07:20:55'),
 (5, 'email-receive-from', 'Smartlinks', 'Cấu Hình From Nhận Báo Giá', 5, 1, '2017-08-26 06:53:21', '2017-08-26 07:20:55'),
-(6, 'email-signatures', '<pre style="margin-left:0cm; margin-right:0cm">\r\n<span style="font-size:10pt"><span style="font-family:&quot;Courier New&quot;">-- </span></span></pre>\r\n\r\n<pre style="margin-left:0cm; margin-right:0cm">\r\n<span style="font-size:10pt"><span style="font-family:&quot;Courier New&quot;">__________________________________________________________________</span></span></pre>\r\n\r\n<pre style="margin-left:0cm; margin-right:0cm">\r\n\r\n&nbsp;</pre>\r\n\r\n<pre style="margin-left:0cm; margin-right:0cm">\r\n<span style="font-size:10pt"><span style="font-family:&quot;Courier New&quot;"> </span></span></pre>\r\n\r\n<pre style="margin-left:0cm; margin-right:0cm">\r\n\r\n&nbsp;</pre>\r\n\r\n<pre style="margin-left:0cm; margin-right:0cm">\r\n<span style="font-size:10pt"><span style="font-family:&quot;Courier New&quot;">V&otilde; Thị Ngọc Yến</span></span></pre>\r\n\r\n<pre style="margin-left:0cm; margin-right:0cm">\r\n\r\n&nbsp;</pre>\r\n\r\n<pre style="margin-left:0cm; margin-right:0cm">\r\n<span style="font-size:10pt"><span style="font-family:&quot;Courier New&quot;">Nh&acirc;n Vi&ecirc;n Kinh Doanh</span></span></pre>\r\n\r\n<pre style="margin-left:0cm; margin-right:0cm">\r\n\r\n&nbsp;</pre>\r\n\r\n<pre style="margin-left:0cm; margin-right:0cm">\r\n<span style="font-size:10pt"><span style="font-family:&quot;Courier New&quot;">__________________________________________________________________</span></span></pre>\r\n\r\n<pre style="margin-left:0cm; margin-right:0cm">\r\n\r\n&nbsp;</pre>\r\n\r\n<pre style="margin-left:0cm; margin-right:0cm">\r\n<span style="font-size:10pt"><span style="font-family:&quot;Courier New&quot;"> </span></span></pre>\r\n\r\n<pre style="margin-left:0cm; margin-right:0cm">\r\n\r\n&nbsp;</pre>\r\n\r\n<pre style="margin-left:0cm; margin-right:0cm">\r\n<span style="font-size:10pt"><span style="font-family:&quot;Courier New&quot;">C&ocirc;ng Ty TNHH Truyền Th&ocirc;ng V&agrave; Đầu Tư Smartlinks</span></span></pre>\r\n\r\n<pre style="margin-left:0cm; margin-right:0cm">\r\n\r\n&nbsp;</pre>\r\n\r\n<pre style="margin-left:0cm; margin-right:0cm">\r\n<span style="font-size:10pt"><span style="font-family:&quot;Courier New&quot;">Địa chỉ: 20/13 Nguyễn Trường Tộ, P.12, Quận 4, TPHCM</span></span></pre>\r\n\r\n<pre style="margin-left:0cm; margin-right:0cm">\r\n\r\n&nbsp;</pre>\r\n\r\n<pre style="margin-left:0cm; margin-right:0cm">\r\n<span style="font-size:10pt"><span style="font-family:&quot;Courier New&quot;">Mobile: (+84) 911.177.131</span></span></pre>\r\n\r\n<pre style="margin-left:0cm; margin-right:0cm">\r\n\r\n&nbsp;</pre>\r\n\r\n<pre style="margin-left:0cm; margin-right:0cm">\r\n<span style="font-size:10pt"><span style="font-family:&quot;Courier New&quot;">Email: <a href="mailto:yenvtn.sml@gmail.com" style="color:blue; text-decoration:underline" target="_blank">yenvtn.sml@gmail.com</a></span></span></pre>\r\n\r\n<pre style="margin-left:0cm; margin-right:0cm">\r\n\r\n&nbsp;</pre>\r\n\r\n<pre style="margin-left:0cm; margin-right:0cm">\r\n<span style="font-size:10pt"><span style="font-family:&quot;Courier New&quot;">Website: <a href="http://smartlinks.vn" style="color:blue; text-decoration:underline" target="_blank">http://smartlinks.vn</a></span></span></pre>', 'Cấu Hình Chữ Ký', 7, 1, '2017-08-26 06:53:21', '2017-08-26 07:20:55'),
-(7, 'email-sender-content', '<h1 style="margin-left:0cm; margin-right:0cm"><span style="font-size:24pt"><span style="font-family:&quot;Times New Roman&quot;,serif">Ch&uacute;ng T&ocirc;i Đ&atilde; Nhận Được Mail, Xin Ch&acirc;n Th&agrave;nh Cảm Ơn</span></span></h1>', 'Cấu Hình Nội Dung Gửi Khách Hàng', 6, 1, '2017-08-26 06:53:21', '2017-08-26 07:20:55');
+(6, 'email-signatures', '<pre style=\"margin-left:0cm; margin-right:0cm\">\r\n<span style=\"font-size:10pt\"><span style=\"font-family:&quot;Courier New&quot;\">-- </span></span></pre>\r\n\r\n<pre style=\"margin-left:0cm; margin-right:0cm\">\r\n<span style=\"font-size:10pt\"><span style=\"font-family:&quot;Courier New&quot;\">__________________________________________________________________</span></span></pre>\r\n\r\n<pre style=\"margin-left:0cm; margin-right:0cm\">\r\n\r\n&nbsp;</pre>\r\n\r\n<pre style=\"margin-left:0cm; margin-right:0cm\">\r\n<span style=\"font-size:10pt\"><span style=\"font-family:&quot;Courier New&quot;\"> </span></span></pre>\r\n\r\n<pre style=\"margin-left:0cm; margin-right:0cm\">\r\n\r\n&nbsp;</pre>\r\n\r\n<pre style=\"margin-left:0cm; margin-right:0cm\">\r\n<span style=\"font-size:10pt\"><span style=\"font-family:&quot;Courier New&quot;\">V&otilde; Thị Ngọc Yến</span></span></pre>\r\n\r\n<pre style=\"margin-left:0cm; margin-right:0cm\">\r\n\r\n&nbsp;</pre>\r\n\r\n<pre style=\"margin-left:0cm; margin-right:0cm\">\r\n<span style=\"font-size:10pt\"><span style=\"font-family:&quot;Courier New&quot;\">Nh&acirc;n Vi&ecirc;n Kinh Doanh</span></span></pre>\r\n\r\n<pre style=\"margin-left:0cm; margin-right:0cm\">\r\n\r\n&nbsp;</pre>\r\n\r\n<pre style=\"margin-left:0cm; margin-right:0cm\">\r\n<span style=\"font-size:10pt\"><span style=\"font-family:&quot;Courier New&quot;\">__________________________________________________________________</span></span></pre>\r\n\r\n<pre style=\"margin-left:0cm; margin-right:0cm\">\r\n\r\n&nbsp;</pre>\r\n\r\n<pre style=\"margin-left:0cm; margin-right:0cm\">\r\n<span style=\"font-size:10pt\"><span style=\"font-family:&quot;Courier New&quot;\"> </span></span></pre>\r\n\r\n<pre style=\"margin-left:0cm; margin-right:0cm\">\r\n\r\n&nbsp;</pre>\r\n\r\n<pre style=\"margin-left:0cm; margin-right:0cm\">\r\n<span style=\"font-size:10pt\"><span style=\"font-family:&quot;Courier New&quot;\">C&ocirc;ng Ty TNHH Truyền Th&ocirc;ng V&agrave; Đầu Tư Smartlinks</span></span></pre>\r\n\r\n<pre style=\"margin-left:0cm; margin-right:0cm\">\r\n\r\n&nbsp;</pre>\r\n\r\n<pre style=\"margin-left:0cm; margin-right:0cm\">\r\n<span style=\"font-size:10pt\"><span style=\"font-family:&quot;Courier New&quot;\">Địa chỉ: 20/13 Nguyễn Trường Tộ, P.12, Quận 4, TPHCM</span></span></pre>\r\n\r\n<pre style=\"margin-left:0cm; margin-right:0cm\">\r\n\r\n&nbsp;</pre>\r\n\r\n<pre style=\"margin-left:0cm; margin-right:0cm\">\r\n<span style=\"font-size:10pt\"><span style=\"font-family:&quot;Courier New&quot;\">Mobile: (+84) 911.177.131</span></span></pre>\r\n\r\n<pre style=\"margin-left:0cm; margin-right:0cm\">\r\n\r\n&nbsp;</pre>\r\n\r\n<pre style=\"margin-left:0cm; margin-right:0cm\">\r\n<span style=\"font-size:10pt\"><span style=\"font-family:&quot;Courier New&quot;\">Email: <a href=\"mailto:yenvtn.sml@gmail.com\" style=\"color:blue; text-decoration:underline\" target=\"_blank\">yenvtn.sml@gmail.com</a></span></span></pre>\r\n\r\n<pre style=\"margin-left:0cm; margin-right:0cm\">\r\n\r\n&nbsp;</pre>\r\n\r\n<pre style=\"margin-left:0cm; margin-right:0cm\">\r\n<span style=\"font-size:10pt\"><span style=\"font-family:&quot;Courier New&quot;\">Website: <a href=\"http://smartlinks.vn\" style=\"color:blue; text-decoration:underline\" target=\"_blank\">http://smartlinks.vn</a></span></span></pre>', 'Cấu Hình Chữ Ký', 7, 1, '2017-08-26 06:53:21', '2017-08-26 07:20:55'),
+(7, 'email-sender-content', '<h1 style=\"margin-left:0cm; margin-right:0cm\"><span style=\"font-size:24pt\"><span style=\"font-family:&quot;Times New Roman&quot;,serif\">Ch&uacute;ng T&ocirc;i Đ&atilde; Nhận Được Mail, Xin Ch&acirc;n Th&agrave;nh Cảm Ơn</span></span></h1>', 'Cấu Hình Nội Dung Gửi Khách Hàng', 6, 1, '2017-08-26 06:53:21', '2017-08-26 07:20:55');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `employees`
+-- Cấu trúc bảng cho bảng `employees`
 --
 
 CREATE TABLE `employees` (
@@ -96,19 +98,19 @@ CREATE TABLE `employees` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `employees`
+-- Đang đổ dữ liệu cho bảng `employees`
 --
 
 INSERT INTO `employees` (`id`, `emp_name`, `emp_phone`, `emp_email`, `emp_skype`, `emp_duty`, `emp_note`, `emp_order`, `emp_is_work`, `emp_image`, `created_at`, `updated_at`) VALUES
 (1, 'Mr. Quang', '0907468264', 'nnduyquang@gmail.com', 'nnduyquang', 'Chuyên Viên Kỹ Thuật', '<p>Đẹp Trai</p>', 4, 1, 'images/uploads/images/Emps/16601688_10206450883149807_3202604677948432802_o.jpg', '2017-08-27 03:09:40', '2017-08-30 02:26:55'),
 (2, 'Ms. Thư', '0914348131', 'athunguyen.dn@gmail.com', 'athunguyen.dn', 'Chuyên Viên Kinh Doanh', '<p>Đẹp l&agrave; được</p>', 3, 1, 'images/uploads/images/Emps/20746243_10211678195704646_1083256869000324251_o.jpg', '2017-08-27 03:12:42', '2017-08-30 02:26:40'),
-(3, 'Ms. Yến', '0911177131', 'yenvtn.sml@gmail.com', 'sale02_slm', 'Chuyên Viên Kinh Doanh', NULL, 1, 1, 'images/uploads/images/Emps/team_04.png', '2017-08-30 02:23:01', '2017-08-30 02:49:02'),
-(4, 'Ms. Trang', '(028)66 83 00 91', 'trangnh.sml@gmail.com', 'sale01_slm', 'Chuyên Viên CSKH', NULL, 2, 1, 'images/uploads/images/Emps/team_04.png', '2017-08-30 02:26:25', '2017-08-30 08:12:14');
+(3, 'Ms. Yến', '0911177131', 'yenvtn.sml@gmail.com', 'sale02_slm', 'Chuyên Viên Kinh Doanh', NULL, 1, 1, 'images/uploads/images/Emps/IMG_7347.jpg', '2017-08-30 02:23:01', '2017-09-02 13:13:37'),
+(4, 'Ms. Trang', '(028)66 83 00 91', 'trangnh.sml@gmail.com', 'sale01_slm', 'Chuyên Viên CSKH', NULL, 2, 1, 'images/uploads/images/Emps/IMG_7346.jpg', '2017-08-30 02:26:25', '2017-09-02 13:12:17');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `migrations`
+-- Cấu trúc bảng cho bảng `migrations`
 --
 
 CREATE TABLE `migrations` (
@@ -118,7 +120,7 @@ CREATE TABLE `migrations` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `migrations`
+-- Đang đổ dữ liệu cho bảng `migrations`
 --
 
 INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
@@ -133,7 +135,7 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `news`
+-- Cấu trúc bảng cho bảng `news`
 --
 
 CREATE TABLE `news` (
@@ -151,7 +153,7 @@ CREATE TABLE `news` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `password_resets`
+-- Cấu trúc bảng cho bảng `password_resets`
 --
 
 CREATE TABLE `password_resets` (
@@ -163,7 +165,7 @@ CREATE TABLE `password_resets` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `permissions`
+-- Cấu trúc bảng cho bảng `permissions`
 --
 
 CREATE TABLE `permissions` (
@@ -177,7 +179,7 @@ CREATE TABLE `permissions` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `permissions`
+-- Đang đổ dữ liệu cho bảng `permissions`
 --
 
 INSERT INTO `permissions` (`id`, `name`, `display_name`, `description`, `category_permission_id`, `created_at`, `updated_at`) VALUES
@@ -205,7 +207,7 @@ INSERT INTO `permissions` (`id`, `name`, `display_name`, `description`, `categor
 -- --------------------------------------------------------
 
 --
--- Table structure for table `permission_role`
+-- Cấu trúc bảng cho bảng `permission_role`
 --
 
 CREATE TABLE `permission_role` (
@@ -214,7 +216,7 @@ CREATE TABLE `permission_role` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `permission_role`
+-- Đang đổ dữ liệu cho bảng `permission_role`
 --
 
 INSERT INTO `permission_role` (`permission_id`, `role_id`) VALUES
@@ -242,7 +244,7 @@ INSERT INTO `permission_role` (`permission_id`, `role_id`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `roles`
+-- Cấu trúc bảng cho bảng `roles`
 --
 
 CREATE TABLE `roles` (
@@ -255,7 +257,7 @@ CREATE TABLE `roles` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `roles`
+-- Đang đổ dữ liệu cho bảng `roles`
 --
 
 INSERT INTO `roles` (`id`, `name`, `display_name`, `description`, `created_at`, `updated_at`) VALUES
@@ -264,7 +266,7 @@ INSERT INTO `roles` (`id`, `name`, `display_name`, `description`, `created_at`, 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `role_user`
+-- Cấu trúc bảng cho bảng `role_user`
 --
 
 CREATE TABLE `role_user` (
@@ -273,7 +275,7 @@ CREATE TABLE `role_user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `role_user`
+-- Đang đổ dữ liệu cho bảng `role_user`
 --
 
 INSERT INTO `role_user` (`user_id`, `role_id`) VALUES
@@ -282,7 +284,7 @@ INSERT INTO `role_user` (`user_id`, `role_id`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `sliders`
+-- Cấu trúc bảng cho bảng `sliders`
 --
 
 CREATE TABLE `sliders` (
@@ -295,7 +297,7 @@ CREATE TABLE `sliders` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `sliders`
+-- Đang đổ dữ liệu cho bảng `sliders`
 --
 
 INSERT INTO `sliders` (`id`, `slider_order`, `slider_is_active`, `slider_image`, `created_at`, `updated_at`) VALUES
@@ -305,7 +307,7 @@ INSERT INTO `sliders` (`id`, `slider_order`, `slider_is_active`, `slider_image`,
 -- --------------------------------------------------------
 
 --
--- Table structure for table `users`
+-- Cấu trúc bảng cho bảng `users`
 --
 
 CREATE TABLE `users` (
@@ -319,57 +321,57 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `users`
+-- Đang đổ dữ liệu cho bảng `users`
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
 (1, 'nnduyquang', 'nnduyquang@gmail.com', '$2y$10$uM5fRQBa7zKsDAHP/Vaid.P7LihKYXlRZu.4QZeOou5.5HXrMglOW', NULL, '2017-08-26 05:22:25', NULL);
 
 --
--- Indexes for dumped tables
+-- Chỉ mục cho các bảng đã đổ
 --
 
 --
--- Indexes for table `category_permissions`
+-- Chỉ mục cho bảng `category_permissions`
 --
 ALTER TABLE `category_permissions`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `category_permissions_name_unique` (`name`);
 
 --
--- Indexes for table `configs`
+-- Chỉ mục cho bảng `configs`
 --
 ALTER TABLE `configs`
   ADD PRIMARY KEY (`id`),
   ADD KEY `configs_user_id_foreign` (`user_id`);
 
 --
--- Indexes for table `employees`
+-- Chỉ mục cho bảng `employees`
 --
 ALTER TABLE `employees`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `migrations`
+-- Chỉ mục cho bảng `migrations`
 --
 ALTER TABLE `migrations`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `news`
+-- Chỉ mục cho bảng `news`
 --
 ALTER TABLE `news`
   ADD PRIMARY KEY (`id`),
   ADD KEY `news_user_id_foreign` (`user_id`);
 
 --
--- Indexes for table `password_resets`
+-- Chỉ mục cho bảng `password_resets`
 --
 ALTER TABLE `password_resets`
   ADD KEY `password_resets_email_index` (`email`);
 
 --
--- Indexes for table `permissions`
+-- Chỉ mục cho bảng `permissions`
 --
 ALTER TABLE `permissions`
   ADD PRIMARY KEY (`id`),
@@ -377,123 +379,124 @@ ALTER TABLE `permissions`
   ADD KEY `permissions_category_permission_id_foreign` (`category_permission_id`);
 
 --
--- Indexes for table `permission_role`
+-- Chỉ mục cho bảng `permission_role`
 --
 ALTER TABLE `permission_role`
   ADD PRIMARY KEY (`permission_id`,`role_id`),
   ADD KEY `permission_role_role_id_foreign` (`role_id`);
 
 --
--- Indexes for table `roles`
+-- Chỉ mục cho bảng `roles`
 --
 ALTER TABLE `roles`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `roles_name_unique` (`name`);
 
 --
--- Indexes for table `role_user`
+-- Chỉ mục cho bảng `role_user`
 --
 ALTER TABLE `role_user`
   ADD PRIMARY KEY (`user_id`,`role_id`),
   ADD KEY `role_user_role_id_foreign` (`role_id`);
 
 --
--- Indexes for table `sliders`
+-- Chỉ mục cho bảng `sliders`
 --
 ALTER TABLE `sliders`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `users`
+-- Chỉ mục cho bảng `users`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `users_email_unique` (`email`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT cho các bảng đã đổ
 --
 
 --
--- AUTO_INCREMENT for table `category_permissions`
+-- AUTO_INCREMENT cho bảng `category_permissions`
 --
 ALTER TABLE `category_permissions`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
--- AUTO_INCREMENT for table `configs`
+-- AUTO_INCREMENT cho bảng `configs`
 --
 ALTER TABLE `configs`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 --
--- AUTO_INCREMENT for table `employees`
+-- AUTO_INCREMENT cho bảng `employees`
 --
 ALTER TABLE `employees`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
--- AUTO_INCREMENT for table `migrations`
+-- AUTO_INCREMENT cho bảng `migrations`
 --
 ALTER TABLE `migrations`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 --
--- AUTO_INCREMENT for table `news`
+-- AUTO_INCREMENT cho bảng `news`
 --
 ALTER TABLE `news`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `permissions`
+-- AUTO_INCREMENT cho bảng `permissions`
 --
 ALTER TABLE `permissions`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 --
--- AUTO_INCREMENT for table `roles`
+-- AUTO_INCREMENT cho bảng `roles`
 --
 ALTER TABLE `roles`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
--- AUTO_INCREMENT for table `sliders`
+-- AUTO_INCREMENT cho bảng `sliders`
 --
 ALTER TABLE `sliders`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
--- AUTO_INCREMENT for table `users`
+-- AUTO_INCREMENT cho bảng `users`
 --
 ALTER TABLE `users`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
--- Constraints for dumped tables
+-- Các ràng buộc cho các bảng đã đổ
 --
 
 --
--- Constraints for table `configs`
+-- Các ràng buộc cho bảng `configs`
 --
 ALTER TABLE `configs`
   ADD CONSTRAINT `configs_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Constraints for table `news`
+-- Các ràng buộc cho bảng `news`
 --
 ALTER TABLE `news`
   ADD CONSTRAINT `news_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Constraints for table `permissions`
+-- Các ràng buộc cho bảng `permissions`
 --
 ALTER TABLE `permissions`
   ADD CONSTRAINT `permissions_category_permission_id_foreign` FOREIGN KEY (`category_permission_id`) REFERENCES `category_permissions` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Constraints for table `permission_role`
+-- Các ràng buộc cho bảng `permission_role`
 --
 ALTER TABLE `permission_role`
   ADD CONSTRAINT `permission_role_permission_id_foreign` FOREIGN KEY (`permission_id`) REFERENCES `permissions` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `permission_role_role_id_foreign` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Constraints for table `role_user`
+-- Các ràng buộc cho bảng `role_user`
 --
 ALTER TABLE `role_user`
   ADD CONSTRAINT `role_user_role_id_foreign` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `role_user_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

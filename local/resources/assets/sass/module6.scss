@@ -42,6 +42,7 @@
     }
   }
 }
+
 .wpContainHeader {
   .dvBanner {
     height: 500px;
@@ -68,7 +69,7 @@
     }
   }
 }
-@media screen and(min-width: 576px) {
+@media screen and (min-width: 576px) {
   .wpLoiIch {
     .slogun {
       h1 {
@@ -76,10 +77,10 @@
         line-height: 1.5;
       }
     }
-
   }
 }
-@media screen and(min-width: 992px) {
+
+@media screen and (min-width: 992px) {
   .wpLoiIch {
     .slogun {
       h1 {
@@ -87,17 +88,6 @@
         line-height: 1.5;
       }
     }
-
   }
 }
-@media screen and(max-width: 768px) {
-  .wpLoiIch {
-    .slogun {
-      h1 {
-        font-size: 20px;
-        line-height: 1.5;
-      }
-    }
 
-  }
-}

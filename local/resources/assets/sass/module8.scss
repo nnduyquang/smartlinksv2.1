@@ -10,6 +10,7 @@
     top: 0;
     left: 0;
     background-size: 100% 100%;
+    width: 100%;
     z-index: -1;
   }
 
@@ -31,8 +32,8 @@
       margin-top: 27px;
       margin-bottom: 18px;
     }
-    ul{
-      li{
+    ul {
+      li {
         color: white;
         margin: 0 0 20px 20px;
         list-style: circle;
@@ -42,48 +43,17 @@
     }
   }
 }
-//@media screen and(min-width: 576px) {
-//  .wpTheManh {
-//    h1 {
-//      font-size: 20px;
-//      line-height: 2;
-//    }
-//    h5{
-//      line-height:1.5
-//    }
-//    .textDescribeTheManh {
-//      h3 {
-//        font-size: 25px;
-//      }
-//    }
-//  }
-//}
-@media screen and(min-width: 992px) {
+
+@media screen and (min-width: 992px) {
   .wpTheManh {
     h1 {
       font-size: 20px;
       line-height: 2;
     }
-    h5{
-      line-height:1.5
+    h5 {
+      line-height: 1.5;
     }
-    .textDescribeTheManh {
-      h3 {
-        font-size: 25px;
-      }
-    }
-  }
-}
-@media screen and(max-width: 768px) {
-  .wpTheManh {
-    h1 {
-      font-size: 20px;
-      line-height: 2;
-    }
-    h5{
-      line-height:1.5
-    }
-    .textDescribeTheManh {
+    .textDescribeTheManh{
       h3 {
         font-size: 25px;
       }

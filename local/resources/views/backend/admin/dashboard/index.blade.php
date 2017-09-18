@@ -1,4 +1,4 @@
-@extends('backend.admin.master')
-@section('container')
-
+@extends('backend.admin.master')
+@section('container')
+
 @stop

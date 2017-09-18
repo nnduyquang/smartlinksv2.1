@@ -3,7 +3,7 @@
   margin-bottom: 54px;
   .sub-heading {
     font-size: 15px;
-    font-weight: normal;
+    font-weight: bold;
     line-height: 1;
     padding: 0;
     color: #979797;
@@ -23,6 +23,7 @@
     line-height: 1;
     font-weight: 700;
     text-transform: uppercase;
+    color: #00afef;
     &.in {
       color: white;
     }

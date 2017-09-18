@@ -3,12 +3,12 @@
   position: relative;
   z-index: 30;
   a {
-    color: #000;
+    color: white;
   }
   .footer__jumpTop > a {
     font-size: 30px;
     line-height: 1;
-    background: floralwhite;
+    background: #13afbe;
     height: 106px;
     left: 50%;
     margin: 0 0 0 -53px;
@@ -19,7 +19,7 @@
     width: 106px;
     border-radius: 50%;
     .fa {
-      color: #00afef;
+      color: white;
       padding-top: 10px;
       transition: all 0.5s ease;
     }
@@ -28,12 +28,12 @@
     position: relative;
     z-index: 101;
     .footer-wrap-location {
-      background-color: floralwhite;
+      background-color: #13afbe;
     }
     .footer__location {
       color: #bcbec0;
       text-transform: uppercase;
-      border-bottom: 2px #00afef solid;
+      border-bottom: 2px white solid;
       padding: 55px 0 40px;
       #menu-contact-menu {
         font-family: "Montserrat", georgia, serif;
@@ -60,6 +60,9 @@
     .footer__mainRow {
       padding-top: 50px;
       padding-bottom: 50px;
+      .footer__bcorp{
+        color: white;
+      }
       .logo-footer {
         width: 70%;
         height: 70%;

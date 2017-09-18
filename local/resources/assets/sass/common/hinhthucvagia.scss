@@ -130,7 +130,7 @@
 *
 *
 */
-@media screen and(min-width: 768px) {
+@media screen and(max-width: 480px) {
   .container-prices {
     .one-price {
       border-radius: 0;
@@ -140,26 +140,6 @@
         border-radius: 0 !important;
       }
     }
-    .price{
-      font-size: 30px!important;
-    }
-
-  }
-}
-@media screen and(min-width: 992px) {
-  .container-prices {
-    .one-price {
-      border-radius: 350px;
-      margin-top: 20px;
-      min-height: 300px;
-      &::after {
-        border-radius: 0 !important;
-      }
-      h3{
-        font-size: 39px;
-      }
-    }
-
   }
 }
 @media screen and(max-width: 768px) {
@@ -174,6 +154,19 @@
     }
     .price{
       font-size: 30px!important;
+    }
+
+  }
+}
+@media screen and(max-width: 1024px) {
+  .container-prices {
+    .one-price {
+      border-radius: 0;
+      margin-top: 20px;
+      min-height: 300px;
+      &::after {
+        border-radius: 0 !important;
+      }
     }
 
   }
