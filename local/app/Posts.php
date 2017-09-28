@@ -1,0 +1,1 @@
+<?phpnamespace App;use Illuminate\Database\Eloquent\Model;class Posts extends Model{    protected $fillable = [        'title','path', 'content', 'isPost','image','user_id','category_post_id','created_at','updated_at'    ];    public function users()    {        return $this->belongsTo('App\User', 'user_id');    }}
