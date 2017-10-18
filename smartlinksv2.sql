@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 28, 2017 at 12:19 PM
+-- Generation Time: Oct 18, 2017 at 12:03 PM
 -- Server version: 10.1.16-MariaDB
 -- PHP Version: 5.6.24
 
@@ -19,6 +19,38 @@ SET time_zone = "+00:00";
 --
 -- Database: `smartlinksv2`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `accounts`
+--
+
+CREATE TABLE `accounts` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `is_TD` tinyint(1) NOT NULL DEFAULT '1',
+  `account_is_active` tinyint(1) NOT NULL DEFAULT '1',
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `campaigns`
+--
+
+CREATE TABLE `campaigns` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `website` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `campaign_is_active` tinyint(1) NOT NULL DEFAULT '1',
+  `campaign_is_pause` tinyint(1) NOT NULL DEFAULT '0',
+  `account_id` int(10) UNSIGNED NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -129,6 +161,39 @@ INSERT INTO `employees` (`id`, `emp_name`, `emp_phone`, `emp_email`, `emp_skype`
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `histories`
+--
+
+CREATE TABLE `histories` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `date_start` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `date_end` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `note` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `price_active` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `price_final` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `is_End` tinyint(1) NOT NULL DEFAULT '0',
+  `campaign_id` int(10) UNSIGNED NOT NULL,
+  `keyword_id` int(10) UNSIGNED NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `keywords`
+--
+
+CREATE TABLE `keywords` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `name` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `migrations`
 --
 
@@ -150,7 +215,12 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (8, '2017_08_27_011825_create_employees_table', 4),
 (9, '2017_08_27_105513_create_sliders_table', 5),
 (10, '2017_09_28_080614_create_category_posts_table', 6),
-(11, '2017_08_26_130321_create_news_table', 7);
+(11, '2017_08_26_130321_create_news_table', 7),
+(12, '2017_08_26_130321_create_posts_table', 8),
+(14, '2017_10_18_083008_create_accounts_table', 9),
+(15, '2017_10_18_083200_create_campaigns_table', 9),
+(16, '2017_10_18_083648_create_keywords_table', 9),
+(17, '2017_10_18_085841_create_histories_table', 9);
 
 -- --------------------------------------------------------
 
@@ -361,6 +431,19 @@ INSERT INTO `users` (`id`, `name`, `email`, `password`, `remember_token`, `creat
 --
 
 --
+-- Indexes for table `accounts`
+--
+ALTER TABLE `accounts`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `campaigns`
+--
+ALTER TABLE `campaigns`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `campaigns_account_id_foreign` (`account_id`);
+
+--
 -- Indexes for table `category_permissions`
 --
 ALTER TABLE `category_permissions`
@@ -384,6 +467,20 @@ ALTER TABLE `configs`
 -- Indexes for table `employees`
 --
 ALTER TABLE `employees`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `histories`
+--
+ALTER TABLE `histories`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `histories_campaign_id_foreign` (`campaign_id`),
+  ADD KEY `histories_keyword_id_foreign` (`keyword_id`);
+
+--
+-- Indexes for table `keywords`
+--
+ALTER TABLE `keywords`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -453,6 +550,16 @@ ALTER TABLE `users`
 --
 
 --
+-- AUTO_INCREMENT for table `accounts`
+--
+ALTER TABLE `accounts`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `campaigns`
+--
+ALTER TABLE `campaigns`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+--
 -- AUTO_INCREMENT for table `category_permissions`
 --
 ALTER TABLE `category_permissions`
@@ -473,10 +580,20 @@ ALTER TABLE `configs`
 ALTER TABLE `employees`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
+-- AUTO_INCREMENT for table `histories`
+--
+ALTER TABLE `histories`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `keywords`
+--
+ALTER TABLE `keywords`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+--
 -- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 --
 -- AUTO_INCREMENT for table `permissions`
 --
@@ -507,10 +624,23 @@ ALTER TABLE `users`
 --
 
 --
+-- Constraints for table `campaigns`
+--
+ALTER TABLE `campaigns`
+  ADD CONSTRAINT `campaigns_account_id_foreign` FOREIGN KEY (`account_id`) REFERENCES `accounts` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
 -- Constraints for table `configs`
 --
 ALTER TABLE `configs`
   ADD CONSTRAINT `configs_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
+-- Constraints for table `histories`
+--
+ALTER TABLE `histories`
+  ADD CONSTRAINT `histories_campaign_id_foreign` FOREIGN KEY (`campaign_id`) REFERENCES `campaigns` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `histories_keyword_id_foreign` FOREIGN KEY (`keyword_id`) REFERENCES `keywords` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Constraints for table `permissions`
