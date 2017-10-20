@@ -23,10 +23,10 @@
     "nivo-slider": "*",
     "waypoints": "^4.0.1",
     "countUp.js": "^1.8.5",
-    "AdminLTE": "admin-lte#^2.3.11",
     "ckeditor": "#full/latest",
     "bootstrap-toggle": "^2.2.2",
     "kcfinder": "^3.20.4",
-    "typed.js": "^2.0.5"
+    "typed.js": "^2.0.5",
+    "admin-lte": "^2.4.2"
   }
 }

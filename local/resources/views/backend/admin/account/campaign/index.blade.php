@@ -1,15 +1,9 @@
 @extends('backend.admin.master')
 
 @section('styles')
-
-    {{ Html::style('css/be.emp.css') }}
-
 @stop
 
 @section('scripts')
-
-    {{ Html::script('js/be.emp.js',array('async' => 'async') ) }}
-
 @stop
 
 @section('container')

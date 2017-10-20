@@ -26,11 +26,11 @@
 
             <div class="pull-right">
 
-                @permission(('account-create'))
+                {{--@permission(('account-create'))--}}
 
                 <a class="btn btn-success" href="{{ route('account.create') }}"> Thêm Tài Khoản</a>
 
-                @endpermission
+                {{--@endpermission--}}
 
             </div>
 
@@ -114,27 +114,28 @@
 
         </tr>
 
-        @foreach ($accounts as $key => $data)
+        {{--@foreach ($accounts as $key => $data)--}}
 
             <tr>
 
                 {{--<td>{{ ++$i }}</td>--}}
-                <td>i</td>
-                <td>ID Account</td>
-                <td>text</td>
-                <td>text</td>
-                <td>text</td>
+                <td>1</td>
+                <td>984-733-3144</td>
+                <td>Máy Ấp Trứng</td>
+                <td>www.mayaptrung.com</td>
+                <td>Đang Chạy</td>
                 <td>text</td>
                 <td>text</td>
                 <td>text</td>
                 <td>
 
-                    @permission(('account-edit'))
+                    {{--@permission(('account-edit'))--}}
 
-                    <a class="btn btn-primary" href="{{ route('account.edit',$data->id) }}">Edit</a>
+                    {{--<a class="btn btn-primary" href="{{ route('account.edit',$data->id) }}">Edit</a>--}}
+                    <a class="btn btn-primary" href="{{ route('account.edit',1) }}">Cập Nhật Tài Khoản</a>
 
-                    @endpermission
-                    <a class="btn btn-primary" href="#">Xem Lịch Sử</a>
+                    {{--@endpermission--}}
+                    <a class="btn btn-primary" href="#">Xem Lịch Sử Chiến Dịch</a>
 
                     {{--@permission(('account-delete'))--}}
 
@@ -150,10 +151,10 @@
 
             </tr>
 
-        @endforeach
+        {{--@endforeach--}}
 
     </table>
 
-    {!! $accounts->links() !!}
+    {{--{!! $accounts->links() !!}--}}
 
 @stop
