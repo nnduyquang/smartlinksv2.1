@@ -99,6 +99,134 @@
       top: 55px;
     }
   }
+  #tk-quy-trinh {
+    background-color: #f5f8fb;
+    padding-top: 70px;
+    #tk-noi-dung-quy-trinh {
+      .tk-contain-box {
+        position: relative;
+        border: 1px solid #d8d9db;
+        margin-bottom: 40px;
+        background-color: white;
+        padding: 20px;
+        text-align: center;
+        .img_icon {
+          text-align: center;
+          margin-bottom: 20px;
+        }
+        h3.title {
+          font-size: 18px;
+          font-weight: 700;
+          color: #38454f;
+          margin-bottom: 10px;
+        }
+        .subtitle {
+          line-height: 1.6;
+          text-align: center;
+        }
+      }
+      .tk-contain-box:before, .tk-contain-box:after {
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+      }
+      .tk-contain-box:before {
+        border-top-color: #d8d9db;
+        margin-left: -17px;
+        top: 100%;
+        left: 50%;
+        border-width: 17px;
+      }
+      .tk-contain-box:after {
+        border-top-color: #fff;
+        margin-left: -15px;
+        top: 100%;
+        left: 50%;
+        border-width: 15px;
+      }
+    }
+    #tk-noi-dung-proccesses {
+      .bar {
+        display: block;
+        position: relative;
+        left: 15%;
+        width: 70%;
+        top: 50%;
+        border-bottom: 1px solid #6ecff5;
+      }
+      .step-below {
+        position: relative;
+        text-align: center;
+        top: -20px;
+      }
+    }
+    #tk-result {
+      h1 {
+        font-weight: 700;
+        color: #38454f;
+        font-size: 24px;
+        text-align: center;
+        margin-top: 60px;
+        margin-bottom: 60px;
+      }
+      .img-site-simple {
+        width: 100%;
+      }
+    }
+    #tk-testimonials {
+      .chevron {
+        padding-left: 130px;
+        padding-right: 130px;
+        position: relative;
+        background: #6ACEF6;
+        text-align: center;
+        color: #fff;
+        font-family: Arial;
+        font-size: 22px;
+        overflow: hidden;
+        height: 220px;
+        .content {
+          position: relative;
+          top: 50%;
+          transform: translateY(-50%);
+          .quote {
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 1.4;
+          }
+          .author {
+            padding-top: 20px;
+            font-weight: 700;
+            font-size: 18px;
+          }
+        }
+      }
+      .chevron:before, .chevron:after {
+        border: rgba(255, 255, 255, 0) solid;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        border-width: 110px 70px;
+        margin-left: 0;
+
+      }
+      .chevron:before {
+        top: 0;
+        left: 0;
+        border-color: #2895d9 rgba(40, 149, 217, 0) rgba(40, 149, 217, .2) rgba(40, 149, 217, .5);
+      }
+      .chevron:after {
+        top: 0;
+        right: 0;
+        border-color: #2895d9 rgba(40, 149, 217, .5) rgba(40, 149, 217, .2) rgba(40, 149, 217, 0);
+      }
+    }
+  }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -115,12 +243,43 @@
         h5.sub-heading {
           line-height: 1.6;
         }
-        h3.heading{
+        h3.heading {
           font-size: 20px;
         }
       }
-      .bgQuyTrinh{
+      .bgQuyTrinh {
         margin-top: 20px;
+      }
+    }
+    #tk-quy-trinh{
+      #tk-noi-dung-quy-trinh{
+        .tk-contain-box.on-mobile:before{
+          display: none;
+        }
+        .tk-contain-box.on-mobile:after{
+          display: none;
+        }
+      }
+      #tk-noi-dung-proccesses{
+        display: none;
+      }
+      #tk-testimonials{
+        .chevron{
+          padding: 0;
+          .content{
+            .quote{
+              font-size: 17px;
+            }
+          }
+        }
+        .chevron.on-mobile:before,.chevron.on-mobile:after{
+         display: none;
+        }
+      }
+      #tk-result{
+        h1{
+          line-height: 1.4;
+        }
       }
     }
   }
@@ -142,5 +301,6 @@
         top: -120px;
       }
     }
+
   }
 }
