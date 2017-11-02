@@ -1,0 +1,120 @@
+#facebook-ads {
+  .fads-title {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position: relative;
+    .fads-around {
+      .fads-header {
+        padding: 5px 15px;
+        background-color: #00b0ef;
+        color: #fff;
+        display: inline-block;
+        font-size: 42px;
+        font-weight: 700;
+        letter-spacing: 8px;
+        line-height: 54px;
+        text-transform: uppercase;
+      }
+    }
+    .fads-around:before {
+      content: " ";
+      height: 5px;
+      width: 100%;
+      background-color: #00b0ef;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      z-index: -1;
+    }
+  }
+  #fads-choose-us {
+    margin-bottom: 30px;
+    img {
+      width: 100%;
+    }
+    h2 {
+      font-size: 23px;
+      text-transform: uppercase;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      line-height: 1.2;
+    }
+    p {
+      text-align: justify;
+      line-height: 1.4;
+      color: #666;
+      font-size: 17px;
+    }
+  }
+  #fads-feedback {
+    .fads-feedback-box {
+      padding-top: 20px;
+      padding-left: 60px;
+      padding-right: 60px;
+      padding-bottom: 20px;
+      color: white;
+      margin-bottom: 30px;
+      p.fads-feedback-content{
+        text-align: justify;
+        line-height: 1.7;
+        font-size: 15px;
+      }
+      .fads-feedback-box-bottom{
+        margin-top: 20px;
+        img{
+          //width: 60%;
+        }
+        p{
+          font-weight: bold;
+          font-size: 20px;
+          line-height: 1.2;
+        }
+      }
+    }
+    .fads-feedback-box.box-1{
+      background-color: #be294f;
+    }
+    .fads-feedback-box.box-2{
+      background-color: #143e68;
+    }
+    .fads-feedback-box.box-3{
+      background-color: #f79720;
+    }
+    .fads-feedback-box.box-4{
+      background-color: #25a0a0;
+    }
+  }
+  #fads-serv{
+    padding-left: 87px;
+    margin-bottom: 50px;
+    ul.fads-serv-left{
+      li{
+        font-size: 20px;
+        background-color: #f2f2f2;
+        padding: 14px;
+        position: relative;
+        margin-bottom: 50px;
+      }
+      li:before{
+        content: counter(li);
+        counter-increment: li;
+        position: absolute;
+        background-color: #00b0ef;
+        width: 60px;
+        height: 60px;
+        top: -7px;
+        left: -55px;
+        margin: 0 8px 0 0;
+        text-align: center;
+        font-weight: bold;
+        padding: 20px;
+        color: white;
+        border: 1px solid white;
+        box-shadow: 0px 0px 0px 5px #00b0ef;
+        border-radius: 50%;
+        font-size: xx-large;
+      }
+    }
+  }
+}
