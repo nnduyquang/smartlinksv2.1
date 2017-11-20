@@ -3107,3 +3107,24 @@ This class is added to the container
     width: 25%;
   }
 }
+
+#xlnt-menu-img-top img {
+  width: 100%;
+  height: 100%;
+}
+
+#xlnt-menu ul {
+  float: right;
+}
+
+#xlnt-menu ul li {
+  display: inline;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+#xlnt-menu ul li a {
+  border-right: 1px solid black;
+  padding-right: 10px;
+  padding-left: 10px;
+}
