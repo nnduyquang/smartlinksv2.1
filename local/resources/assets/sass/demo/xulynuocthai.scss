@@ -1,21 +1,22 @@
-#xlnt-menu-img-top{
-  img{
+#xlnt-menu-img-top {
+  img {
     width: 100%;
     height: 100%;
   }
 }
-#xlnt-menu{
-  background: linear-gradient(to bottom, #e4e4e4 , white);
-  ul{
+
+#xlnt-menu {
+  background: linear-gradient(to bottom, #e4e4e4, white);
+  ul {
     float: right;
     padding-top: 15px;
     padding-bottom: 15px;
-    li{
+    li {
       display: inline;
       font-size: 15px;
       text-transform: uppercase;
       font-weight: bold;
-      a{
+      a {
         border-right: 1px solid black;
         padding-right: 10px;
         padding-left: 10px;
@@ -23,6 +24,11 @@
     }
   }
 }
-#xlnt-slider{
 
+#xlnt-slider-01 {
+  #xlnt_slider {
+    img {
+      height: 350px!important;
+    }
+  }
 }
