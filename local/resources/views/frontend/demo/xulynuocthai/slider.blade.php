@@ -3,7 +3,7 @@
         <div class="container">
             {{--{{ Html::image('images/slider/slider_01.jpg','',array('class'=>'')) }}--}}
             <div class="slider-wrapper theme-default">
-                <div id="xlnt_slider" class="nivoSlider">
+                <div id="xlnt-slider" class="nivoSlider">
 
                     {{--@foreach ($sliders as $key => $data)--}}
 

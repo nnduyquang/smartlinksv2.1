@@ -12,6 +12,7 @@
     {{ Html::style('css/core.common.css') }}
     {{ Html::style('css/core.frontend.css') }}
     {{ Html::style('css/frontend.css') }}
+    {{ Html::style('css/themes/default/default.css') }}
     @yield('styles')
 </head>
 <body>
@@ -27,7 +28,7 @@
 </div>
 {{--@include('frontend.common.m-sidebar')--}}
 <div class="footer">
-    {{--@include('frontend.common.footer')--}}
+    @include('frontend.demo.xulynuocthai.footer')
 </div>
 {{ Html::script('js/core.common.js') }}
 {{ Html::script('js/core.frontend.js') }}
