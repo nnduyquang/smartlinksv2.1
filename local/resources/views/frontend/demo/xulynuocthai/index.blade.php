@@ -10,11 +10,14 @@
                     <h2 class="xlnt-01-left-header">Danh Mục Sản Phẩm</h2>
                     <ul>
                         <li><a href="#">Tư Vấn Môi Trường</a></li>
-                        <li><a href="#">Thiết Kế Thi Công</a></li>
-                        <li><a href="#">Bảo Dưỡng Và Vận Hành Hệ Thống</a></li>
-                        <li><a href="#">Tư Vấn Lập Dự Án Đầu Tư Xây Dựng</a></li>
-                        <li><a href="#">Lập Kế Hoạch Ứng Phó Sự Cố Tràn Dầu</a></li>
-                        <li><a href="#">Luật Môi Trường</a></li>
+                        <li><a href="#">Xử Lý Nước Thải</a></li>
+                        <li><a href="#">Xử Lý Nước Cấp</a></li>
+                        <li><a href="#">Xử Lý Khí Thải</a></li>
+                        <li><a href="#">Xử Lý Mùi</a></li>
+                        <li><a href="#">Vật Tư - Thiết Bị</a></li>
+                        <li><a href="#">Vật Liệu Lọc</a></li>
+                        <li><a href="#">Hóa Chất Xử Lý Nước</a></li>
+                        <li><a href="#">Máy Ozone</a></li>
                     </ul>
                 </div>
                 <div id="xlnt-01-right" class="col-md-8">
@@ -46,25 +49,38 @@
                     <div class="col-md-3 xlnt-02-one-item">
                         <a href="#">
                             {{ Html::image('images/demo/xulynuocthai/de-an-bvmt-chi-tiet-1477041166_270x170.png','',array('class'=>'')) }}
-                            <h2 class="xlnt-02-item-title">Đề Án Bảo Vệ Môi Trường Chi Tiết</h2>
+                            <h2 class="xlnt-02-item-title">Cam Kết Bảo Vệ Môi </h2>
+                            </h2>
                         </a>
                     </div>
                     <div class="col-md-3 xlnt-02-one-item">
                         <a href="#">
                             {{ Html::image('images/demo/xulynuocthai/11111-1510297299_270x170.jpg','',array('class'=>'')) }}
-                            <h2 class="xlnt-02-item-title">Báo Cáo Quan Trắc Định Kỳ</h2>
+                            <h2 class="xlnt-02-item-title">Đánh Giá Tác Động Môi Trường</h2>
                         </a>
                     </div>
                     <div class="col-md-3 xlnt-02-one-item">
                         <a href="#">
                             {{ Html::image('images/demo/xulynuocthai/giayphepxathaivaonguonnuoc-1472485655_270x170.png','',array('class'=>'')) }}
-                            <h2 class="xlnt-02-item-title">Lập Báo Cáo Xả Thải Vào Nguồn Nước</h2>
+                            <h2 class="xlnt-02-item-title">Đề Án Bảo Vệ Môi Trường</h2>
                         </a>
                     </div>
                     <div class="col-md-3 xlnt-02-one-item">
                         <a href="#">
                             {{ Html::image('images/demo/xulynuocthai/xingiayphepmoitruong-1472485841_270x170.jpg','',array('class'=>'')) }}
-                            <h2 class="xlnt-02-item-title">Giấy Phép Bảo Vệ Môi Trường</h2>
+                            <h2 class="xlnt-02-item-title">Giám Sát Môi Trường</h2>
+                        </a>
+                    </div>
+                    <div class="col-md-3 xlnt-02-one-item">
+                        <a href="#">
+                            {{ Html::image('images/demo/xulynuocthai/xingiayphepmoitruong-1472485841_270x170.jpg','',array('class'=>'')) }}
+                            <h2 class="xlnt-02-item-title">Giấy Phép Xả Thải Vào Nguồn Nước</h2>
+                        </a>
+                    </div>
+                    <div class="col-md-3 xlnt-02-one-item">
+                        <a href="#">
+                            {{ Html::image('images/demo/xulynuocthai/xingiayphepmoitruong-1472485841_270x170.jpg','',array('class'=>'')) }}
+                            <h2 class="xlnt-02-item-title">Sổ Chủ Nguồn Thải</h2>
                         </a>
                     </div>
                 </div>
@@ -73,32 +89,32 @@
     </div>
 
     <div class="xlnt-02 col-md-12">
-        <h2 class="xlnt-02-header"><a href="#">Thiết Kế, Thi Công</a></h2>
+        <h2 class="xlnt-02-header"><a href="#">Xử Lý Nước Thải</a></h2>
         <div class="xlnt-02-content" class="col-md-12">
             <div class="row">
                 <div class="container">
                     <div class="col-md-3 xlnt-02-one-item">
                         <a href="#">
                             {{ Html::image('images/demo/xulynuocthai/de-an-bvmt-chi-tiet-1477041166_270x170.png','',array('class'=>'')) }}
-                            <h2 class="xlnt-02-item-title">Hệ Thống Xử Lý Nước Thải Sinh Hoạt</h2>
+                            <h2 class="xlnt-02-item-title">Xử Lý Nước Thải Công Nghiệp</h2>
                         </a>
                     </div>
                     <div class="col-md-3 xlnt-02-one-item">
                         <a href="#">
                             {{ Html::image('images/demo/xulynuocthai/11111-1510297299_270x170.jpg','',array('class'=>'')) }}
-                            <h2 class="xlnt-02-item-title">Hệ Thống Xử Lý Nước Thải Công Nghiệp</h2>
+                            <h2 class="xlnt-02-item-title">Xử Lý Nước Thải Sinh Hoạt</h2>
                         </a>
                     </div>
                     <div class="col-md-3 xlnt-02-one-item">
                         <a href="#">
                             {{ Html::image('images/demo/xulynuocthai/giayphepxathaivaonguonnuoc-1472485655_270x170.png','',array('class'=>'')) }}
-                            <h2 class="xlnt-02-item-title">Hệ Thống Điện Nước</h2>
+                            <h2 class="xlnt-02-item-title">Xử Lý Nước Thải Y Tế</h2>
                         </a>
                     </div>
                     <div class="col-md-3 xlnt-02-one-item">
                         <a href="#">
-                            {{ Html::image('images/demo/xulynuocthai/xingiayphepmoitruong-1472485841_270x170.jpg','',array('class'=>'')) }}
-                            <h2 class="xlnt-02-item-title">Hệ Thống Xử Lý Nước Thải Bệnh Viện</h2>
+                            {{ Html::image('images/demo/xulynuocthai/giayphepxathaivaonguonnuoc-1472485655_270x170.png','',array('class'=>'')) }}
+                            <h2 class="xlnt-02-item-title">Xử Lý Nước Thải Dệt Nhuộm</h2>
                         </a>
                     </div>
                 </div>
@@ -106,6 +122,78 @@
         </div>
     </div>
 
+    <div class="xlnt-02 col-md-12">
+        <h2 class="xlnt-02-header"><a href="#">Xử Lý Nước Cấp</a></h2>
+        <div class="xlnt-02-content" class="col-md-12">
+            <div class="row">
+                <div class="container">
+                    <div class="col-md-3 xlnt-02-one-item">
+                        <a href="#">
+                            {{ Html::image('images/demo/xulynuocthai/de-an-bvmt-chi-tiet-1477041166_270x170.png','',array('class'=>'')) }}
+                            <h2 class="xlnt-02-item-title">Lọc Nước Sinh Hoạt Hộ Gia Đình</h2>
+                        </a>
+                    </div>
+                    <div class="col-md-3 xlnt-02-one-item">
+                        <a href="#">
+                            {{ Html::image('images/demo/xulynuocthai/11111-1510297299_270x170.jpg','',array('class'=>'')) }}
+                            <h2 class="xlnt-02-item-title">Xử Lý Nước Cấp Công Nghiệp</h2>
+                        </a>
+                    </div>
+                    <div class="col-md-3 xlnt-02-one-item">
+                        <a href="#">
+                            {{ Html::image('images/demo/xulynuocthai/giayphepxathaivaonguonnuoc-1472485655_270x170.png','',array('class'=>'')) }}
+                            <h2 class="xlnt-02-item-title">Xử Lý Nước Tinh Khiết - Đóng Bình</h2>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="xlnt-02 col-md-12">
+        <h2 class="xlnt-02-header"><a href="#">Vật Tư - Thiết Bị</a></h2>
+        <div class="xlnt-02-content" class="col-md-12">
+            <div class="row">
+                <div class="container">
+                    <div class="col-md-3 xlnt-02-one-item">
+                        <a href="#">
+                            {{ Html::image('images/demo/xulynuocthai/de-an-bvmt-chi-tiet-1477041166_270x170.png','',array('class'=>'')) }}
+                            <h2 class="xlnt-02-item-title">Bơm Nước, Bơm Định Lượng, Máy Thổi Khí Các Loại</h2>
+                        </a>
+                    </div>
+                    <div class="col-md-3 xlnt-02-one-item">
+                        <a href="#">
+                            {{ Html::image('images/demo/xulynuocthai/11111-1510297299_270x170.jpg','',array('class'=>'')) }}
+                            <h2 class="xlnt-02-item-title">Đĩa Phân Phối Khí</h2>
+                        </a>
+                    </div>
+                    <div class="col-md-3 xlnt-02-one-item">
+                        <a href="#">
+                            {{ Html::image('images/demo/xulynuocthai/giayphepxathaivaonguonnuoc-1472485655_270x170.png','',array('class'=>'')) }}
+                            <h2 class="xlnt-02-item-title">Giá Thể Sinh Học, Giá Thể Đệm Dạng Cầu, Dạng Cước, Sợi, Tổ Ong</h2>
+                        </a>
+                    </div>
+                    <div class="col-md-3 xlnt-02-one-item">
+                        <a href="#">
+                            {{ Html::image('images/demo/xulynuocthai/giayphepxathaivaonguonnuoc-1472485655_270x170.png','',array('class'=>'')) }}
+                            <h2 class="xlnt-02-item-title">Màng Lọc MBR (Trung Quốc, Malaysia, Nhật)</h2>
+                        </a>
+                    </div>
+                    {{--<div class="col-md-3 xlnt-02-one-item">--}}
+                        {{--<a href="#">--}}
+                            {{--{{ Html::image('images/demo/xulynuocthai/giayphepxathaivaonguonnuoc-1472485655_270x170.png','',array('class'=>'')) }}--}}
+                            {{--<h2 class="xlnt-02-item-title">Vật Tư Thiết Bị Xử Lý Nước</h2>--}}
+                        {{--</a>--}}
+                    {{--</div>--}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="xlnt-03" class="col-md-12">
+        <div class="row">
+            {{ Html::image('images/demo/xulynuocthai/timthumb.png','',array('class'=>'')) }}
+        </div>
+    </div>
     <div class="xlnt-02 col-md-12">
         <h2 class="xlnt-02-header"><a href="#">Dự Án Đã Thực Hiện</a></h2>
         <div class="xlnt-02-content" class="col-md-12">
@@ -114,58 +202,53 @@
                     <div class="col-md-3 xlnt-02-one-item">
                         <a href="#">
                             {{ Html::image('images/demo/xulynuocthai/de-an-bvmt-chi-tiet-1477041166_270x170.png','',array('class'=>'')) }}
-                            {{--<h2 class="xlnt-02-item-title">Hệ Thống Xử Lý Nước Thải Sinh Hoạt</h2>--}}
+                            {{--<h2 class="xlnt-02-item-title">Bơm Nước, Bơm D(ịnh Lượng, Máy Thổi Khí Các Loại</h2>--}}
                         </a>
                     </div>
                     <div class="col-md-3 xlnt-02-one-item">
                         <a href="#">
                             {{ Html::image('images/demo/xulynuocthai/11111-1510297299_270x170.jpg','',array('class'=>'')) }}
-                            {{--<h2 class="xlnt-02-item-title">Hệ Thống Xử Lý Nước Thải Công Nghiệp</h2>--}}
+                            {{--<h2 class="xlnt-02-item-title">Đĩa Phân Phối Khí</h2>--}}
                         </a>
                     </div>
                     <div class="col-md-3 xlnt-02-one-item">
                         <a href="#">
                             {{ Html::image('images/demo/xulynuocthai/giayphepxathaivaonguonnuoc-1472485655_270x170.png','',array('class'=>'')) }}
-                            {{--<h2 class="xlnt-02-item-title">Hệ Thống Điện Nước</h2>--}}
+                            {{--<h2 class="xlnt-02-item-title">Giá Thể Sinh Học, Giá Thể Đệm Dạng Cầu, Dạng Cước, Sợi, Tổ Ong</h2>--}}
                         </a>
                     </div>
                     <div class="col-md-3 xlnt-02-one-item">
                         <a href="#">
-                            {{ Html::image('images/demo/xulynuocthai/xingiayphepmoitruong-1472485841_270x170.jpg','',array('class'=>'')) }}
-                            {{--<h2 class="xlnt-02-item-title">Hệ Thống Xử Lý Nước Thải Bệnh Viện</h2>--}}
+                            {{ Html::image('images/demo/xulynuocthai/giayphepxathaivaonguonnuoc-1472485655_270x170.png','',array('class'=>'')) }}
+                            {{--<h2 class="xlnt-02-item-title">Màng Lọc MBR (Trung Quốc, Malaysia, Nhật)</h2>--}}
                         </a>
                     </div>
                     <div class="col-md-3 xlnt-02-one-item">
                         <a href="#">
-                            {{ Html::image('images/demo/xulynuocthai/xingiayphepmoitruong-1472485841_270x170.jpg','',array('class'=>'')) }}
-                            {{--<h2 class="xlnt-02-item-title">Hệ Thống Xử Lý Nước Thải Bệnh Viện</h2>--}}
+                            {{ Html::image('images/demo/xulynuocthai/giayphepxathaivaonguonnuoc-1472485655_270x170.png','',array('class'=>'')) }}
+                            {{--<h2 class="xlnt-02-item-title">Vật Tư Thiết BỊ Xử Lý Nước</h2>--}}
                         </a>
                     </div>
                     <div class="col-md-3 xlnt-02-one-item">
                         <a href="#">
-                            {{ Html::image('images/demo/xulynuocthai/xingiayphepmoitruong-1472485841_270x170.jpg','',array('class'=>'')) }}
-                            {{--<h2 class="xlnt-02-item-title">Hệ Thống Xử Lý Nước Thải Bệnh Viện</h2>--}}
+                            {{ Html::image('images/demo/xulynuocthai/giayphepxathaivaonguonnuoc-1472485655_270x170.png','',array('class'=>'')) }}
+                            {{--<h2 class="xlnt-02-item-title">Vật Tư Thiết BỊ Xử Lý Nước</h2>--}}
                         </a>
                     </div>
                     <div class="col-md-3 xlnt-02-one-item">
                         <a href="#">
-                            {{ Html::image('images/demo/xulynuocthai/xingiayphepmoitruong-1472485841_270x170.jpg','',array('class'=>'')) }}
-                            {{--<h2 class="xlnt-02-item-title">Hệ Thống Xử Lý Nước Thải Bệnh Viện</h2>--}}
+                            {{ Html::image('images/demo/xulynuocthai/giayphepxathaivaonguonnuoc-1472485655_270x170.png','',array('class'=>'')) }}
+                            {{--<h2 class="xlnt-02-item-title">Vật Tư Thiết BỊ Xử Lý Nước</h2>--}}
                         </a>
                     </div>
                     <div class="col-md-3 xlnt-02-one-item">
                         <a href="#">
-                            {{ Html::image('images/demo/xulynuocthai/xingiayphepmoitruong-1472485841_270x170.jpg','',array('class'=>'')) }}
-                            {{--<h2 class="xlnt-02-item-title">Hệ Thống Xử Lý Nước Thải Bệnh Viện</h2>--}}
+                            {{ Html::image('images/demo/xulynuocthai/giayphepxathaivaonguonnuoc-1472485655_270x170.png','',array('class'=>'')) }}
+                            {{--<h2 class="xlnt-02-item-title">Vật Tư Thiết BỊ Xử Lý Nước</h2>--}}
                         </a>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div id="xlnt-03" class="col-md-12">
-        <div class="row">
-            {{ Html::image('images/demo/xulynuocthai/timthumb.png','',array('class'=>'')) }}
         </div>
     </div>
     <div id="xlnt-04" class="col-md-12">

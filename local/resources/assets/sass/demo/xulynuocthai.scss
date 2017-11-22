@@ -117,6 +117,7 @@
   .xlnt-02-content {
     padding-top: 60px;
     .xlnt-02-one-item {
+      height: 230px;
       a {
         color: black;
         font-weight: bold;
@@ -245,7 +246,7 @@
   }
 }
 
-#xlnt-06{
+#xlnt-06 {
   .owl-carousel {
     position: relative;
   }
@@ -253,7 +254,7 @@
     .owl-item img {
       height: 150px;
     }
-    .owl-item img:hover{
+    .owl-item img:hover {
       cursor: pointer;
     }
   }
@@ -313,8 +314,8 @@
       padding-top: 15px;
       padding-bottom: 15px;
     }
-    ul{
-      li{
+    ul {
+      li {
         color: white;
         line-height: 1.5;
       }
@@ -323,10 +324,47 @@
   }
   #xlnt-footer-bottom {
     background-color: #3785bc;
-    .xlnt-copyright{
+    .xlnt-copyright {
       padding-top: 20px;
       padding-bottom: 20px;
       float: right;
+    }
+  }
+}
+
+@media screen and(max-width: 765px) {
+  #xlnt-04 {
+    #xlnt-04-left {
+      h2.xlnt-04-title-left:after {
+        width: 0;
+      }
+    }
+  }
+  #xlnt-slider-01 {
+    #xlnt_slider {
+      img {
+        height: 350px !important;
+      }
+    }
+    .nivoSlider {
+      height: 100%;
+    }
+  }
+  .xlnt-02 {
+    .xlnt-02-content {
+      .xlnt-02-one-item {
+        height: 100%;
+      }
+    }
+  }
+  #xlnt-03 {
+    img {
+      height: 150px;
+    }
+  }
+  #xlnt-05 {
+    img {
+      height: 150px;
     }
   }
 }

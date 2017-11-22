@@ -1,9 +1,9 @@
-<div id="xlnt-menu-img-top" class="col-md-12">
+<div id="xlnt-menu-img-top" class="col-md-12 hidden-sm hidden-xs">
     <div class="row">
         {{ Html::image('images/demo/xulynuocthai/9335364905.jpg','',array('class'=>'')) }}
     </div>
 </div>
-<div id="xlnt-menu" class="col-md-12">
+<div id="xlnt-menu" class="col-md-12 hidden-sm hidden-xs">
     <div class="row">
         <div class="container">
             <ul>
