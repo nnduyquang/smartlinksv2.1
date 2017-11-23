@@ -335,8 +335,17 @@
 @media screen and(max-width: 765px) {
   #xlnt-04 {
     #xlnt-04-left {
+      margin-top: 20px;
       h2.xlnt-04-title-left:after {
         width: 0;
+      }
+      h2.xlnt-04-title-right{
+        padding-right: 0;
+      }
+      .xlnt-04-one-item{
+        h2{
+          text-align: center;
+        }
       }
     }
   }
@@ -354,6 +363,11 @@
     .xlnt-02-content {
       .xlnt-02-one-item {
         height: 100%;
+        a{
+          h2.xlnt-02-item-title{
+            margin-bottom: 10px;
+          }
+        }
       }
     }
   }
@@ -365,6 +379,18 @@
   #xlnt-05 {
     img {
       height: 150px;
+    }
+  }
+  #xlnt-footer {
+
+    #xlnt-footer-bottom {
+      background-color: #3785bc;
+      .xlnt-copyright {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        float: right;
+        text-align: center;
+      }
     }
   }
 }
