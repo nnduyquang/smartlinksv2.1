@@ -1,5 +1,5 @@
 .top-bar {
-  background-color: #00afef;
+  background-color: #142542;
   .top-bar-left {
     margin-left: -10px;
     margin-right: -10px;
@@ -75,7 +75,8 @@
         position: relative;
       }
       a {
-        color: #00afef;
+        //color: #00afef;
+        color: #161242;
         display: block;
         position: relative;
         font-size: 14px;
@@ -84,7 +85,8 @@
         font-weight: bolder;
       }
       a:hover{
-        color: #00a7d0;
+        //color: #00a7d0;
+        color:#af3400;
       }
       li:hover > ul {
         display: block;
@@ -118,7 +120,8 @@
         padding: 0 20px;
       }
       a {
-        color: #00afef;
+        //color: #00afef;
+        color: #161242;
         display: block;
         position: relative;
         font-size: 14px;
@@ -127,7 +130,9 @@
         font-weight: bolder;
       }
       a:hover{
-        color: #00a7d0;
+        //color: #00a7d0;
+        color:#af3400;
+
       }
     }
   }

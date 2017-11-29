@@ -25,11 +25,13 @@
     border-radius: 350px;
     &.bg-color1 {
       color: white;
-      background-color: #455a64;
+      //background-color: #455a64;
+      background-color: #f1773d;
       animation-duration: 2s;
     }
     &.bg-color1::after {
-      box-shadow: 0 0 10px #455a64;
+      //box-shadow: 0 0 10px #455a64;
+      box-shadow: 0 0 10px #f1773d;
     }
     &.bg-color2 {
       color: white;

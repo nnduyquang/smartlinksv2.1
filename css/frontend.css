@@ -1,6 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto);@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Roboto);@import url(https://fonts.googleapis.com/css?family=Open+Sans);@charset "UTF-8";
 body {
-  font: 400 14px/20px Roboto, sans-serif !important;
+  font-family: "Open Sans", sans-serif !important;
   line-height: 1.6;
   webkit-font-smoothing: antialiased;
 }
@@ -111,7 +111,7 @@ a, a:hover, a:active {
 }
 
 .top-bar {
-  background-color: #00afef;
+  background-color: #142542;
 }
 
 .top-bar .top-bar-left {
@@ -206,7 +206,7 @@ a, a:hover, a:active {
 }
 
 .header .header-wrapper ul.left-menu a {
-  color: #00afef;
+  color: #161242;
   display: block;
   position: relative;
   font-size: 14px;
@@ -216,7 +216,7 @@ a, a:hover, a:active {
 }
 
 .header .header-wrapper ul.left-menu a:hover {
-  color: #00a7d0;
+  color: #af3400;
 }
 
 .header .header-wrapper ul.left-menu li:hover > ul {
@@ -258,7 +258,7 @@ a, a:hover, a:active {
 }
 
 .header .header-wrapper ul.right-menu a {
-  color: #00afef;
+  color: #161242;
   display: block;
   position: relative;
   font-size: 14px;
@@ -268,7 +268,7 @@ a, a:hover, a:active {
 }
 
 .header .header-wrapper ul.right-menu a:hover {
-  color: #00a7d0;
+  color: #af3400;
 }
 
 .header .abs-center-logo {
@@ -509,58 +509,58 @@ a, a:hover, a:active {
 }
 
 .container-why .one-item .icon-item.bg-item2 {
-  background-color: #fec606;
+  background-color: #f04903;
   -webkit-animation-delay: 0.2s;
           animation-delay: 0.2s;
 }
 
 .container-why .one-item .icon-item.bg-item2::after {
-  -webkit-box-shadow: 0 0 0 2px #fec606;
-          box-shadow: 0 0 0 2px #fec606;
+  -webkit-box-shadow: 0 0 0 2px #f04903;
+          box-shadow: 0 0 0 2px #f04903;
 }
 
 .container-why .one-item .icon-item.bg-item3 {
-  background-color: #71ba51;
+  background-color: #f04903;
   -webkit-animation-delay: 0.4s;
           animation-delay: 0.4s;
 }
 
 .container-why .one-item .icon-item.bg-item3::after {
-  -webkit-box-shadow: 0 0 0 2px #71ba51;
-          box-shadow: 0 0 0 2px #71ba51;
+  -webkit-box-shadow: 0 0 0 2px #f04903;
+          box-shadow: 0 0 0 2px #f04903;
 }
 
 .container-why .one-item .icon-item.bg-item4 {
-  background-color: #6c8784;
+  background-color: #f04903;
   -webkit-animation-delay: 0.6s;
           animation-delay: 0.6s;
 }
 
 .container-why .one-item .icon-item.bg-item4::after {
-  -webkit-box-shadow: 0 0 0 2px #6c8784;
-          box-shadow: 0 0 0 2px #6c8784;
+  -webkit-box-shadow: 0 0 0 2px #f04903;
+          box-shadow: 0 0 0 2px #f04903;
 }
 
 .container-why .one-item .icon-item.bg-item5 {
-  background-color: #3d8eb9;
+  background-color: #f04903;
   -webkit-animation-delay: 0.8s;
           animation-delay: 0.8s;
 }
 
 .container-why .one-item .icon-item.bg-item5::after {
-  -webkit-box-shadow: 0 0 0 2px #3d8eb9;
-          box-shadow: 0 0 0 2px #3d8eb9;
+  -webkit-box-shadow: 0 0 0 2px #f04903;
+          box-shadow: 0 0 0 2px #f04903;
 }
 
 .container-why .one-item .icon-item.bg-item6 {
-  background-color: #d3324f;
+  background-color: #f04903;
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
 }
 
 .container-why .one-item .icon-item.bg-item6::after {
-  -webkit-box-shadow: 0 0 0 2px #d3324f;
-          box-shadow: 0 0 0 2px #d3324f;
+  -webkit-box-shadow: 0 0 0 2px #f04903;
+          box-shadow: 0 0 0 2px #f04903;
 }
 
 .container-why .one-item .icon-item::after {
@@ -659,6 +659,7 @@ a, a:hover, a:active {
 .container-why .one-item .content-item .description-item {
   margin-bottom: 10px;
   clear: both;
+  line-height: 24px;
 }
 
 .container-why .one-item:hover .icon-item:after {
@@ -752,7 +753,7 @@ a, a:hover, a:active {
 }
 
 .container-analysis .wrap-input-analysis .btn-analysis {
-  background-color: #4BA5B7;
+  background-color: #f04903;
   color: white;
   text-transform: uppercase;
   font-weight: 700;
@@ -1318,14 +1319,14 @@ a, a:hover, a:active {
 
 .container-prices .one-price.bg-color1 {
   color: white;
-  background-color: #455a64;
+  background-color: #f1773d;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
 }
 
 .container-prices .one-price.bg-color1::after {
-  -webkit-box-shadow: 0 0 10px #455a64;
-          box-shadow: 0 0 10px #455a64;
+  -webkit-box-shadow: 0 0 10px #f1773d;
+          box-shadow: 0 0 10px #f1773d;
 }
 
 .container-prices .one-price.bg-color2 {
