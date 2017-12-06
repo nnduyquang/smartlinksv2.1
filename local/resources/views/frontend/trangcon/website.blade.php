@@ -1,4 +1,7 @@
 @extends('frontend.master')
+@section('title')
+   Thiết Kế Website
+@stop
 @section('slider')
     {{--@include('slider.slider')--}}
 @stop

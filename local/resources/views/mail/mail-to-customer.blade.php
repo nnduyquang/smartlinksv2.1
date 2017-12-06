@@ -1,10 +1,1 @@
-{!! $content !!}
-
-<br>
-<br>
-Thanks,<br>
-<br>
-<br>
-<br>
-{!! $signatures !!}
-
+{!! $content !!}<br><br>Thanks,<br><br><br><br>{!! $signatures !!}

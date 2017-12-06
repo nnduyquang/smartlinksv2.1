@@ -1,4 +1,7 @@
 @extends('frontend.master')
+@section('title')
+   Quảng Cáo Facebook
+@stop
 @section('slider')
     {{--@include('slider.slider')--}}
 @stop

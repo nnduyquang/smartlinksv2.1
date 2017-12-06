@@ -1,6 +1,1 @@
-@extends('frontend.master')
-@section('slider')
-    {{--@include('slider.slider')--}}
-@stop
-@section('container')
-@stop
+@extends('frontend.master')@section('title') Tin Tức Digital Marketing@stop@section('slider')    {{--@include('slider.slider')--}}@stop@section('container')@stop

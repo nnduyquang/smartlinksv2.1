@@ -1,4 +1,7 @@
 @extends('frontend.master')
+@section('title')
+   Giới Thiệu Smartlinks
+@stop
 @section('slider')
     {{--@include('slider.slider')--}}
 @stop

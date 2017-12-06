@@ -1,4 +1,7 @@
 @extends('frontend.master')
+@section('title')
+Google Adwords
+@stop
 @section('slider')
     {{--@include('slider.slider')--}}
 @stop
@@ -40,14 +43,14 @@
                         </div>
                         <div class="col-md-12">
                             <div class="slogun">
-                                <h1>
+                                <h3>
                                     <span style="color: #1fb8f1">Smartlinks</span> giúp bạn tiếp cận hàng triệu khách
                                     hàng<br>
                                     thông qua quảng cáo <span style="color: #0404ba">G</span><span
                                             style="color: red">o</span><span
                                             style="color: yellow">o</span><span style="color: #0404ba">g</span><span
                                             style="color: lawngreen">l</span><span style="color: red">e</span> Adwords
-                                </h1>
+                                </h3>
                             </div>
                         </div>
                     </div>
