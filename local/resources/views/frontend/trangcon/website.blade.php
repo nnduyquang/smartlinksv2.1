@@ -3,7 +3,7 @@
    Thiết Kế Website Chuẩn SEO Chuyên Nghiệp - Smartlinks.vn
 @stop
 @section('description')
-    Smartlinks Chuyên Thiết Kế Website Giá Rẻ Chuẩn SEO Tối Ưu Đa Nền Tảng Desktop, Di Động Theo Xu Hướng Mới Nhất Hiện Nay Được Nhiều Công Ty Tin Tưởng Sử Dụng
+    Smartlinks Là Công Ty Thiết Kế Website Chuyên Nghiệp. Chúng Tôi Chuyên Thiết Kế Website Nhà Hàng, Bất Động Sản, Bán Hàng Chuẩn SEO. ☎ Hotline: 0907 468 264
 @stop
 @section('slider')
     {{--@include('slider.slider')--}}

@@ -3,7 +3,7 @@
     Quảng Cáo Google Adwords Chuyên Nghiệp Hiểu Quả - Smartlinks.vn
 @stop
 @section('description')
-    Đại Lý Uy Tín Chuyên Về Quảng Cáo Google Adwords Với Chi Phí Thấp - Hiệu Quả Cao, Tiếp Cận Chính Xác Nguồn Khách Hàng, Đối Tác Của Nhiều Công Ty Lớn Tại HCM
+    Smartlinks Là Công Ty Dịch Vụ Quảng Cáo Google Adwords Giá Rẻ Với Chi Phí Thấp - Hiệu Quả Cao, Đúng Đối Tượng Khách Hàng. ☎ Hotline: 0914 348 131
 @stop
 @section('slider')
     {{--@include('slider.slider')--}}
@@ -17,7 +17,7 @@
                         {{ Html::image('images/temps/ss_adwords.jpg','',array('class'=>'dvBanner')) }}
                         <div class="wpTextHeader">
                             <div class="textHeader">
-                                <h1> Google Adwords</h1>
+                                <h1>Quảng Cáo Google Adwords</h1>
                                 <div class="subTextHeading">
                                     Mang lại lượng khách hàng tiềm năng đến với doanh nghiệp của bạn
                                 </div>
