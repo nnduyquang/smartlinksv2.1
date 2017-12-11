@@ -2050,7 +2050,7 @@ This class is added to the container
   top: -20px;
 }
 
-#website-design #tk-quy-trinh #tk-result h1 {
+#website-design #tk-quy-trinh #tk-result h3 {
   font-weight: 700;
   color: #38454f;
   font-size: 24px;
@@ -2150,7 +2150,7 @@ This class is added to the container
   #website-design #tk-quy-trinh #tk-testimonials .chevron.on-mobile:before, #website-design #tk-quy-trinh #tk-testimonials .chevron.on-mobile:after {
     display: none;
   }
-  #website-design #tk-quy-trinh #tk-result h1 {
+  #website-design #tk-quy-trinh #tk-result h3 {
     line-height: 1.4;
   }
 }

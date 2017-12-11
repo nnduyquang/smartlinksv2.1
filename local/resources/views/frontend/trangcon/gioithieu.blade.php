@@ -1,6 +1,6 @@
 @extends('frontend.master')
 @section('title')
-   Giới Thiệu Smartlinks
+   Công Ty Quảng Cáo Google Adwords Smartlinks - Smartlinks.vn
 @stop
 @section('slider')
     {{--@include('slider.slider')--}}

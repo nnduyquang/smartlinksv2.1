@@ -1,6 +1,9 @@
 @extends('frontend.master')
 @section('title')
-   Thiết Kế Website
+   Thiết Kế Website Chuẩn SEO Chuyên Nghiệp - Smartlinks.vn
+@stop
+@section('description')
+    Smartlinks Chuyên Thiết Kế Website Giá Rẻ Chuẩn SEO Tối Ưu Đa Nền Tảng Desktop, Di Động Theo Xu Hướng Mới Nhất Hiện Nay Được Nhiều Công Ty Tin Tưởng Sử Dụng
 @stop
 @section('slider')
     {{--@include('slider.slider')--}}
@@ -14,7 +17,7 @@
                         {{ Html::image('images/temps/Web-Design-and-Development-Banner1.jpg','',array('class'=>'dvBanner')) }}
                         <div class="wpTextHeader">
                             <div class="textHeader">
-                                <h1> Thiết Kế Website</h1>
+                                <h1>Thiết Kế Website</h1>
                                 <div class="subTextHeading">
                                     Chuyên nghiệp - Chuẩn SEO - Tốc độ tối ưu
                                 </div>
@@ -241,7 +244,7 @@
                     </div>
                     <div id="tk-result" class="col-md-12">
                         <div class="row">
-                            <h1>VÀ WEBSITE BẠN NHẬN ĐƯỢC THẬT TUYỆT VỜI</h1>
+                            <h3>VÀ WEBSITE BẠN NHẬN ĐƯỢC THẬT TUYỆT VỜI</h3>
                             {{ Html::image('images/temps/site-samples.png','',array('class'=>'img-site-simple')) }}
                         </div>
                     </div>
@@ -262,6 +265,5 @@
             </div>
         </div>
     </div>
-
     @include('frontend.common.LienHeBaoGia')
 @stop

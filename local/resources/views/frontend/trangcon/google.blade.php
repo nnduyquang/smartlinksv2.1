@@ -1,6 +1,9 @@
 @extends('frontend.master')
 @section('title')
-Google Adwords
+    Quảng Cáo Google Adwords Chuyên Nghiệp Hiểu Quả - Smartlinks.vn
+@stop
+@section('description')
+    Đại Lý Uy Tín Chuyên Về Quảng Cáo Google Adwords Với Chi Phí Thấp - Hiệu Quả Cao, Tiếp Cận Chính Xác Nguồn Khách Hàng, Đối Tác Của Nhiều Công Ty Lớn Tại HCM
 @stop
 @section('slider')
     {{--@include('slider.slider')--}}

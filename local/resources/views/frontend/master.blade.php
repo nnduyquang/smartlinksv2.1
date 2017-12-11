@@ -7,7 +7,7 @@
     <title>@yield('title')</title>
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="keywords" content="">
-    <meta name="description" content="">
+    <meta name="description" content="@yield('description')">
     <meta name="viewport" content="width=device-width">
     {{ Html::style('css/core.common.css') }}
     {{ Html::style('css/core.frontend.css') }}
