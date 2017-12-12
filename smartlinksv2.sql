@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 02, 2017 at 07:51 AM
+-- Generation Time: Dec 12, 2017 at 10:20 AM
 -- Server version: 10.1.16-MariaDB
 -- PHP Version: 5.6.24
 
@@ -75,27 +75,6 @@ INSERT INTO `category_permissions` (`id`, `name`, `created_at`, `updated_at`) VA
 (3, 'Tin Tức', '2017-08-26 06:06:08', '2017-08-26 06:06:08'),
 (4, 'Nhân Viên', '2017-08-26 18:21:15', '2017-08-26 18:21:15'),
 (5, 'Cấu Hình', '2017-08-27 04:06:10', '2017-08-27 04:06:10');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `category_posts`
---
-
-CREATE TABLE `category_posts` (
-  `id` int(10) UNSIGNED NOT NULL,
-  `name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Dumping data for table `category_posts`
---
-
-INSERT INTO `category_posts` (`id`, `name`, `created_at`, `updated_at`) VALUES
-(1, 'Tin Tức', '2017-09-28 01:34:22', '2017-09-28 01:34:22'),
-(2, 'Bài Viết', '2017-09-28 01:34:23', '2017-09-28 01:34:23');
 
 -- --------------------------------------------------------
 
@@ -194,6 +173,22 @@ CREATE TABLE `keywords` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `menus`
+--
+
+CREATE TABLE `menus` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `path` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `order` int(11) NOT NULL DEFAULT '1',
+  `parent_id` int(11) DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `migrations`
 --
 
@@ -220,7 +215,9 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (14, '2017_10_18_083008_create_accounts_table', 9),
 (15, '2017_10_18_083200_create_campaigns_table', 9),
 (16, '2017_10_18_083648_create_keywords_table', 9),
-(17, '2017_10_18_085841_create_histories_table', 9);
+(17, '2017_10_18_085841_create_histories_table', 9),
+(18, '2017_12_12_143147_create_menus_table', 10),
+(19, '2017_12_12_143904_edit_posts_table', 11);
 
 -- --------------------------------------------------------
 
@@ -327,18 +324,13 @@ CREATE TABLE `posts` (
   `isPost` tinyint(1) NOT NULL DEFAULT '0',
   `image` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `user_id` int(10) UNSIGNED NOT NULL,
-  `category_post_id` int(10) UNSIGNED NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `title_seo` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `description_seo` longtext COLLATE utf8mb4_unicode_ci,
+  `description` longtext COLLATE utf8mb4_unicode_ci,
+  `menu_id` int(10) UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Dumping data for table `posts`
---
-
-INSERT INTO `posts` (`id`, `title`, `path`, `content`, `isPost`, `image`, `user_id`, `category_post_id`, `created_at`, `updated_at`) VALUES
-(1, 'test 23', 'test-23', '<p>test 23</p>', 0, 'images/uploads/images/Emps/20746243_10211678195704646_1083256869000324251_o.jpg', 1, 1, '2017-09-28 01:58:14', '2017-09-28 02:20:53'),
-(2, 'Giới Thiệu', 'gioi-thieu', '<h2><span style="font-size:30px;line-height: 1.4;"><span style="color:#14afbe">GIỚI THIỆU VỀ SMARTLINKS</span></span></h2>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p style="text-align:justify">SmartLinks tự h&agrave;o khi được đ&aacute;nh gi&aacute; l&agrave; một đơn vị tuy c&ograve;n non trẻ nhưng biết &ldquo;đi tắt đ&oacute;n đầu c&ocirc;ng nghệ&rdquo; để mang đến những th&agrave;nh c&ocirc;ng ngo&agrave;i mong đợi cho Kh&aacute;ch h&agrave;ng trong c&aacute;c lĩnh vực truyền th&ocirc;ng trực tuyến.<br />\r\nSmartLinks biết c&aacute;ch khai th&aacute;c c&aacute;c thế mạnh của khoa học c&ocirc;ng nghệ để đưa ra c&aacute;c &ldquo;giải ph&aacute;p marketing online&rdquo; hiệu quả ph&ugrave; hợp cho từng giai đoạn ph&aacute;t triển của doanh nghiệp với từng mặt h&agrave;ng cụ thể nhắm đến kh&aacute;ch h&agrave;ng mục ti&ecirc;u kh&aacute;c nhau của doanh nghiệp, mang đến những th&agrave;nh c&ocirc;ng kh&ocirc;ng chỉ ở việc l&agrave;m gia tăng được doanh số b&aacute;n h&agrave;ng, x&acirc;y dựng v&agrave; quảng b&aacute; thương hiệu, h&igrave;nh ảnh doanh nghiệp m&agrave; c&ograve;n gi&uacute;p doanh nghiệp khai th&aacute;c triệt kh&aacute;ch h&agrave;ng tiềm năng của m&igrave;nh.</p>\r\n\r\n<p style="text-align:justify">&nbsp;</p>\r\n\r\n<h2><span style="font-size:30px;line-height: 1.4;"><span style="color:#14afbe">SMARTLINKS MANG ĐẾN CHO DOANH NGHIỆP&hellip;</span></span></h2>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p style="text-align:justify">Kh&ocirc;ng chỉ b&aacute;o gi&aacute; th&ocirc;ng thường, SmartLinks sẽ gi&uacute;p doanh nghiệp nghi&ecirc;n cứu vị thế của m&igrave;nh tr&ecirc;n thị trường &amp; xu hướng của người d&ugrave;ng trước khi x&acirc;y dựng kế hoạch quảng c&aacute;o trực tuyến chi tiết v&agrave; hiệu quả.<br />\r\nCh&uacute;ng t&ocirc;i sẽ tư vấn chi tiết chiến dịch quảng c&aacute;o, thời gian triển khai, lựa chọn k&ecirc;nh quảng c&aacute;o v&agrave; x&acirc;y dựng th&ocirc;ng điệp quảng c&aacute;o ph&ugrave; hợp với mục ti&ecirc;u. Ch&uacute;ng t&ocirc;i cũng sẽ gi&uacute;p doanh nghiệp theo d&otilde;i v&agrave; tối ưu h&oacute;a quảng c&aacute;o h&agrave;ng ng&agrave;y, gửi b&aacute;o c&aacute;o theo tuần, theo th&aacute;ng nhằm mang lại hiệu quả cao nhất cho doanh nghiệp.</p>\r\n\r\n<p style="text-align:justify">Smart Links đ&atilde; biết ph&aacute;t huy thế mạnh v&agrave; khai th&aacute;c triệt để c&aacute;c th&agrave;nh tựu c&ocirc;ng nghệ đem đến th&agrave;nh c&ocirc;ng cho kh&aacute;ch h&agrave;ng, SmartLinks đ&atilde; khẳng định khả năng chăm s&oacute;c chu đ&aacute;o cho c&aacute;c kh&aacute;ch h&agrave;ng trong nước, được kh&aacute;ch h&agrave;ng tin tưởng v&agrave; đ&aacute;nh gi&aacute; rất cao.</p>\r\n\r\n<p style="text-align:justify">&nbsp;</p>', 0, 'images/uploads/images/Emps/IMG_7346.jpg', 1, 2, '2017-09-28 02:39:40', '2017-10-26 03:26:38');
 
 -- --------------------------------------------------------
 
@@ -451,12 +443,6 @@ ALTER TABLE `category_permissions`
   ADD UNIQUE KEY `category_permissions_name_unique` (`name`);
 
 --
--- Indexes for table `category_posts`
---
-ALTER TABLE `category_posts`
-  ADD PRIMARY KEY (`id`);
-
---
 -- Indexes for table `configs`
 --
 ALTER TABLE `configs`
@@ -481,6 +467,12 @@ ALTER TABLE `histories`
 -- Indexes for table `keywords`
 --
 ALTER TABLE `keywords`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `menus`
+--
+ALTER TABLE `menus`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -516,7 +508,7 @@ ALTER TABLE `permission_role`
 ALTER TABLE `posts`
   ADD PRIMARY KEY (`id`),
   ADD KEY `posts_user_id_foreign` (`user_id`),
-  ADD KEY `posts_category_post_id_foreign` (`category_post_id`);
+  ADD KEY `posts_menu_id_foreign` (`menu_id`);
 
 --
 -- Indexes for table `roles`
@@ -565,11 +557,6 @@ ALTER TABLE `campaigns`
 ALTER TABLE `category_permissions`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
--- AUTO_INCREMENT for table `category_posts`
---
-ALTER TABLE `category_posts`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
---
 -- AUTO_INCREMENT for table `configs`
 --
 ALTER TABLE `configs`
@@ -590,10 +577,15 @@ ALTER TABLE `histories`
 ALTER TABLE `keywords`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 --
+-- AUTO_INCREMENT for table `menus`
+--
+ALTER TABLE `menus`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+--
 -- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 --
 -- AUTO_INCREMENT for table `permissions`
 --
@@ -603,7 +595,7 @@ ALTER TABLE `permissions`
 -- AUTO_INCREMENT for table `posts`
 --
 ALTER TABLE `posts`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `roles`
 --
@@ -659,7 +651,7 @@ ALTER TABLE `permission_role`
 -- Constraints for table `posts`
 --
 ALTER TABLE `posts`
-  ADD CONSTRAINT `posts_category_post_id_foreign` FOREIGN KEY (`category_post_id`) REFERENCES `category_posts` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `posts_menu_id_foreign` FOREIGN KEY (`menu_id`) REFERENCES `menus` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `posts_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
