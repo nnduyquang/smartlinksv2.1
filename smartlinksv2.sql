@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 12, 2017 at 10:20 AM
+-- Generation Time: Dec 12, 2017 at 04:22 PM
 -- Server version: 10.1.16-MariaDB
 -- PHP Version: 5.6.24
 
@@ -74,7 +74,8 @@ INSERT INTO `category_permissions` (`id`, `name`, `created_at`, `updated_at`) VA
 (2, 'User', '2017-08-26 05:56:05', '2017-08-26 05:56:05'),
 (3, 'Tin Tức', '2017-08-26 06:06:08', '2017-08-26 06:06:08'),
 (4, 'Nhân Viên', '2017-08-26 18:21:15', '2017-08-26 18:21:15'),
-(5, 'Cấu Hình', '2017-08-27 04:06:10', '2017-08-27 04:06:10');
+(5, 'Cấu Hình', '2017-08-27 04:06:10', '2017-08-27 04:06:10'),
+(6, 'Menu', '2017-12-12 12:50:20', '2017-12-12 12:50:20');
 
 -- --------------------------------------------------------
 
@@ -180,6 +181,7 @@ CREATE TABLE `menus` (
   `id` int(10) UNSIGNED NOT NULL,
   `name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `path` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `level` tinyint(1) UNSIGNED NOT NULL DEFAULT '0',
   `order` int(11) NOT NULL DEFAULT '1',
   `parent_id` int(11) DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
@@ -271,7 +273,11 @@ INSERT INTO `permissions` (`id`, `name`, `display_name`, `description`, `categor
 (17, 'config-list', 'Toàn Quyền Cấu Hình', 'Được Toàn Quyền Cấu Hình', 5, '2017-08-27 04:06:43', '2017-08-27 04:06:43'),
 (18, 'config-create', 'Thêm Mới Cấu Hình', 'Được Thêm Mới Cấu Hình', 5, '2017-08-27 04:06:43', '2017-08-27 04:06:43'),
 (19, 'config-edit', 'Cập Nhật Cấu Hình', 'Được Cập Nhật Cấu Hình', 5, '2017-08-27 04:06:44', '2017-08-27 04:06:44'),
-(20, 'config-delete', 'Xóa Cấu Hình', 'Được Xóa Cấu Hình', 5, '2017-08-27 04:06:44', '2017-08-27 04:06:44');
+(20, 'config-delete', 'Xóa Cấu Hình', 'Được Xóa Cấu Hình', 5, '2017-08-27 04:06:44', '2017-08-27 04:06:44'),
+(21, 'menu-list', 'Toàn Quyền Menu', 'Được Toàn Quyền Menu', 6, '2017-12-12 12:51:48', '2017-12-12 12:51:48'),
+(22, 'menu-create', 'Thêm Mới Menu', 'Được Thêm Mới Menu', 6, '2017-12-12 12:51:48', '2017-12-12 12:51:48'),
+(23, 'menu-edit', 'Cập Nhật Menu', 'Được Cập Nhật Menu', 6, '2017-12-12 12:51:48', '2017-12-12 12:51:48'),
+(24, 'menu-delete', 'Xóa Menu', 'Được Xóa Menu', 6, '2017-12-12 12:51:48', '2017-12-12 12:51:48');
 
 -- --------------------------------------------------------
 
@@ -308,7 +314,11 @@ INSERT INTO `permission_role` (`permission_id`, `role_id`) VALUES
 (17, 1),
 (18, 1),
 (19, 1),
-(20, 1);
+(20, 1),
+(21, 1),
+(22, 1),
+(23, 1),
+(24, 1);
 
 -- --------------------------------------------------------
 
@@ -555,7 +565,7 @@ ALTER TABLE `campaigns`
 -- AUTO_INCREMENT for table `category_permissions`
 --
 ALTER TABLE `category_permissions`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 --
 -- AUTO_INCREMENT for table `configs`
 --
@@ -590,7 +600,7 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT for table `permissions`
 --
 ALTER TABLE `permissions`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 --
 -- AUTO_INCREMENT for table `posts`
 --
