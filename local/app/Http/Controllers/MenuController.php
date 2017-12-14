@@ -27,9 +27,9 @@ class MenuController extends Controller
         }
         $newArray=[];
         self::showMenuDropDown($dd_menus,0,$newArray);
-//        dd($newArray);
         $dd_menus =array_prepend(array_pluck($newArray,'name','id'),'Menu Gốc','-1') ;
-        return view('backend.admin.menu.index', compact('dd_menus'));
+        $list_menus=$newArray;
+        return view('backend.admin.menu.index', compact('dd_menus','list_menus'));
     }
 
 
@@ -89,7 +89,23 @@ class MenuController extends Controller
      */
     public function edit($id)
     {
-        //
+        $menu=Menu::find($id);
+        $dd_menus = Menu::all();
+        foreach ($dd_menus as $key => $data) {
+            if ($data->level == MENU_CAP_1) {
+                $data->name = ' ---- ' . $data->name;
+            } else if ($data->level == MENU_CAP_2) {
+                $data->name = ' --------- ' . $data->name;
+            }
+        }
+        $newArray=[];
+        self::showMenuDropDown($dd_menus,0,$newArray);
+        $dd_menus =array_prepend(array_pluck($newArray,'name','id'),'Menu Gốc','-1') ;
+        return response()->json([
+            'success' => true,
+            'menu' => $menu,
+            'dd_menus'=>$dd_menus
+        ]);
     }
 
     /**

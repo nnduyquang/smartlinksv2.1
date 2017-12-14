@@ -14,6 +14,7 @@
   "../js/core.backend.js": "../js/core.backend.js",
   "../js/be.config.email.js": "../js/be.config.email.js",
   "../js/be.emp.js": "../js/be.emp.js",
+  "../js/be.menu.js": "../js/be.menu.js",
   "../css/bootstrap-toggle.min.css": "../css/bootstrap-toggle.min.css",
   "../js/bootstrap-toggle.min.js": "../js/bootstrap-toggle.min.js",
   "../js/be.config.slider.js": "../js/be.config.slider.js",

@@ -3,6 +3,7 @@
     {{ Html::style('css/backend.css') }}
 @stop
 @section('scripts')
+    {{ Html::script('js/ulti.js',array('async' => 'async') ) }}
     {{ Html::script('js/be.menu.js',array('async' => 'async') ) }}
 @stop
 @section('container')
@@ -57,109 +58,23 @@
                     <th>Sắp Xếp</th>
                     <th width="280px">Action</th>
                 </tr>
-                {{--@foreach ($emps as $key => $data)--}}
-                {{--<tr>--}}
-                {{--<td>{{ ++$i }}</td>--}}
-                {{--<td>  {{ Html::image($data->emp_image,'',array('id'=>'showEmpImage','class'=>'showHinhIndex'))}}</td>--}}
-                {{--<td>{{ $data->emp_name }}</td>--}}
-                {{--<td>{{ $data->emp_phone }}</td>--}}
-                {{--<td>{{ $data->emp_order }}</td>--}}
-                {{--<td>{{ $data->created_at }}</td>--}}
-                {{--<td>{{ $data->updated_at }}</td>--}}
-                {{--<td>{{$data->emp_is_work==1?'Đang Làm':'Nghỉ'}}</td>--}}
-                {{--<td>--}}
-                {{--@permission(('news-edit'))--}}
-                {{--<a class="btn btn-primary" href="{{ route('emp.edit',$data->id) }}">Edit</a>--}}
-                {{--@endpermission--}}
-                {{--@permission(('news-delete'))--}}
-                {{--{!! Form::open(['method' => 'DELETE','route' => ['emp.destroy', $data->id],'style'=>'display:inline']) !!}--}}
-                {{--{!! Form::submit('Delete', ['class' => 'btn btn-danger']) !!}--}}
-                {{--{!! Form::close() !!}--}}
-                {{--@endpermission--}}
-                {{--</td>--}}
-                {{--</tr>--}}
-                {{--@endforeach--}}
-                <tr>
-                    <td>Giới Thiệu</td>
-                    <td>gioi-thieu</td>
-                    <td>1</td>
-                    <td>
-                        @permission(('menu-edit'))
-                        <a class="btn btn-primary" href="#">Edit</a>
-                        @endpermission
-                        @permission(('menu-delete'))
-                        {!! Form::open(['method' => 'DELETE','style'=>'display:inline']) !!}
-                        {!! Form::submit('Delete', ['class' => 'btn btn-danger']) !!}
-                        {!! Form::close() !!}
-                        @endpermission
-                    </td>
-                </tr>
-                <tr>
-                    <td>Thiết Kế Website</td>
-                    <td>thiet-ke-website</td>
-                    <td>1</td>
-                    <td>
-                        @permission(('menu-edit'))
-                        <a class="btn btn-primary" href="#">Edit</a>
-                        @endpermission
-                        @permission(('menu-delete'))
-                        {!! Form::open(['method' => 'DELETE','style'=>'display:inline']) !!}
-                        {!! Form::submit('Delete', ['class' => 'btn btn-danger']) !!}
-                        {!! Form::close() !!}
-                        @endpermission
-                    </td>
-                </tr>
-                <tr>
-                    <td>&emsp;&emsp;<i class="fa fa-level-up fa-flip-horizontal" aria-hidden="true"></i>Thiết Kế Website
-                        Doanh Nghiệp
-                    </td>
-                    <td>thiet-ke-website-doanh-nghiep</td>
-                    <td>1</td>
-                    <td>
-                        @permission(('menu-edit'))
-                        <a class="btn btn-primary" href="#">Edit</a>
-                        @endpermission
-                        @permission(('menu-delete'))
-                        {!! Form::open(['method' => 'DELETE','style'=>'display:inline']) !!}
-                        {!! Form::submit('Delete', ['class' => 'btn btn-danger']) !!}
-                        {!! Form::close() !!}
-                        @endpermission
-                    </td>
-                </tr>
-                <tr>
-                    <td>&emsp;&emsp;<i class="fa fa-level-up fa-flip-horizontal" aria-hidden="true"></i>Thiết Kế Website
-                        Doanh Nghiệp
-                    </td>
-                    <td>thiet-ke-website-doanh-nghiep</td>
-                    <td>1</td>
-                    <td>
-                        @permission(('menu-edit'))
-                        <a class="btn btn-primary" href="#">Edit</a>
-                        @endpermission
-                        @permission(('menu-delete'))
-                        {!! Form::open(['method' => 'DELETE','style'=>'display:inline']) !!}
-                        {!! Form::submit('Delete', ['class' => 'btn btn-danger']) !!}
-                        {!! Form::close() !!}
-                        @endpermission
-                    </td>
-                </tr>
-                <tr>
-                    <td>&emsp;&emsp;&emsp;&emsp;<i class="fa fa-level-up fa-flip-horizontal" aria-hidden="true"></i>Thiết
-                        Kế Website Doanh Nghiệp Giá Rẻ
-                    </td>
-                    <td>thiet-ke-website-doanh-nghiep-gia-re</td>
-                    <td>1</td>
-                    <td>
-                        @permission(('menu-edit'))
-                        <a class="btn btn-primary" href="#">Edit</a>
-                        @endpermission
-                        @permission(('menu-delete'))
-                        {!! Form::open(['method' => 'DELETE','style'=>'display:inline']) !!}
-                        {!! Form::submit('Delete', ['class' => 'btn btn-danger']) !!}
-                        {!! Form::close() !!}
-                        @endpermission
-                    </td>
-                </tr>
+                @foreach($list_menus as $key=>$data)
+                    <tr>
+                        <td>{{$data->name}}</td>
+                        <td>{{$data->path}}</td>
+                        <td>{{$data->order}}</td>
+                        <td>
+                            @permission(('menu-edit'))
+                            <a class="btn btn-primary edit-menu" data-id="{{$data->id}}" href="#">Edit</a>
+                            @endpermission
+                            @permission(('menu-delete'))
+                            {!! Form::open(['method' => 'DELETE','style'=>'display:inline']) !!}
+                            {!! Form::submit('Delete', ['class' => 'btn btn-danger']) !!}
+                            {!! Form::close() !!}
+                            @endpermission
+                        </td>
+                    </tr>
+                @endforeach
             </table>
             {{--{!! $emps->links() !!}--}}
         </div>
@@ -175,7 +90,6 @@
                     {!! Form::text('name', null, array('placeholder' => 'Tên Menu','class' => 'form-control')) !!}
                     {!! Form::text('order', null, array('placeholder' => 'STT','class' => 'form-control')) !!}
                     <span>Menu Cấp</span>
-                    {{--{!! Form::select('level', array('-1' => 'Chính', '0' => 'Thiết Kế Website'), null,array('class' => 'form-control')) !!}--}}
                     {!! Form::select('level', $dd_menus, null,array('class' => 'form-control')) !!}
                 </div>
                 <div class="menu-confirm">
@@ -185,5 +99,28 @@
             </div>
         </div>
     </div>
+        <div class="col-md-5">
+            <div id="menu-update">
+
+            </div>
+            {{--<div id="menu-create" class="col-md-12">--}}
+            {{--<div class="row">--}}
+            {{--<div class="menu-box-top">--}}
+            {{--<h4>Cập Nhật Menu</h4>--}}
+            {{--</div>--}}
+            {{--<div class="menu-box-bottom">--}}
+            {{--{!! Form::open(array('route' => ['menu.update',$menu->id],'method'=>'PATCH')) !!}--}}
+            {{--{!! Form::text('name', $menu->name, array('placeholder' => 'Tên Menu','class' => 'form-control')) !!}--}}
+            {{--{!! Form::text('order', $menu->order, array('placeholder' => 'STT','class' => 'form-control')) !!}--}}
+            {{--<span>Menu Cấp</span>--}}
+            {{--{!! Form::select('level', $dd_menus, null,array('class' => 'form-control')) !!}--}}
+            {{--</div>--}}
+            {{--<div class="menu-confirm">--}}
+            {{--{!! Form::submit('Cập Nhật',array('class'=>'menu-confirm-ok btn')) !!}--}}
+            {{--</div>--}}
+            {{--{!! Form::close() !!}--}}
+            {{--</div>--}}
+            {{--</div>--}}
+        </div>
 
 @stop
