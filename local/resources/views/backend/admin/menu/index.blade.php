@@ -171,14 +171,17 @@
                     <h4>Tạo Mới Menu</h4>
                 </div>
                 <div class="menu-box-bottom">
+                    {!! Form::open(array('route' => 'menu.store','method'=>'POST')) !!}
                     {!! Form::text('name', null, array('placeholder' => 'Tên Menu','class' => 'form-control')) !!}
                     {!! Form::text('order', null, array('placeholder' => 'STT','class' => 'form-control')) !!}
                     <span>Menu Cấp</span>
-                    {!! Form::select('size', array('L' => 'Large', 'S' => 'Small',), 'S',array('class' => 'form-control')) !!}
+                    {{--{!! Form::select('level', array('-1' => 'Chính', '0' => 'Thiết Kế Website'), null,array('class' => 'form-control')) !!}--}}
+                    {!! Form::select('level', $dd_menus, null,array('class' => 'form-control')) !!}
                 </div>
                 <div class="menu-confirm">
-                    {!! Form::submit('Thêm Mới!',array('class'=>'menu-confirm-ok btn')) !!}
+                    {!! Form::submit('Thêm Mới',array('class'=>'menu-confirm-ok btn')) !!}
                 </div>
+                {!! Form::close() !!}
             </div>
         </div>
     </div>

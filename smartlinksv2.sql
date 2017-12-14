@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 12, 2017 at 04:22 PM
+-- Generation Time: Dec 14, 2017 at 06:24 AM
 -- Server version: 10.1.16-MariaDB
 -- PHP Version: 5.6.24
 
@@ -187,6 +187,19 @@ CREATE TABLE `menus` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `menus`
+--
+
+INSERT INTO `menus` (`id`, `name`, `path`, `level`, `order`, `parent_id`, `created_at`, `updated_at`) VALUES
+(1, 'Thiết Kế Website', 'thiet-ke-website', 0, 1, NULL, '2017-12-13 14:34:47', '2017-12-13 14:34:47'),
+(2, 'Giới Thiệu', 'gioi-thieu', 1, 2, 1, '2017-12-14 00:26:27', '2017-12-14 00:26:27'),
+(3, 'Google Adwords', 'google-adwords', 2, 1, 2, '2017-12-14 01:26:18', '2017-12-14 01:26:18'),
+(4, 'Dịch Vụ 1', 'dich-vu-1', 0, 1, NULL, '2017-12-14 01:36:03', '2017-12-14 01:36:03'),
+(5, 'Dịch Vụ Phụ 1', 'dich-vu-phu-1', 1, 1, 4, '2017-12-14 01:36:55', '2017-12-14 01:36:55'),
+(6, 'Dịch Vụ Phụ 2', 'dich-vu-phu-2', 1, 1, 4, '2017-12-14 01:37:12', '2017-12-14 01:37:12'),
+(7, 'Hỏi Đáp Website', 'hoi-dap-website', 1, 1, 1, '2017-12-14 01:38:45', '2017-12-14 01:38:45');
 
 -- --------------------------------------------------------
 
@@ -590,7 +603,7 @@ ALTER TABLE `keywords`
 -- AUTO_INCREMENT for table `menus`
 --
 ALTER TABLE `menus`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 --
 -- AUTO_INCREMENT for table `migrations`
 --
