@@ -21,27 +21,16 @@ class MenuController extends Controller
         foreach ($dd_menus as $key => $data) {
             if ($data->level == MENU_CAP_1) {
                 $data->name = ' ---- ' . $data->name;
-            }
-            else if ($data->level == MENU_CAP_2) {
+            } else if ($data->level == MENU_CAP_2) {
                 $data->name = ' --------- ' . $data->name;
             }
         }
-//        foreach($dd_menus as $key => $data){
-//            $parentID=$data->parent_id;
-//            foreach ($dd_menus as $key =>$sortData){
-//                if($sortData->id==$parentID){
-//
-//                }
-//            }
-//        }
-        dd($dd_menus);
-        $dd_menus = $dd_menus->pluck('name', 'id')->prepend('Menu Gốc', '-1');
-
-        $dd_menus=$dd_menus->slice(1,2);
-        dd($dd_menus);
+        $newArray=[];
+        self::showMenuDropDown($dd_menus,0,$newArray);
+//        dd($newArray);
+        $dd_menus =array_prepend(array_pluck($newArray,'name','id'),'Menu Gốc','-1') ;
         return view('backend.admin.menu.index', compact('dd_menus'));
     }
-
 
 
     /**
@@ -77,8 +66,7 @@ class MenuController extends Controller
         $menu->path = $path;
         $menu->order = $order;
         $menu->save();
-        return redirect()->route('menu.index')
-            ->with('success', 'Thêm Menu Thành Công');
+        return redirect()->route('menu.index')->with('success', 'Thêm Menu Thành Công');
         //dd($request);
     }
 
@@ -125,5 +113,17 @@ class MenuController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function showMenuDropDown($dd_menus, $parent_id = 0,&$newArray)
+    {
+        foreach ($dd_menus as $key => $data) {
+            if ($data->parent_id == $parent_id) {
+                array_push($newArray,$data);
+//                echo  $data->name."<br>";
+                $dd_menus->forget($key);
+                self::showMenuDropDown($dd_menus, $data->id,$newArray);
+            }
+        }
     }
 }
