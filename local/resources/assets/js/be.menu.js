@@ -12,9 +12,10 @@ $('.edit-menu').click(function () {
                 var options='';
                 var list_keys=Object.keys(data.dd_menus);
                 var list_values=Object.values(data.dd_menus);
-                alert(list_keys);
-                for(i=0;i<list_keys.length;i++){
-                    options+='<option value="'+list_keys[i]+'">'+list_values[i]+'</option>';
+                var list_data=Object.entries(data.dd_menus);
+                // alert(list_keys);
+                for(i=0;i<list_data.length;i++){
+                    options+='<option value="'+list_data[i][0]+'">'+list_data[i][1]+'</option>';
                 }
                 // data.dd_menus.forEach(function(e){
                 //     // options+='<option value="'+e.id+'">'+e.name+'</option>'
