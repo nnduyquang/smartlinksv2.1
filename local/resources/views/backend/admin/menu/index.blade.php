@@ -99,28 +99,28 @@
             </div>
         </div>
     </div>
-        <div class="col-md-5">
-            <div id="menu-update">
-
-            </div>
+    <div class="col-md-5">
+        <div id="menu-update">
             {{--<div id="menu-create" class="col-md-12">--}}
-            {{--<div class="row">--}}
-            {{--<div class="menu-box-top">--}}
-            {{--<h4>Cập Nhật Menu</h4>--}}
-            {{--</div>--}}
-            {{--<div class="menu-box-bottom">--}}
-            {{--{!! Form::open(array('route' => ['menu.update',$menu->id],'method'=>'PATCH')) !!}--}}
-            {{--{!! Form::text('name', $menu->name, array('placeholder' => 'Tên Menu','class' => 'form-control')) !!}--}}
-            {{--{!! Form::text('order', $menu->order, array('placeholder' => 'STT','class' => 'form-control')) !!}--}}
-            {{--<span>Menu Cấp</span>--}}
-            {{--{!! Form::select('level', $dd_menus, null,array('class' => 'form-control')) !!}--}}
-            {{--</div>--}}
-            {{--<div class="menu-confirm">--}}
-            {{--{!! Form::submit('Cập Nhật',array('class'=>'menu-confirm-ok btn')) !!}--}}
-            {{--</div>--}}
-            {{--{!! Form::close() !!}--}}
-            {{--</div>--}}
+                {{--<div class="row">--}}
+                    {{--<div class="menu-box-top">--}}
+                        {{--<h4>Cập Nhật Menu</h4>--}}
+                    {{--</div>--}}
+                    {{--<div class="menu-box-bottom">--}}
+                        {{--{!! Form::open(array('route' => ['menu.update',-1],'method'=>'PATCH')) !!}--}}
+                        {{--{!! Form::text('name', null, array('placeholder' => 'Tên Menu','class' => 'form-control')) !!}--}}
+                        {{--{!! Form::text('order', null, array('placeholder' => 'STT','class' => 'form-control')) !!}--}}
+                        {{--<span>Menu Cấp</span>--}}
+                        {{--{!! Form::select('level', $dd_menus, null,array('class' => 'form-control')) !!}--}}
+                    {{--</div>--}}
+                    {{--<div class="menu-confirm">--}}
+                        {{--{!! Form::submit('Cập Nhật',array('class'=>'menu-confirm-ok btn')) !!}--}}
+                    {{--</div>--}}
+                    {{--{!! Form::close() !!}--}}
+                {{--</div>--}}
             {{--</div>--}}
         </div>
+
+    </div>
 
 @stop

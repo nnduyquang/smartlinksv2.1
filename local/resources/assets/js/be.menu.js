@@ -9,19 +9,14 @@ $('.edit-menu').click(function () {
         },
         success: function (data) {
             if (data.success) {
-                var options='';
-                var list_keys=Object.keys(data.dd_menus);
-                var list_values=Object.values(data.dd_menus);
-                var list_data=Object.entries(data.dd_menus);
-                // alert(list_keys);
-                for(i=0;i<list_data.length;i++){
-                    options+='<option value="'+list_data[i][0]+'">'+list_data[i][1]+'</option>';
+                var options = '';
+                var list_dd = data.dd_menus;
+                for (i = 0; i < list_dd.length; i++) {
+                    if (list_dd[i]['index'] == data.menu.parent_id)
+                        options += '<option value="' + list_dd[i]['index'] + '" selected>' + list_dd[i]['value'] + '</option>';
+                    else
+                        options += '<option value="' + list_dd[i]['index'] + '">' + list_dd[i]['value'] + '</option>';
                 }
-                // data.dd_menus.forEach(function(e){
-                //     // options+='<option value="'+e.id+'">'+e.name+'</option>'
-                //     options+='<option value="-1">Menu Gốc</option>'
-                // });
-                // var form1 = "{{ Form::open(array("method" => "GET", "id" => "_RemoveForm")) }} {{ Form::close() }}";
                 var form = '<div id="menu-create" class="col-md-12">'
                     + '<div class="row">'
                     + '<div class="menu-box-top">'
@@ -32,7 +27,7 @@ $('.edit-menu').click(function () {
                     + '<input name="_token" type="hidden" value="' + token + '">'
                     + '<input placeholder="Tên Menu" value="' + data.menu.name + '" class="form-control" name="name" type="text">'
                     + '<input placeholder="STT" value="' + data.menu.order + '" class="form-control" name="order" type="text">'
-                    + '<span>Menu Cấp</span>'
+                    + '<span>Menu Cấp Cha</span>'
                     + '<select class="form-control" name="level">'
                     + options
                     + '</select>'

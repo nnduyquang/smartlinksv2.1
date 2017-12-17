@@ -100,7 +100,10 @@ class MenuController extends Controller
         }
         $newArray=[];
         self::showMenuDropDown($dd_menus,0,$newArray);
-        $dd_menus =array_prepend(array_pluck($newArray,'name','id'),'Menu Gốc','-1') ;
+        $dd_menus =array_prepend(array_pluck($newArray,'name','id'),'Menu Gốc','-1');
+        $dd_menus = array_map(function($index,$value) {
+            return ['index'=>$index,'value'=>$value];
+        },array_keys($dd_menus),$dd_menus);
         return response()->json([
             'success' => true,
             'menu' => $menu,
