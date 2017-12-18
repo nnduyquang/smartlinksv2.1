@@ -39,3 +39,16 @@
     }
   }
 }
+#menu-update{
+  display: none;
+  .show-error{
+    display: none;
+    color: red;
+  }
+}
+.blink_me {
+  animation: blinker 1s linear 3;
+}
+@keyframes blinker {
+  50% { opacity: 0; }
+}

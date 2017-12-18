@@ -53,7 +53,7 @@
         <div class="row">
             <table class="table table-bordered">
                 <tr>
-                    <th>Tên</th>
+                    <th width="280px">Tên</th>
                     <th>Path</th>
                     <th>Sắp Xếp</th>
                     <th width="280px">Action</th>
@@ -90,35 +90,19 @@
                     {!! Form::text('name', null, array('placeholder' => 'Tên Menu','class' => 'form-control')) !!}
                     {!! Form::text('order', null, array('placeholder' => 'STT','class' => 'form-control')) !!}
                     <span>Menu Cấp</span>
-                    {!! Form::select('level', $dd_menus, null,array('class' => 'form-control')) !!}
+                    {!! Form::select('parent', $dd_menus, null,array('class' => 'form-control')) !!}
+
+                    <div class="menu-confirm">
+                        {!! Form::submit('Thêm Mới',array('class'=>'menu-confirm-ok btn')) !!}
+                    </div>
+                    {!! Form::close() !!}
                 </div>
-                <div class="menu-confirm">
-                    {!! Form::submit('Thêm Mới',array('class'=>'menu-confirm-ok btn')) !!}
-                </div>
-                {!! Form::close() !!}
             </div>
         </div>
     </div>
-    <div class="col-md-5">
-        <div id="menu-update">
-            {{--<div id="menu-create" class="col-md-12">--}}
-                {{--<div class="row">--}}
-                    {{--<div class="menu-box-top">--}}
-                        {{--<h4>Cập Nhật Menu</h4>--}}
-                    {{--</div>--}}
-                    {{--<div class="menu-box-bottom">--}}
-                        {{--{!! Form::open(array('route' => ['menu.update',-1],'method'=>'PATCH')) !!}--}}
-                        {{--{!! Form::text('name', null, array('placeholder' => 'Tên Menu','class' => 'form-control')) !!}--}}
-                        {{--{!! Form::text('order', null, array('placeholder' => 'STT','class' => 'form-control')) !!}--}}
-                        {{--<span>Menu Cấp</span>--}}
-                        {{--{!! Form::select('level', $dd_menus, null,array('class' => 'form-control')) !!}--}}
-                    {{--</div>--}}
-                    {{--<div class="menu-confirm">--}}
-                        {{--{!! Form::submit('Cập Nhật',array('class'=>'menu-confirm-ok btn')) !!}--}}
-                    {{--</div>--}}
-                    {{--{!! Form::close() !!}--}}
-                {{--</div>--}}
-            {{--</div>--}}
+    <div class="col-md-5"  style="margin-top: 50px;">
+        <div id="menu-update" class="col-md-12">
+
         </div>
 
     </div>

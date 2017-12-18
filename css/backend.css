@@ -75,3 +75,29 @@
   color: white;
   text-transform: uppercase;
 }
+
+#menu-update {
+  display: none;
+}
+
+#menu-update .show-error {
+  display: none;
+  color: red;
+}
+
+.blink_me {
+  -webkit-animation: blinker 1s linear 3;
+          animation: blinker 1s linear 3;
+}
+
+@-webkit-keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}

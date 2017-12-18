@@ -17,7 +17,7 @@ class MenuController extends Controller
     {
         // Lay List Menu Trong DB Sau Do Add Item 'Menu Goc' Len Dau Tien
 //        $dd_menus = Menu::all()->pluck('name', 'id')->prepend('Menu Gốc','-1');
-        $dd_menus = Menu::all();
+        $dd_menus = Menu::orderBy('order')->get();
         foreach ($dd_menus as $key => $data) {
             if ($data->level == MENU_CAP_1) {
                 $data->name = ' ---- ' . $data->name;
@@ -25,11 +25,11 @@ class MenuController extends Controller
                 $data->name = ' --------- ' . $data->name;
             }
         }
-        $newArray=[];
-        self::showMenuDropDown($dd_menus,0,$newArray);
-        $dd_menus =array_prepend(array_pluck($newArray,'name','id'),'Menu Gốc','-1') ;
-        $list_menus=$newArray;
-        return view('backend.admin.menu.index', compact('dd_menus','list_menus'));
+        $newArray = [];
+        self::showMenuDropDown($dd_menus, 0, $newArray);
+        $dd_menus = array_prepend(array_pluck($newArray, 'name', 'id'), 'Menu Gốc', '-1');
+        $list_menus = $newArray;
+        return view('backend.admin.menu.index', compact('dd_menus', 'list_menus'));
     }
 
 
@@ -55,7 +55,7 @@ class MenuController extends Controller
         $name = $request->input('name');
         $path = chuyen_chuoi_thanh_path($name);
         $order = $request->input('order');
-        $parentID = $request->input('level');
+        $parentID = $request->input('parent');
         if ($parentID != MENU_CHINH) {
             $menu->parent_id = $parentID;
             $level = Menu::where('id', '=', $parentID)->first()->level;
@@ -64,7 +64,9 @@ class MenuController extends Controller
             $menu->level = 0;
         $menu->name = $name;
         $menu->path = $path;
-        $menu->order = $order;
+        if ($order) {
+            $menu->order = $order;
+        }
         $menu->save();
         return redirect()->route('menu.index')->with('success', 'Thêm Menu Thành Công');
         //dd($request);
@@ -89,7 +91,7 @@ class MenuController extends Controller
      */
     public function edit($id)
     {
-        $menu=Menu::find($id);
+        $menu = Menu::find($id);
         $dd_menus = Menu::all();
         foreach ($dd_menus as $key => $data) {
             if ($data->level == MENU_CAP_1) {
@@ -98,17 +100,13 @@ class MenuController extends Controller
                 $data->name = ' --------- ' . $data->name;
             }
         }
-        $newArray=[];
-        self::showMenuDropDown($dd_menus,0,$newArray);
-        $dd_menus =array_prepend(array_pluck($newArray,'name','id'),'Menu Gốc','-1');
-        $dd_menus = array_map(function($index,$value) {
-            return ['index'=>$index,'value'=>$value];
-        },array_keys($dd_menus),$dd_menus);
-        return response()->json([
-            'success' => true,
-            'menu' => $menu,
-            'dd_menus'=>$dd_menus
-        ]);
+        $newArray = [];
+        self::showMenuDropDown($dd_menus, 0, $newArray);
+        $dd_menus = array_prepend(array_pluck($newArray, 'name', 'id'), 'Menu Gốc', '-1');
+        $dd_menus = array_map(function ($index, $value) {
+            return ['index' => $index, 'value' => $value];
+        }, array_keys($dd_menus), $dd_menus);
+        return response()->json(['success' => true, 'menu' => $menu, 'dd_menus' => $dd_menus]);
     }
 
     /**
@@ -120,7 +118,27 @@ class MenuController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $menu = Menu::find($id);
+        $name = $request->input('name');
+        $path = chuyen_chuoi_thanh_path($name);
+        $order = $request->input('order');
+        $parentID = $request->input('parent');
+        if ($parentID != MENU_CHINH) {
+            $menu->parent_id = $parentID;
+            $level = Menu::where('id', '=', $parentID)->first()->level;
+            $menu->level = (int)$level + 1;
+        } else {
+            $menu->parent_id = 0;
+            $menu->level = 0;
+        }
+
+        $menu->name = $name;
+        $menu->path = $path;
+        if ($order) {
+            $menu->order = $order;
+        }
+        $menu->save();
+        return redirect()->route('menu.index')->with('success', 'Cập Nhật Menu Thành Công');
     }
 
     /**
@@ -134,14 +152,14 @@ class MenuController extends Controller
         //
     }
 
-    public function showMenuDropDown($dd_menus, $parent_id = 0,&$newArray)
+    public function showMenuDropDown($dd_menus, $parent_id = 0, &$newArray)
     {
         foreach ($dd_menus as $key => $data) {
             if ($data->parent_id == $parent_id) {
-                array_push($newArray,$data);
+                array_push($newArray, $data);
 //                echo  $data->name."<br>";
                 $dd_menus->forget($key);
-                self::showMenuDropDown($dd_menus, $data->id,$newArray);
+                self::showMenuDropDown($dd_menus, $data->id, $newArray);
             }
         }
     }
