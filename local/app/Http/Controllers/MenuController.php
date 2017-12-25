@@ -157,7 +157,6 @@ class MenuController extends Controller
         foreach ($dd_menus as $key => $data) {
             if ($data->parent_id == $parent_id) {
                 array_push($newArray, $data);
-//                echo  $data->name."<br>";
                 $dd_menus->forget($key);
                 self::showMenuDropDown($dd_menus, $data->id, $newArray);
             }
