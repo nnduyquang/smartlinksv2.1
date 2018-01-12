@@ -1,10 +1,9 @@
 @extends('backend.admin.master')
 @section('styles')
-    {{ Html::style('css/backend.css') }}
+
 @stop
 @section('scripts')
-    {{ Html::script('js/ulti.js',array('async' => 'async') ) }}
-    {{ Html::script('js/be.menu.js',array('async' => 'async') ) }}
+
 @stop
 @section('container')
     <div class="row">
