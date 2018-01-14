@@ -7,7 +7,7 @@
   font-size: 0;
   letter-spacing: -4px;
   padding: 104px 0 0;
-  background: #002340;
+  //background: #002340;
   margin-bottom: 55px;
   > .container {
     display: inline-block;
@@ -33,7 +33,7 @@
       .tagline {
         p.element {
           text-transform: uppercase;
-          color: rgba(255, 255, 255, 0.5);
+          color: white;
           font-size: 21px !important;
           line-height: 1.1;
           display: inline-block;
@@ -57,7 +57,7 @@
           color: #fff;
           text-transform: uppercase;
           i {
-            color: #F1773D;
+            color: #f3ad1d;
           }
         }
       }
@@ -80,6 +80,16 @@
             font-size: 50px;
           }
         }
+      }
+    }
+  }
+}
+@media screen and(max-width: 1440px) and(min-width: 768px){
+  #slider2 {
+    min-height: 519px;
+    > .container{
+      .text-block{
+        padding: 0;
       }
     }
   }

@@ -4,7 +4,7 @@
             <div class="col-md-12 heading-holder">
                 <h1>SMARTLINKS MARKETING</h1>
             </div>
-            <div class="tagline">
+            <div class="tagline hidden-sm hidden-xs">
                 <p class="element"></p>
             </div>
             <div class="infos">

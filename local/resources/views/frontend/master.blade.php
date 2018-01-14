@@ -28,7 +28,7 @@
 </div>
 @include('frontend.common.m-sidebar')
 <div class="footer">
-    @include('frontend.common.footer')
+    @include('frontend.common.footer2')
 </div>
 {{ Html::script('js/core.common.js') }}
 {{ Html::script('js/core.frontend.js') }}
@@ -71,7 +71,14 @@
 
     gtag('config', 'UA-105806900-1');
 </script>
-
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.11&appId=1401298499950254';
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
 </body>
 
 </Html>

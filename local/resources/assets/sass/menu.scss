@@ -1,5 +1,5 @@
 .top-bar {
-  background-color: #142542;
+  background-color: #1f45a8;
   .top-bar-left {
     margin-left: -10px;
     margin-right: -10px;
@@ -79,7 +79,7 @@
         color: #161242;
         display: block;
         position: relative;
-        font-size: 14px;
+        font-size: 18px;
         padding: 15px 0;
         text-transform: uppercase;
         font-weight: bolder;
@@ -90,6 +90,16 @@
       }
       li:hover > ul {
         display: block;
+      }
+      li.has-item-down{
+        ul{
+          li{
+            a{
+              font-size: 14px;
+            }
+          }
+        }
+
       }
       ul {
         display: none;
@@ -124,7 +134,7 @@
         color: #161242;
         display: block;
         position: relative;
-        font-size: 14px;
+        font-size: 18px;
         padding: 15px 0;
         text-transform: uppercase;
         font-weight: bolder;

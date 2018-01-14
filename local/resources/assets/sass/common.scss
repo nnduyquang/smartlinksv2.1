@@ -6,11 +6,11 @@
     font-weight: bold;
     line-height: 1;
     padding: 0;
-    color: #979797;
+    color: black;
     margin: 0;
     text-transform: uppercase;
     &.out {
-      color: #979797;
+      color: black;
     }
     &.in {
       color: #ffffff;
@@ -23,7 +23,7 @@
     line-height: 1;
     font-weight: 700;
     text-transform: uppercase;
-    color: #00afef;
+    color: #125fb7;
     &.in {
       color: white;
     }

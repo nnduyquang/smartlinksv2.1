@@ -141,13 +141,16 @@
           padding: 0;
           letter-spacing: -0.03em;
           line-height: 28px;
-          color: #00afef;
+          color: #125fb7;
           text-transform: uppercase;
           font-weight: 700;
           &:hover {
             color: #00afef;
           }
         }
+      }
+      .description-item{
+        line-height: 1.5;
       }
 
     }

@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@font-face {
+  font-family: UTMAVO;
+  src: url('../fonts/utm-avo.ttf');
+}
 
 
 body {
@@ -11,10 +16,10 @@ body {
 #wrap-container{
   margin-top: 80px;
 }
-@media screen and(max-width: 415px) {
+@media screen and(max-width: 768px) {
   #wrap-container{
     margin-top: 0px;
-    margin-bottom: 20px;
+    //margin-bottom: 20px;
   }
 }
 @import "reset";
@@ -37,5 +42,6 @@ body {
 @import "module11";
 @import "fe.phoneanimation";
 @import "pagespeedinsight";
-@import "footer";
+//@import "footer";
+@import "footer2";
 @import "demo/xulynuocthai";

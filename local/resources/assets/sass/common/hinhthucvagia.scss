@@ -26,28 +26,28 @@
     &.bg-color1 {
       color: white;
       //background-color: #455a64;
-      background-color: #f1773d;
+      background-color: #f3ad1d;
       animation-duration: 2s;
     }
     &.bg-color1::after {
       //box-shadow: 0 0 10px #455a64;
-      box-shadow: 0 0 10px #f1773d;
+      box-shadow: 0 0 10px #f3ad1d;
     }
     &.bg-color2 {
       color: white;
-      background-color: #0097a7;
+      background-color: #125fb7;
       animation-duration: 2s
     }
     &.bg-color2::after {
-      box-shadow: 0 0 10px #0097a7;
+      box-shadow: 0 0 10px #125fb7;
     }
     &.bg-color3 {
       color: white;
-      background-color: #f1773d;
+      background-color: #f3ad1d;
       animation-duration: 2s
     }
     &.bg-color3::after {
-      box-shadow: 0 0 10px #f1773d;
+      box-shadow: 0 0 10px #f3ad1d;
     }
     &::after {
       top: -7px;
