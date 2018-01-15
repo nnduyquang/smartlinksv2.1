@@ -36,17 +36,17 @@
         background-color: #dca50a;
       }
       &.bg-item2::after {
-        box-shadow: 0 0 0 2px #cecece;
+        box-shadow: 0 0 0 2px #125fb7;
       }
       &.bg-item2 {
-        background-color: #cecece;
+        background-color: #125fb7;
         animation-delay: 0.2s;
       }
       &.bg-item3::after {
-        box-shadow: 0 0 0 2px #14afbe;
+        box-shadow: 0 0 0 2px #ffa500;
       }
       &.bg-item3 {
-        background-color: #14afbe;
+        background-color: white;
         animation-delay: 1s;
       }
       &.bg-item4::after {
@@ -57,10 +57,10 @@
         animation-delay: 0.4s;
       }
       &.bg-item5::after {
-        box-shadow: 0 0 0 2px #4dc3ab;
+        box-shadow: 0 0 0 2px #68b3e7;
       }
       &.bg-item5 {
-        background-color: #4dc3ab;
+        background-color: #68b3e7;
         animation-delay: 0.8s;
       }
       &.bg-item6::after {

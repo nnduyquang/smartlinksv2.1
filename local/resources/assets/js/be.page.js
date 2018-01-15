@@ -6,4 +6,4 @@ if ($('#btnBrowseImagePage').length) {
     button1.onclick = function () {
         selectFileWithKCFinder('pathImagePage','showHinhPage');
     }
-};
+}

@@ -10,15 +10,15 @@
     @if(Auth::user()->can('role-list'))
         <li><a href="{{ route('roles.index') }}"><i class="fa fa-link"></i> <span>Quyền</span></a></li>
     @endif
-    <li><a href="{{ route('menu.index') }}"><i class="fa fa-link"></i> <span>Menu</span></a>
+    {{--<li><a href="{{ route('menu.index') }}"><i class="fa fa-link"></i> <span>Menu</span></a>--}}
     </li>
     <li><a href="{{ route('emp.index') }}"><i class="fa fa-link"></i> <span>Quản Lý Nhân Viên</span></a>
     </li>
     <li><a href="{{ route('account.index') }}"><i class="fa fa-link"></i> <span>Tài Khoản</span></a>
     </li>
-    <li><a href="{{ route('page.index') }}"><i class="fa fa-link"></i> <span>Trang</span></a>
+    {{--<li><a href="{{ route('page.index') }}"><i class="fa fa-link"></i> <span>Trang</span></a>--}}
     </li>
-    <li><a href="{{ route('post.index') }}"><i class="fa fa-link"></i> <span>Bài Viết</span></a>
+    {{--<li><a href="{{ route('post.index') }}"><i class="fa fa-link"></i> <span>Bài Viết</span></a>--}}
     </li>
     <li class="treeview">
         <a href="#"><i class="fa fa-link"></i><span>Cấu Hình</span>
