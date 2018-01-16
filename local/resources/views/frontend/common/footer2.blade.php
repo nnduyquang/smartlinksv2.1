@@ -18,9 +18,9 @@
                                         Hotline: 0914.348.131
                                     </li>
                                     <li><i class="fa fa-envelope" aria-hidden="true"></i> info@smartlinks.vn</li>
-                                    <li><p>Smartlinks Đem Lại Hiệu Quả Cao Cho Khách Hàng Bằng Cách Sử Dụng Kỹ Thuật
-                                            Công Nghệ
-                                            Mới Nhất Trong Lĩnh Vực Marketing Online</p></li>
+                                    <li><p>Smartlinks đem lại hiệu quả cao cho khách hàng bằng cách sử dụng kỹ thuật
+                                            công nghệ
+                                            mới nhất trong lĩnh vực marketing online</p></li>
                                 </ul>
                             </div>
 

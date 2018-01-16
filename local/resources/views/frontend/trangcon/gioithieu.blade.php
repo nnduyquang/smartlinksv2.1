@@ -11,7 +11,7 @@
             <div class="col-md-12">
                 <div class="row">
                     <div class="wpContainHeader">
-                        {{ Html::image('images/temps/ss_adwords.jpg','',array('class'=>'dvBanner')) }}
+                        {{ Html::image($content->image,'',array('class'=>'dvBanner')) }}
                         <div class="wpTextHeader">
                             <div class="textHeader">
                                 <h1> Giới Thiệu</h1>

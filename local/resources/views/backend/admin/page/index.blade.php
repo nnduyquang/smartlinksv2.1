@@ -49,6 +49,7 @@
         <tr>
             <th>TT</th>
             <th>Tên Trang</th>
+            <th>Path</th>
             <th>Trạng Thái</th>
             <th>Người Đăng</th>
             <th>Ngày Đăng</th>
@@ -59,6 +60,7 @@
         @foreach ($pages as $key => $data)
             <td>{{ ++$i }}</td>
             <td>{{ $data->title }}</td>
+            <td>{{ $data->path }}</td>
             <td>{{ $data->isActive }}</td>
             <td>{{ $data->users->name }}</td>
             <td>{{ $data->created_at }}</td>

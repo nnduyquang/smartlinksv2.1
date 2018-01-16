@@ -7,7 +7,7 @@
     .fads-around {
       .fads-header {
         padding: 5px 15px;
-        background-color: #00b0ef;
+        background-color: #1f45a8;
         color: #fff;
         display: inline-block;
         font-size: 42px;
@@ -21,7 +21,7 @@
       content: " ";
       height: 5px;
       width: 100%;
-      background-color: #00b0ef;
+      background-color: #1f45a8;
       position: absolute;
       left: 0;
       top: 50%;
@@ -101,7 +101,7 @@
         content: counter(li);
         counter-increment: li;
         position: absolute;
-        background-color: #00b0ef;
+        background-color: #1f45a8;
         width: 60px;
         height: 60px;
         top: -7px;
@@ -109,10 +109,10 @@
         margin: 0 8px 0 0;
         text-align: center;
         font-weight: bold;
-        padding: 20px;
+        padding: 10px;
         color: white;
         border: 1px solid white;
-        box-shadow: 0px 0px 0px 5px #00b0ef;
+        box-shadow: 0px 0px 0px 5px #1f45a8;
         border-radius: 50%;
         font-size: xx-large;
       }
@@ -136,6 +136,7 @@
       text-align: justify;
       text-align: center;
       margin-bottom: 50px;
+      color:#1f45a8;
     }
   }
 }

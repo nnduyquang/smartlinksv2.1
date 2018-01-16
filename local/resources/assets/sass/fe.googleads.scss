@@ -18,7 +18,7 @@
           &::before {
             content: counter(li);
             counter-increment: li;
-            border: solid 2px #26b7e7;
+            border: solid 2px #1f45a8;
             position: absolute;
             background-color: #eeeded;
             width: 40px;
@@ -55,6 +55,7 @@
       h1 {
         text-transform: uppercase;
         font-size: 36px;
+        color: #1f45a8;
         &::after {
           content: "";
           display: block;

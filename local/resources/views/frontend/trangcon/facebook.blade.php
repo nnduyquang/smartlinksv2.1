@@ -14,7 +14,7 @@
             <div class="col-md-12">
                 <div class="row">
                     <div class="wpContainHeader">
-                        {{ Html::image('images/temps/banner_facebook.png','',array('class'=>'dvBanner')) }}
+                        {{ Html::image('images/temps/banner_facebook.jpg','',array('class'=>'dvBanner')) }}
                         <div class="wpTextHeader">
                             <div class="textHeader">
                                 <h1>Quảng Cáo Facebook</h1>
