@@ -105,6 +105,33 @@ a, a:hover, a:active {
   height: 55px;
 }
 
+@media all and (min-width: 800px) {
+  .fancybox-thumbs {
+    top: auto;
+    width: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 95px;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.3);
+  }
+  .fancybox-thumbs ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .fancybox-show-thumbs .fancybox-inner {
+    right: 0;
+    bottom: 95px;
+  }
+}
+
 .top-bar {
   background-color: #1f45a8;
 }
@@ -2382,6 +2409,10 @@ This class is added to the container
     left: -72;
     top: 6px;
   }
+}
+
+#gioi-thieu #gt-content {
+  margin-bottom: 50px;
 }
 
 #gioi-thieu #gt-muctieu {
