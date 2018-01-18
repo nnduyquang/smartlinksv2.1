@@ -20,6 +20,8 @@
     </li>
     <li><a href="{{ route('post.index') }}"><i class="fa fa-link"></i> <span>Bài Viết</span></a>
     </li>
+    <li><a href="{{ route('tuyendung.index') }}"><i class="fa fa-link"></i> <span>Tuyển Dụng</span></a>
+    </li>
     <li class="treeview">
         <a href="#"><i class="fa fa-link"></i><span>Cấu Hình</span>
             <span class="pull-right-container">

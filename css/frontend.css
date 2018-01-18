@@ -2446,6 +2446,27 @@ This class is added to the container
   vertical-align: bottom;
 }
 
+#tuyen-dung #td-info p {
+  margin-bottom: 20px;
+}
+
+#tuyen-dung #td-content .one-item {
+  margin-bottom: 20px;
+}
+
+#tuyen-dung #td-content .one-item a {
+  color: #1f45a8;
+}
+
+#tuyen-dung #td-content .one-item a img {
+  width: 100%;
+}
+
+#tuyen-dung #td-content .one-item a p {
+  display: block;
+  line-height: 1.5;
+}
+
 .wpLoiIch {
   padding: 40px 0 0 0;
   float: left;

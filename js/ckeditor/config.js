@@ -9,8 +9,7 @@ CKEDITOR.stylesSet.add( 'my_lightbox', [
 CKEDITOR.editorConfig = function( config ) {
     config.entities_latin = false;
     config.allowedContent = true;
-    config.extraPlugins = 'lineheight';
-    config.extraPlugins = 'btgrid';
+    config.extraPlugins = 'btgrid,lineheight';
     config.line_height="1;1.1;1.2;1.3;1.4;1.5" ;
     config.lineHeight_style = {
         element: 'p',
