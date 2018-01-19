@@ -24,7 +24,7 @@
             </ul>
         </div>
     @endif
-    {!! Form::model($tuyendung,array('route' => ['tuyendung.update',$page->id],'method'=>'PATCH')) !!}
+    {!! Form::model($tuyendung,array('route' => ['tuyendung.update',$tuyendung->id],'method'=>'PATCH')) !!}
     <div class="col-md-12">
         <div class="row">
             <div class="col-md-12">
@@ -70,7 +70,7 @@
                     </div>
                     <div class="form-group">
                         <strong>Mô Tả (description):</strong>
-                        {!! Form::textarea('seo_description',null,array('placeholder' => '','id'=>'seo-description-tuyuen-dung','class' => 'form-control','rows'=>'10','style'=>'resize:none')) !!}
+                        {!! Form::textarea('seo_description',null,array('placeholder' => '','id'=>'seo-description-tuyen-dung','class' => 'form-control','rows'=>'10','style'=>'resize:none')) !!}
                     </div>
                     <div class="form-group">
                         <strong>Kích Hoạt:</strong>

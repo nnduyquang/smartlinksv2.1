@@ -13,14 +13,19 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="row">
-                    <div class="wpContainHeader">
-                        {{ Html::image('images/temps/banner_facebook.jpg','',array('class'=>'dvBanner')) }}
-                        <div class="wpTextHeader">
-                            <div class="textHeader">
-                                <h1>Quảng Cáo Facebook</h1>
-                                <div class="subTextHeading">
-                                    Quảng Cáo Sản Phẩm Của Bạn Đến Hàng Tỷ Người Dùng Facebook Ngay HÔM NAY Với Dịch Vụ
-                                    Facebook Ads Của Smartlinks
+                    <div class="container">
+                        <div class="row">
+                            <div class="wpContainHeader">
+                                {{ Html::image('images/temps/banner_facebook.jpg','',array('class'=>'dvBanner')) }}
+                                <div class="wpTextHeader">
+                                    <div class="textHeader">
+                                        <h1>Quảng Cáo Facebook</h1>
+                                        <div class="subTextHeading">
+                                            Quảng Cáo Sản Phẩm Của Bạn Đến Hàng Tỷ Người Dùng Facebook Ngay HÔM NAY Với
+                                            Dịch Vụ
+                                            Facebook Ads Của Smartlinks
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

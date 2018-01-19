@@ -1,6 +1,6 @@
 @extends('frontend.master')
 @section('title')
-   Thiết Kế Website Chuẩn SEO Chuyên Nghiệp - Smartlinks.vn
+    Thiết Kế Website Chuẩn SEO Chuyên Nghiệp - Smartlinks.vn
 @stop
 @section('description')
     Smartlinks Là Công Ty Thiết Kế Website Chuyên Nghiệp. Chúng Tôi Chuyên Thiết Kế Website Nhà Hàng, Bất Động Sản, Bán Hàng Chuẩn SEO. ☎ Hotline: 0907 468 264
@@ -13,13 +13,17 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="row">
-                    <div class="wpContainHeader">
-                        {{ Html::image('images/temps/Web-Design-and-Development-Banner1.jpg','',array('class'=>'dvBanner')) }}
-                        <div class="wpTextHeader">
-                            <div class="textHeader">
-                                <h1>Thiết Kế Website</h1>
-                                <div class="subTextHeading">
-                                    Chuyên nghiệp - Chuẩn SEO - Tốc độ tối ưu
+                    <div class="container">
+                        <div class="row">
+                            <div class="wpContainHeader">
+                                {{ Html::image('images/temps/Web-Design-and-Development-Banner1.jpg','',array('class'=>'dvBanner')) }}
+                                <div class="wpTextHeader">
+                                    <div class="textHeader">
+                                        <h1>Thiết Kế Website</h1>
+                                        <div class="subTextHeading">
+                                            Chuyên nghiệp - Chuẩn SEO - Tốc độ tối ưu
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -252,7 +256,9 @@
                         <div class="row">
                             <div class="chevron on-mobile">
                                 <div class="content">
-                                    <div class="quote">"Nếu Bạn Muốn Có Một Website Chuyên Nghiệp Phục Vụ Cho Công Việc Kinh Doanh, Phù Hợp Thị Hiếu Và Xu Hướng Mới HIện Nay, Tương Thích Với Mọi Thiết Bị Cũng Như Trải Nghiệm Người Dùng, 100% Hãy Liên Hệ Ngay Với Smartlinks"
+                                    <div class="quote">"Nếu Bạn Muốn Có Một Website Chuyên Nghiệp Phục Vụ Cho Công Việc
+                                        Kinh Doanh, Phù Hợp Thị Hiếu Và Xu Hướng Mới HIện Nay, Tương Thích Với Mọi Thiết
+                                        Bị Cũng Như Trải Nghiệm Người Dùng, 100% Hãy Liên Hệ Ngay Với Smartlinks"
                                     </div>
                                     <div class="author">
                                         - Quang Nguyễn, Chuyên Gia Tư Vấn Và Thiết Kế, Smartlinks.

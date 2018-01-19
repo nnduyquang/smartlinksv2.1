@@ -1,6 +1,6 @@
 @extends('frontend.master')
 @section('title')
-   Công Ty Quảng Cáo Google Adwords Smartlinks - Smartlinks.vn
+    Công Ty Quảng Cáo Google Adwords Smartlinks - Smartlinks.vn
 @stop
 @section('slider')
     {{--@include('slider.slider')--}}
@@ -10,13 +10,17 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="row">
-                    <div class="wpContainHeader">
-                        {{ Html::image($content->image,'',array('class'=>'dvBanner')) }}
-                        <div class="wpTextHeader">
-                            <div class="textHeader">
-                                <h1> Giới Thiệu</h1>
-                                <div class="subTextHeading">
+                    <div class="container">
+                        <div class="row">
+                            <div class="wpContainHeader">
+                                {{ Html::image($content->image,'',array('class'=>'dvBanner')) }}
+                                <div class="wpTextHeader">
+                                    <div class="textHeader">
+                                        <h1> Giới Thiệu</h1>
+                                        <div class="subTextHeading">
 
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
