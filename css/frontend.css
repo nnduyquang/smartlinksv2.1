@@ -2468,6 +2468,30 @@ This class is added to the container
   font-weight: bold;
 }
 
+#truc-tiep {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#truc-tiep .truc-tiep-top {
+  line-height: 1.5;
+}
+
+#truc-tiep .truc-tiep-top h1 {
+  font-size: 40px;
+  color: #1f45a8;
+}
+
+#truc-tiep .truc-tiep-top p.name {
+  font-size: 32px;
+  font-style: italic;
+  color: red;
+}
+
+#truc-tiep .truc-tiep-top p.description {
+  font-size: 45px;
+}
+
 .wpLoiIch {
   padding: 40px 0 0 0;
   float: left;

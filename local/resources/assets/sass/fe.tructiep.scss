@@ -1,0 +1,19 @@
+#truc-tiep {
+  text-align: center;
+  margin-bottom: 50px;
+  .truc-tiep-top {
+    line-height: 1.5;
+    h1 {
+      font-size: 40px;
+      color: #1f45a8;
+    }
+    p.name {
+      font-size: 32px;
+      font-style: italic;
+      color: red;
+    }
+    p.description {
+      font-size: 45px;
+    }
+  }
+}
