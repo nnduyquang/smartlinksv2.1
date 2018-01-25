@@ -11,13 +11,13 @@
                             </div>
                             <div class="footer-info">
                                 <ul>
-                                    <li><span class="footer-title">VP: </span>20/13 Nguyễn Trường Tộ, P.12, Quận 4,
+                                    <li><i class="fa fa-building-o" aria-hidden="true"></i>20/13 Nguyễn Trường Tộ, P.12, Quận 4,
                                         TPHCM
                                     </li>
                                     <li><i class="fa fa-phone-square" aria-hidden="true"></i>(028) 66 83 00 91 -
                                         Hotline: 0914.348.131
                                     </li>
-                                    <li><i class="fa fa-envelope" aria-hidden="true"></i> info@smartlinks.vn</li>
+                                    <li><i class="fa fa-envelope" aria-hidden="true"></i>info@smartlinks.vn</li>
                                     <li><p>Smartlinks đem lại hiệu quả cao cho khách hàng bằng cách sử dụng kỹ thuật
                                             công nghệ
                                             mới nhất trong lĩnh vực marketing online</p></li>
