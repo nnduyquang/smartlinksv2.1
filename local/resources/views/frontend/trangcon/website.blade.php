@@ -163,22 +163,6 @@
                     </div>
                 </div>
             </div>
-            {{--<div class="containerQuyTrinh">--}}
-            {{--<div class="col-lg-12">--}}
-            {{--<div class="row">--}}
-            {{--{{ Html::image('images/temps/chatluong_quytrinh_bg.png','',array('class'=>'bgQuyTrinh')) }}--}}
-            {{--<div class="swapHeaderQuyTrinh">--}}
-            {{--<div class="heading-text">--}}
-            {{--<h5 class="sub-heading">Quy Trình Thiết Kế Website Chặt Chẽ Và Đảm Bảo Sự Hài Lòng Của Quý--}}
-            {{--Khách</h5>--}}
-            {{--<h3 class="heading">Quy Trình Thiết Kế Website Tại <span style="color: #1fb8f1">Smartlinks</span>--}}
-            {{--</h3>--}}
-            {{--<hr class="heading-line">--}}
-            {{--</div>--}}
-            {{--</div>--}}
-            {{--</div>--}}
-            {{--</div>--}}
-            {{--</div>--}}
             <div id="tk-quy-trinh" class="col-md-12">
                 <div class="row">
 
@@ -256,12 +240,146 @@
                         <div class="row">
                             <div class="chevron on-mobile">
                                 <div class="content">
-                                    <div class="quote">"Nếu Bạn Muốn Có Một Website Chuyên Nghiệp Phục Vụ Cho Công Việc
-                                        Kinh Doanh, Phù Hợp Thị Hiếu Và Xu Hướng Mới HIện Nay, Tương Thích Với Mọi Thiết
-                                        Bị Cũng Như Trải Nghiệm Người Dùng, 100% Hãy Liên Hệ Ngay Với Smartlinks"
+                                    <div class="quote">"Nếu bạn muốn có một website chuyên nghiệp phục vụ cho công việc
+                                        kinh doanh, phù hợp thị hiếu và xu hướng mới hiện nay, tương thích với mọi thiết
+                                        bị cũng như trải nghiệm người dùng, 100%. Hãy liên hệ ngay với Smartlinks"
                                     </div>
                                     <div class="author">
                                         - Quang Nguyễn, Chuyên Gia Tư Vấn Và Thiết Kế, Smartlinks.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tk-price" class="col-md-12">
+                        <div class="row">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="panel price panel-red">
+                                            <div class="panel-heading  text-center">
+                                                <h3>Cơ Bản</h3>
+                                            </div>
+                                            <div class="price-value text-center">
+                                                <p class="lead" style="font-size:40px"><strong>$10 / month</strong></p>
+                                            </div>
+                                            <ul class="list-group list-group-flush text-center">
+                                                <li class="list-group-item"><i class="icon-ok text-danger"></i> Tích Hợp Di Động
+                                                </li>
+                                                <li class="list-group-item"><i class="icon-ok text-danger"></i> Module Giới Thiệu
+                                                </li>
+                                                <li class="list-group-item"><i class="icon-ok text-danger"></i>
+                                                    Module Tin Tức
+                                                </li>
+                                                <li class="list-group-item"><i class="icon-ok text-danger"></i> Module Sản Phẩm
+                                                </li>
+                                                <li class="list-group-item"><i class="icon-ok text-danger"></i> Thông Tin Sản Phẩm Chuẩn SEO (Hỗ Trợ Tối Đa 2 Sản Phẩm)
+                                                </li>
+                                                <li class="list-group-item"><i class="icon-ok text-danger"></i> Module Liên Hệ
+                                                </li>
+                                                <li class="list-group-item"><i class="icon-ok text-danger"></i> Module Tìm Kiếm Cơ Bản
+                                                </li>
+                                                <li class="list-group-item"><i class="icon-ok text-danger"></i> Tích Hợp Fanpage Facebook
+                                                </li>
+                                                <li class="list-group-item"><i class="icon-ok text-danger"></i> X
+                                                </li>
+                                                <li class="list-group-item"><i class="icon-ok text-danger"></i> X
+                                                </li>
+                                                <li class="list-group-item"><i class="icon-ok text-danger"></i> X
+                                                </li>
+                                                <li class="list-group-item"><i class="icon-ok text-danger"></i> X
+                                                </li>
+                                                <li class="list-group-item"><i class="icon-ok text-danger"></i> X
+                                                </li>
+                                            </ul>
+                                            {{--<div class="panel-footer">--}}
+                                                {{--<a class="btn btn-lg btn-block btn-danger" href="#">BUY NOW!</a>--}}
+                                            {{--</div>--}}
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="panel price panel-red highlighted">
+                                            <div class="panel-heading  text-center special">
+                                                <h3>Doanh Nghiệp</h3>
+                                            </div>
+                                            <div class="price-value text-center">
+                                                <p class="lead" style="font-size:40px"><strong>$10 / month</strong></p>
+                                            </div>
+                                            <ul class="list-group list-group-flush text-center">
+                                                <li class="list-group-item"><i class="icon-ok text-danger"></i> Tích Hợp Di Động
+                                                </li>
+                                                <li class="list-group-item"><i class="icon-ok text-danger"></i> Module Giới Thiệu
+                                                </li>
+                                                <li class="list-group-item"><i class="icon-ok text-danger"></i>
+                                                    Module Tin Tức
+                                                </li>
+                                                <li class="list-group-item"><i class="icon-ok text-danger"></i> Module Sản Phẩm
+                                                </li>
+                                                <li class="list-group-item"><i class="icon-ok text-danger"></i> Thông Tin Sản Phẩm Chuẩn SEO (Hỗ Trợ Tối Đa 5 Sản Phẩm)
+                                                </li>
+                                                <li class="list-group-item"><i class="icon-ok text-danger"></i> Module Liên Hệ
+                                                </li>
+                                                <li class="list-group-item"><i class="icon-ok text-danger"></i> Module Tìm Kiếm Cơ Bản
+                                                </li>
+                                                <li class="list-group-item"><i class="icon-ok text-danger"></i> Tích Hợp Fanpage Facebook
+                                                </li>
+                                                <li class="list-group-item"><i class="icon-ok text-danger"></i> Tích Hợp Hộp Chat Online
+                                                </li>
+                                                <li class="list-group-item"><i class="icon-ok text-danger"></i> Chuẩn SEO
+                                                </li>
+                                                <li class="list-group-item"><i class="icon-ok text-danger"></i> X
+                                                </li>
+                                                <li class="list-group-item"><i class="icon-ok text-danger"></i> X
+                                                </li>
+                                                <li class="list-group-item"><i class="icon-ok text-danger"></i> X
+                                                </li>
+                                            </ul>
+                                            {{--<div class="panel-footer">--}}
+                                                {{--<a class="btn btn-lg btn-block btn-danger" href="#">BUY NOW!</a>--}}
+                                            {{--</div>--}}
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="panel price panel-red">
+                                            <div class="panel-heading  text-center">
+                                                <h3>Cao Cấp</h3>
+                                            </div>
+                                            <div class="price-value text-center">
+                                                <p class="lead" style="font-size:40px"><strong>$10 / month</strong></p>
+                                            </div>
+                                            <ul class="list-group list-group-flush text-center">
+                                                <li class="list-group-item"><i class="icon-ok text-danger"></i> Tích Hợp Di Động
+                                                </li>
+                                                <li class="list-group-item"><i class="icon-ok text-danger"></i> Module Giới Thiệu
+                                                </li>
+                                                <li class="list-group-item"><i class="icon-ok text-danger"></i>
+                                                    Module Tin Tức
+                                                </li>
+                                                <li class="list-group-item"><i class="icon-ok text-danger"></i> Module Sản Phẩm
+                                                </li>
+                                                <li class="list-group-item"><i class="icon-ok text-danger"></i> Thông Tin Sản Phẩm Chuẩn SEO (Không Giới Hạn)
+                                                </li>
+                                                <li class="list-group-item"><i class="icon-ok text-danger"></i> Module Liên Hệ
+                                                </li>
+                                                <li class="list-group-item"><i class="icon-ok text-danger"></i> Module Tìm Kiếm Cơ Bản
+                                                </li>
+                                                <li class="list-group-item"><i class="icon-ok text-danger"></i> Tích Hợp Fanpage Facebook
+                                                </li>
+                                                <li class="list-group-item"><i class="icon-ok text-danger"></i> Tích Hợp Hộp Chat Online
+                                                </li>
+                                                <li class="list-group-item"><i class="icon-ok text-danger"></i> Chuẩn SEO
+                                                </li>
+                                                <li class="list-group-item"><i class="icon-ok text-danger"></i> Tìm Hợp Kiếm Nâng Cao
+                                                </li>
+                                                <li class="list-group-item"><i class="icon-ok text-danger"></i> Thiết Kế Giao Diện Độc Quyền
+                                                </li>
+                                                <li class="list-group-item"><i class="icon-ok text-danger"></i> Điều Chỉnh Giao Diện Theo Yêu Cầu
+                                                </li>
+                                            </ul>
+                                            {{--<div class="panel-footer">--}}
+                                                {{--<a class="btn btn-lg btn-block btn-danger" href="#">BUY NOW!</a>--}}
+                                            {{--</div>--}}
+                                        </div>
                                     </div>
                                 </div>
                             </div>

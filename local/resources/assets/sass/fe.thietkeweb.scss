@@ -10,7 +10,7 @@
       h1 {
         text-transform: uppercase;
         font-size: 36px;
-        color:#1f45a8;
+        color: #1f45a8;
         &::after {
           content: "";
           display: block;
@@ -225,6 +225,96 @@
         border-color: #2895d9 rgba(40, 149, 217, .5) rgba(40, 149, 217, .2) rgba(40, 149, 217, 0);
       }
     }
+    #tk-price {
+      margin-top: 20px;
+      .panel {
+        transition: 0.2s all;
+        border-radius: 0;
+        .panel-heading {
+          padding: 0;
+          &.special {
+            position: relative;
+            ::before {
+              position: absolute;
+              content: "";
+              width: 0px;
+              height: 0px;
+              border-top: 60px solid #1f45a8;
+              border-left: 60px solid transparent;
+              right: 0;
+              top: -1px;
+              z-index: 1;
+            }
+            ::after {
+              display: block;
+              position: absolute;
+              right: 8px;
+              top: 8px;
+              font-family: 'fontawesome';
+              font-weight: normal;
+              font-size: 18px;
+              content: '\f006';
+              z-index: 2;
+              color: white;
+            }
+          }
+          h3 {
+            font-size: 32px;
+            text-transform: uppercase;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 15px;
+            padding-top: 15px;
+          }
+        }
+        .price-value {
+          padding: 20px 0 14px;
+          margin: 23px -10px 30px;
+          background: #eee;
+          color: #333;
+          position: relative;
+          transition: all 0.3s ease-in-out 0s;
+          ::before, ::after {
+            content: "";
+            display: block;
+            width: 10px;
+            height: 15px;
+            border-width: 13px 5px 11px;
+            border-style: solid;
+            border-color: transparent #777 #777 transparent;
+            position: absolute;
+            top: -24px;
+            left: 0;
+            transition: all 0.3s ease-in-out 0s;
+          }
+          ::after {
+            border-width: 11px 5px;
+            border-color: transparent transparent #777 #777;
+            top: -22px;
+            left: auto;
+            right: 0;
+
+          }
+        }
+        ul.list-group {
+          li {
+            background-color: inherit;
+          }
+        }
+
+      }
+      .panel:hover {
+        box-shadow: 0px 7px 6px 3px rgba(128, 128, 128, 0.34);
+        background-color: #1f45a8;
+        color: white;
+        &.highlighted {
+          background-color: #ebb02d;
+          .price-value {
+            background-color: #1f45a8;
+            color: white;
+          }
+        }
+      }
+    }
   }
 
 }
@@ -251,33 +341,33 @@
         margin-top: 20px;
       }
     }
-    #tk-quy-trinh{
-      #tk-noi-dung-quy-trinh{
-        .tk-contain-box.on-mobile:before{
+    #tk-quy-trinh {
+      #tk-noi-dung-quy-trinh {
+        .tk-contain-box.on-mobile:before {
           display: none;
         }
-        .tk-contain-box.on-mobile:after{
+        .tk-contain-box.on-mobile:after {
           display: none;
         }
       }
-      #tk-noi-dung-proccesses{
+      #tk-noi-dung-proccesses {
         display: none;
       }
-      #tk-testimonials{
-        .chevron{
+      #tk-testimonials {
+        .chevron {
           padding: 0;
-          .content{
-            .quote{
+          .content {
+            .quote {
               font-size: 17px;
             }
           }
         }
-        .chevron.on-mobile:before,.chevron.on-mobile:after{
-         display: none;
+        .chevron.on-mobile:before, .chevron.on-mobile:after {
+          display: none;
         }
       }
-      #tk-result{
-        h3{
+      #tk-result {
+        h3 {
           line-height: 1.4;
         }
       }
