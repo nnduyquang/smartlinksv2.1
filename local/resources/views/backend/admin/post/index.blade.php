@@ -7,7 +7,7 @@
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
-                <h2>Quản Lý Trang</h2>
+                <h2>Quản Lý Bài Viết</h2>
             </div>
             <div class="pull-right">
                 @permission(('post-create'))
@@ -53,7 +53,7 @@
             <th>Người Đăng</th>
             <th>Ngày Đăng</th>
             <th>Ngày Cập Nhật</th>
-            <th>Tình Trạng</th>
+            <th>Chuyên Mục</th>
             <th width="280px">Action</th>
         </tr>
         @foreach ($posts as $key => $data)
@@ -63,7 +63,7 @@
             <td>{{ $data->users->name }}</td>
             <td>{{ $data->created_at }}</td>
             <td>{{ $data->updated_at }}</td>
-            <td>{{$data->isActive}}</td>
+            <td>{{$data->categorypost->name}}</td>
             <td>
                 @permission(('post-edit'))
                 <a class="btn btn-primary" href="{{ route('post.edit',$data->id) }}">Cập Nhật</a>

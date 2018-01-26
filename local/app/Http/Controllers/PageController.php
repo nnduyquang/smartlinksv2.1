@@ -15,7 +15,7 @@ class PageController extends Controller
      */
     public function index(Request $request)
     {
-        $pages = Post::where('post_type','=',0)->orderBy('id', 'DESC')->get();
+        $pages = Post::where('post_type','=',1)->orderBy('id', 'DESC')->get();
         return view('backend.admin.page.index', compact('pages'))
             ->with('i', ($request->input('page', 1) - 1) * 5);
     }
@@ -65,7 +65,7 @@ class PageController extends Controller
         $page->path = chuyen_chuoi_thanh_path($title);
         $page->image = $image;
         $page->content = $content;
-        $page->post_type = 0;
+        $page->post_type = 1;
         $page->user_id = Auth::user()->id;
         $page->save();
         return redirect()->route('page.index')
@@ -131,7 +131,7 @@ class PageController extends Controller
         $page->path = chuyen_chuoi_thanh_path($title);
         $page->image = $image;
         $page->content = $content;
-        $page->post_type = 0;
+        $page->post_type = 1;
         $page->user_id = Auth::user()->id;
         $page->save();
         return redirect()->route('page.index')

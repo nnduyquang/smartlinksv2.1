@@ -16,6 +16,8 @@
     </li>
     <li><a href="{{ route('account.index') }}"><i class="fa fa-link"></i> <span>Tài Khoản</span></a>
     </li>
+    <li><a href="{{ route('categorypost.index') }}"><i class="fa fa-link"></i> <span>Chuyên Mục Bài Viết</span></a>
+    </li>
     <li><a href="{{ route('page.index') }}"><i class="fa fa-link"></i> <span>Trang</span></a>
     </li>
     <li><a href="{{ route('post.index') }}"><i class="fa fa-link"></i> <span>Bài Viết</span></a>

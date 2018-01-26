@@ -261,7 +261,7 @@
                                                 <h3>Cơ Bản</h3>
                                             </div>
                                             <div class="price-value text-center">
-                                                <p class="lead" style="font-size:40px"><strong>$10 / month</strong></p>
+                                                <p class="lead" style="font-size:40px"><strong>3.600.000</strong></p>
                                             </div>
                                             <ul class="list-group list-group-flush text-center">
                                                 <li class="list-group-item"><i class="icon-ok text-danger"></i> Tích Hợp Di Động
@@ -303,7 +303,7 @@
                                                 <h3>Doanh Nghiệp</h3>
                                             </div>
                                             <div class="price-value text-center">
-                                                <p class="lead" style="font-size:40px"><strong>$10 / month</strong></p>
+                                                <p class="lead" style="font-size:40px"><strong>3.900.000</strong></p>
                                             </div>
                                             <ul class="list-group list-group-flush text-center">
                                                 <li class="list-group-item"><i class="icon-ok text-danger"></i> Tích Hợp Di Động
@@ -345,7 +345,7 @@
                                                 <h3>Cao Cấp</h3>
                                             </div>
                                             <div class="price-value text-center">
-                                                <p class="lead" style="font-size:40px"><strong>$10 / month</strong></p>
+                                                <p class="lead" style="font-size:40px"><strong>5.900.000</strong></p>
                                             </div>
                                             <ul class="list-group list-group-flush text-center">
                                                 <li class="list-group-item"><i class="icon-ok text-danger"></i> Tích Hợp Di Động

@@ -105,6 +105,43 @@ a, a:hover, a:active {
   height: 55px;
 }
 
+.flex-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-grid .col {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.flex-grid-thirds {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-grid-thirds .col {
+  width: 32%;
+}
+
+@media (max-width: 400px) {
+  .flex-grid,
+  .flex-grid-thirds {
+    display: block;
+  }
+  .flex-grid .col,
+  .flex-grid-thirds .col {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+}
+
 @media all and (min-width: 800px) {
   .fancybox-thumbs {
     top: auto;
@@ -173,6 +210,14 @@ a, a:hover, a:active {
 .top-bar .home-link a:before {
   font-family: FontAwesome;
   content: '\F015';
+  font-size: 18px;
+  margin-right: 5px;
+  color: #ffffff;
+}
+
+.top-bar .intro-link a:before {
+  font-family: FontAwesome;
+  content: '\F0F6';
   font-size: 18px;
   margin-right: 5px;
   color: #ffffff;
@@ -2594,6 +2639,69 @@ This class is added to the container
 
 #truc-tiep .truc-tiep-top p.description {
   font-size: 45px;
+}
+
+#hoi-dap #hd-content {
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+
+#hoi-dap #hd-content .hd-content-detail {
+  margin-bottom: 30px;
+}
+
+#hoi-dap #hd-content .toggle:last-child {
+  border-bottom: 1px solid #ddd;
+}
+
+#hoi-dap #hd-content .toggle .toggle-title {
+  position: relative;
+  display: block;
+  border-top: 1px solid #ddd;
+  margin-bottom: 6px;
+}
+
+#hoi-dap #hd-content .toggle .toggle-title h3 {
+  font-size: 20px;
+  margin: 0px;
+  line-height: 1;
+  cursor: pointer;
+  font-weight: 200;
+}
+
+#hoi-dap #hd-content .toggle .toggle-inner {
+  padding: 7px 25px 10px 25px;
+  display: none;
+  margin: -7px 0 6px;
+}
+
+#hoi-dap #hd-content .toggle .toggle-inner div {
+  max-width: 100%;
+}
+
+#hoi-dap #hd-content .toggle .toggle-title .title-name {
+  display: block;
+  padding: 25px 25px 14px;
+}
+
+#hoi-dap #hd-content .toggle .toggle-title a i {
+  font-size: 22px;
+  margin-right: 5px;
+}
+
+#hoi-dap #hd-content .toggle .toggle-title i {
+  position: absolute;
+  background: url("http://arielbeninca.com/Storage/plus_minus.png") 0px -24px no-repeat;
+  width: 24px;
+  height: 24px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  margin: 20px;
+  right: 0;
+}
+
+#hoi-dap #hd-content .toggle .toggle-title.active i {
+  background: url("http://arielbeninca.com/Storage/plus_minus.png") 0px 0px no-repeat;
 }
 
 .wpLoiIch {

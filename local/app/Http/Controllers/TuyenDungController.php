@@ -15,7 +15,7 @@ class TuyenDungController extends Controller
      */
     public function index(Request $request)
     {
-        $tuyendungs = Post::where('post_type','=',2)->orderBy('id', 'DESC')->get();
+        $tuyendungs = Post::where('post_type','=',3)->orderBy('id', 'DESC')->get();
         return view('backend.admin.tuyendung.index', compact('tuyendungs'))
             ->with('i', ($request->input('page', 1) - 1) * 5);
     }
@@ -65,7 +65,7 @@ class TuyenDungController extends Controller
         $tuyendung->path = chuyen_chuoi_thanh_path($title);
         $tuyendung->image = $image;
         $tuyendung->content = $content;
-        $tuyendung->post_type = 2;
+        $tuyendung->post_type = 3;
         $tuyendung->user_id = Auth::user()->id;
         $tuyendung->save();
         return redirect()->route('tuyendung.index')
@@ -131,7 +131,7 @@ class TuyenDungController extends Controller
         $tuyendung->path = chuyen_chuoi_thanh_path($title);
         $tuyendung->image = $image;
         $tuyendung->content = $content;
-        $tuyendung->post_type = 2;
+        $tuyendung->post_type = 3;
         $tuyendung->user_id = Auth::user()->id;
         $tuyendung->save();
         return redirect()->route('tuyendung.index')
