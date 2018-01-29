@@ -51,25 +51,10 @@
                     </div>
                 </div>
             </div>
-            <div class="flex-grid">
-                <div class="col">This little piggy went to market.</div>
-                <div class="col">This little piggy stayed home.</div>
-                <div class="col">This little piggy had roast beef.</div>
-            </div>
 
-            <div class="flex-grid">
-                <div class="col">This little piggy went to market.</div>
-                <div class="col">This little piggy stayed home.</div>
-                <div class="col">This little piggy had roast beef.</div>
-                <div class="col">This little piggy had none.</div>
-                <div class="col">This little piggy went wee wee wee all the way home.</div>
-            </div>
 
-            <div class="flex-grid-thirds">
-                <div class="col">This little piggy went to market.</div>
-                <div class="col">This little piggy stayed home. This little piggy stayed home. This little piggy stayed home. This little piggy stayed home.</div>
-                <div class="col">This little piggy had roast beef.</div>
-            </div>
+
+
         </div>
-    </div>
+
 @stop

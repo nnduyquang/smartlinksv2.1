@@ -105,41 +105,57 @@ a, a:hover, a:active {
   height: 55px;
 }
 
-.flex-grid {
+.row-flex, .row-flex > div[class*='col-'] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.flex-grid .col {
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
 }
 
-.flex-grid-thirds {
+.row-flex-wrap {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -webkit-box-flex: 0;
+      -ms-flex: 0;
+          flex: 0;
+}
+
+.row-flex > div[class*='col-'], .container-flex > div[class*='col-'] {
+  margin: -.2px;
+  /* hack adjust for wrapping */
+}
+
+.container-flex > div[class*='col-'] div, .row-flex > div[class*='col-'] div {
+  width: 100%;
+}
+
+.flex-col {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: -webkit-flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 100%;
+          flex: 1 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
 }
 
-.flex-grid-thirds .col {
-  width: 32%;
-}
-
-@media (max-width: 400px) {
-  .flex-grid,
-  .flex-grid-thirds {
-    display: block;
-  }
-  .flex-grid .col,
-  .flex-grid-thirds .col {
-    width: 100%;
-    margin: 0 0 10px 0;
-  }
+.flex-grow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
 }
 
 @media all and (min-width: 800px) {
@@ -2617,28 +2633,59 @@ This class is added to the container
   font-weight: bold;
 }
 
-#truc-tiep {
-  text-align: center;
-  margin-bottom: 50px;
+#tin-tuc #tt-content #tt-header {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-#truc-tiep .truc-tiep-top {
-  line-height: 1.5;
+#tin-tuc #tt-content #tt-group-info .one-item {
+  margin-bottom: 20px;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
 }
 
-#truc-tiep .truc-tiep-top h1 {
-  font-size: 40px;
+#tin-tuc #tt-content #tt-group-info .one-item a {
   color: #1f45a8;
 }
 
-#truc-tiep .truc-tiep-top p.name {
-  font-size: 32px;
-  font-style: italic;
-  color: red;
+#tin-tuc #tt-content #tt-group-info .one-item a img {
+  width: 100%;
+  height: 180px;
 }
 
-#truc-tiep .truc-tiep-top p.description {
-  font-size: 45px;
+#tin-tuc #tt-content #tt-group-info .one-item a:hover {
+  -webkit-box-shadow: 0px 4px 14px 0px #ddd;
+          box-shadow: 0px 4px 14px 0px #ddd;
+}
+
+#tt-detail #tt-dt-content #tt-dt-content-right h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+#tt-detail #tt-dt-content #tt-dt-content-right .one-item {
+  margin-bottom: 20px;
+}
+
+#tt-detail #tt-dt-content #tt-dt-content-right .one-item a {
+  color: #1f45a8;
+}
+
+#tt-detail #tt-dt-content #tt-dt-content-right .one-item a img {
+  width: 100%;
+  height: 180px;
+  margin-bottom: 10px;
+}
+
+#tt-detail #tt-dt-content #tt-dt-content-right .one-item a .title {
+  text-transform: capitalize;
+  display: block;
+  padding: 5px 10px 10px 10px;
+}
+
+#tt-detail #tt-dt-content #tt-dt-content-right .one-item:hover {
+  -webkit-box-shadow: 0px 4px 14px 0px #ddd;
+          box-shadow: 0px 4px 14px 0px #ddd;
 }
 
 #hoi-dap #hd-content {
