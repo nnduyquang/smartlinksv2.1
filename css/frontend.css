@@ -500,8 +500,26 @@ a, a:hover, a:active {
 }
 
 @media screen and (max-width: 768px) {
+  #slider2 {
+    min-height: 0;
+    padding: 0;
+    margin-bottom: 0;
+  }
+  #slider2 > .container .text-block {
+    padding: 0;
+  }
   #slider2 > .container .text-block .heading-holder h1 {
-    font-size: 50px;
+    font-size: 15px;
+    margin: 10px 0 0 0;
+  }
+  #slider2 > .container .text-block .infos {
+    height: 173px;
+  }
+  #slider2 > .container .text-block .infos .info {
+    font-size: 6px;
+  }
+  #slider2 .slider2 {
+    height: 200px;
   }
 }
 
@@ -2720,6 +2738,7 @@ This class is added to the container
   padding: 7px 25px 10px 25px;
   display: none;
   margin: -7px 0 6px;
+  line-height: 1.5;
 }
 
 #hoi-dap #hd-content .toggle .toggle-inner div {
@@ -2729,6 +2748,7 @@ This class is added to the container
 #hoi-dap #hd-content .toggle .toggle-title .title-name {
   display: block;
   padding: 25px 25px 14px;
+  color: #1f45a8;
 }
 
 #hoi-dap #hd-content .toggle .toggle-title a i {

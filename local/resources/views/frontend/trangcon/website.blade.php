@@ -273,6 +273,8 @@
                                                 </li>
                                                 <li class="list-group-item"><i class="icon-ok text-danger"></i> Module Sản Phẩm
                                                 </li>
+                                                <li class="list-group-item"><i class="icon-ok text-danger"></i> Up Hình Giới Hạn
+                                                </li>
                                                 <li class="list-group-item"><i class="icon-ok text-danger"></i> Thông Tin Sản Phẩm Chuẩn SEO (Hỗ Trợ Tối Đa 2 Sản Phẩm)
                                                 </li>
                                                 <li class="list-group-item"><i class="icon-ok text-danger"></i> Module Liên Hệ
@@ -303,7 +305,7 @@
                                                 <h3>Doanh Nghiệp</h3>
                                             </div>
                                             <div class="price-value text-center">
-                                                <p class="lead" style="font-size:40px"><strong>3.900.000</strong></p>
+                                                <p class="lead" style="font-size:40px"><strong>4.900.000</strong></p>
                                             </div>
                                             <ul class="list-group list-group-flush text-center">
                                                 <li class="list-group-item"><i class="icon-ok text-danger"></i> Tích Hợp Di Động
@@ -314,6 +316,8 @@
                                                     Module Tin Tức
                                                 </li>
                                                 <li class="list-group-item"><i class="icon-ok text-danger"></i> Module Sản Phẩm
+                                                </li>
+                                                <li class="list-group-item"><i class="icon-ok text-danger"></i> Up Hình Giới Hạn
                                                 </li>
                                                 <li class="list-group-item"><i class="icon-ok text-danger"></i> Thông Tin Sản Phẩm Chuẩn SEO (Hỗ Trợ Tối Đa 5 Sản Phẩm)
                                                 </li>
@@ -356,6 +360,8 @@
                                                     Module Tin Tức
                                                 </li>
                                                 <li class="list-group-item"><i class="icon-ok text-danger"></i> Module Sản Phẩm
+                                                </li>
+                                                <li class="list-group-item"><i class="icon-ok text-danger"></i> Up Hình Không Giới Hạn
                                                 </li>
                                                 <li class="list-group-item"><i class="icon-ok text-danger"></i> Thông Tin Sản Phẩm Chuẩn SEO (Không Giới Hạn)
                                                 </li>
