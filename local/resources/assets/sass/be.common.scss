@@ -1,6 +1,11 @@
 .show-image{
   width: 100%;
 }
+.table-style{
+  tr,td{
+    border: 1px solid #eee;
+  }
+}
 .show-image-index{
   width: 200px;
   height: 200px;

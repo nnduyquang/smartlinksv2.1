@@ -1,4 +1,8 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto);@import url(https://fonts.googleapis.com/css?family=Open+Sans);@charset "UTF-8";
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 @font-face {
   font-family: UTMAVO;
   src: url("../fonts/utm-avo.ttf");
@@ -105,6 +109,20 @@ a, a:hover, a:active {
   height: 55px;
 }
 
+.table-style {
+  background-color: #f9f9f9;
+  line-height: 1.5;
+}
+
+.table-style tr, .table-style td {
+  border: 1px solid #eee;
+}
+
+.table-style td {
+  padding: 10px 0 10px 10px;
+  vertical-align: middle;
+}
+
 .row-flex, .row-flex > div[class*='col-'] {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -167,8 +185,7 @@ a, a:hover, a:active {
     right: 0;
     height: 95px;
     padding: 10px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     background: rgba(0, 0, 0, 0.3);
   }
   .fancybox-thumbs ul {
@@ -225,7 +242,7 @@ a, a:hover, a:active {
 
 .top-bar .home-link a:before {
   font-family: FontAwesome;
-  content: '\F015';
+  content: '\f015';
   font-size: 18px;
   margin-right: 5px;
   color: #ffffff;
@@ -233,7 +250,7 @@ a, a:hover, a:active {
 
 .top-bar .intro-link a:before {
   font-family: FontAwesome;
-  content: '\F0F6';
+  content: '\f0f6';
   font-size: 18px;
   margin-right: 5px;
   color: #ffffff;
@@ -241,7 +258,7 @@ a, a:hover, a:active {
 
 .top-bar .location-link a:before {
   font-family: FontAwesome;
-  content: '\F041';
+  content: '\f041';
   font-size: 18px;
   margin-right: 5px;
   color: #ffffff;
@@ -249,7 +266,7 @@ a, a:hover, a:active {
 
 .top-bar .phone-link a:before {
   font-family: FontAwesome;
-  content: '\F095';
+  content: '\f095';
   font-size: 18px;
   margin-right: 5px;
   color: #ffffff;
@@ -269,8 +286,7 @@ a, a:hover, a:active {
 }
 
 .header .header-wrapper .menu {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   list-style: none;
   margin-bottom: 0;
   padding-left: 0;
@@ -540,8 +556,7 @@ a, a:hover, a:active {
 *
 */
 .container-why {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -617,8 +632,7 @@ a, a:hover, a:active {
 }
 
 .container-why .one-item .icon-item.bg-item1::after {
-  -webkit-box-shadow: 0 0 0 2px #f3ad1d;
-          box-shadow: 0 0 0 2px #f3ad1d;
+  box-shadow: 0 0 0 2px #f3ad1d;
 }
 
 .container-why .one-item .icon-item.bg-item2 {
@@ -628,8 +642,7 @@ a, a:hover, a:active {
 }
 
 .container-why .one-item .icon-item.bg-item2::after {
-  -webkit-box-shadow: 0 0 0 2px #f3ad1d;
-          box-shadow: 0 0 0 2px #f3ad1d;
+  box-shadow: 0 0 0 2px #f3ad1d;
 }
 
 .container-why .one-item .icon-item.bg-item3 {
@@ -639,8 +652,7 @@ a, a:hover, a:active {
 }
 
 .container-why .one-item .icon-item.bg-item3::after {
-  -webkit-box-shadow: 0 0 0 2px #f3ad1d;
-          box-shadow: 0 0 0 2px #f3ad1d;
+  box-shadow: 0 0 0 2px #f3ad1d;
 }
 
 .container-why .one-item .icon-item.bg-item4 {
@@ -650,8 +662,7 @@ a, a:hover, a:active {
 }
 
 .container-why .one-item .icon-item.bg-item4::after {
-  -webkit-box-shadow: 0 0 0 2px #f3ad1d;
-          box-shadow: 0 0 0 2px #f3ad1d;
+  box-shadow: 0 0 0 2px #f3ad1d;
 }
 
 .container-why .one-item .icon-item.bg-item5 {
@@ -661,8 +672,7 @@ a, a:hover, a:active {
 }
 
 .container-why .one-item .icon-item.bg-item5::after {
-  -webkit-box-shadow: 0 0 0 2px #f3ad1d;
-          box-shadow: 0 0 0 2px #f3ad1d;
+  box-shadow: 0 0 0 2px #f3ad1d;
 }
 
 .container-why .one-item .icon-item.bg-item6 {
@@ -672,15 +682,13 @@ a, a:hover, a:active {
 }
 
 .container-why .one-item .icon-item.bg-item6::after {
-  -webkit-box-shadow: 0 0 0 2px #f3ad1d;
-          box-shadow: 0 0 0 2px #f3ad1d;
+  box-shadow: 0 0 0 2px #f3ad1d;
 }
 
 .container-why .one-item .icon-item::after {
   top: -7px;
   left: -7px;
   padding: 7px;
-  -webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
   transition: opacity 0.2s, -webkit-transform 0.2s;
   transition: transform 0.2s, opacity 0.2s;
   transition: transform 0.2s, opacity 0.2s, -webkit-transform 0.2s;
@@ -693,8 +701,7 @@ a, a:hover, a:active {
   height: 100%;
   border-radius: 50%;
   content: '';
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
 }
 
 .container-why .one-item .icon-item .style-icon-why1 {
@@ -828,8 +835,7 @@ a, a:hover, a:active {
   background: #125fb7 url("../images/temps/section_bg_04.png") center bottom !important;
   background-repeat: no-repeat !important;
   padding-bottom: 111px !important;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 100%;
   padding-left: 0 !important;
   padding-right: 0 !important;
@@ -873,7 +879,6 @@ a, a:hover, a:active {
   font-size: 22px;
   width: 100%;
   height: 60px;
-  -webkit-transition: background-color 0.2s linear 0s;
   transition: background-color 0.2s linear 0s;
 }
 
@@ -938,8 +943,7 @@ a, a:hover, a:active {
 }
 
 .container-service .service-item .icon-item.bg-item1::after {
-  -webkit-box-shadow: 0 0 0 2px #dca50a;
-          box-shadow: 0 0 0 2px #dca50a;
+  box-shadow: 0 0 0 2px #dca50a;
 }
 
 .container-service .service-item .icon-item.bg-item1 {
@@ -947,8 +951,7 @@ a, a:hover, a:active {
 }
 
 .container-service .service-item .icon-item.bg-item2::after {
-  -webkit-box-shadow: 0 0 0 2px #125fb7;
-          box-shadow: 0 0 0 2px #125fb7;
+  box-shadow: 0 0 0 2px #125fb7;
 }
 
 .container-service .service-item .icon-item.bg-item2 {
@@ -958,8 +961,7 @@ a, a:hover, a:active {
 }
 
 .container-service .service-item .icon-item.bg-item3::after {
-  -webkit-box-shadow: 0 0 0 2px #ffa500;
-          box-shadow: 0 0 0 2px #ffa500;
+  box-shadow: 0 0 0 2px #ffa500;
 }
 
 .container-service .service-item .icon-item.bg-item3 {
@@ -969,8 +971,7 @@ a, a:hover, a:active {
 }
 
 .container-service .service-item .icon-item.bg-item4::after {
-  -webkit-box-shadow: 0 0 0 2px #14afbe;
-          box-shadow: 0 0 0 2px #14afbe;
+  box-shadow: 0 0 0 2px #14afbe;
 }
 
 .container-service .service-item .icon-item.bg-item4 {
@@ -980,8 +981,7 @@ a, a:hover, a:active {
 }
 
 .container-service .service-item .icon-item.bg-item5::after {
-  -webkit-box-shadow: 0 0 0 2px #68b3e7;
-          box-shadow: 0 0 0 2px #68b3e7;
+  box-shadow: 0 0 0 2px #68b3e7;
 }
 
 .container-service .service-item .icon-item.bg-item5 {
@@ -991,8 +991,7 @@ a, a:hover, a:active {
 }
 
 .container-service .service-item .icon-item.bg-item6::after {
-  -webkit-box-shadow: 0 0 0 2px #cf3427;
-          box-shadow: 0 0 0 2px #cf3427;
+  box-shadow: 0 0 0 2px #cf3427;
 }
 
 .container-service .service-item .icon-item.bg-item6 {
@@ -1005,7 +1004,6 @@ a, a:hover, a:active {
   top: -7px;
   left: -7px;
   padding: 7px;
-  -webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
   transition: opacity 0.2s, -webkit-transform 0.2s;
   transition: transform 0.2s, opacity 0.2s;
   transition: transform 0.2s, opacity 0.2s, -webkit-transform 0.2s;
@@ -1018,8 +1016,7 @@ a, a:hover, a:active {
   height: 100%;
   border-radius: 50%;
   content: '';
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
 }
 
 .container-service .service-item .icon-item .style-icon-services1 {
@@ -1304,8 +1301,7 @@ a, a:hover, a:active {
 *
 */
 .container-consultants {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding-left: 0 !important;
   padding-right: 0 !important;
   margin-top: -5px;
@@ -1364,7 +1360,7 @@ a, a:hover, a:active {
 }
 
 .container-consultants .one-member .introduce-member .call-member::before {
-  content: "\F098";
+  content: "\f098";
   font-family: "FontAwesome";
   color: white;
   font-size: 16px;
@@ -1378,7 +1374,7 @@ a, a:hover, a:active {
 }
 
 .container-consultants .one-member .introduce-member .email-member::before {
-  content: "\F003";
+  content: "\f003";
   font-family: "FontAwesome";
   color: white;
   font-size: 16px;
@@ -1402,7 +1398,6 @@ a, a:hover, a:active {
   background: #103754;
   cursor: pointer;
   border-radius: 3px;
-  -webkit-transition: all 300ms linear 0ms;
   transition: all 300ms linear 0ms;
 }
 
@@ -1418,8 +1413,7 @@ a, a:hover, a:active {
   background: #F8F9FB url(../images/temps/section_bg_02.png) center bottom !important;
   background-repeat: no-repeat !important;
   padding-bottom: 111px !important;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 100%;
   padding-left: 0 !important;
   padding-right: 0 !important;
@@ -1442,8 +1436,7 @@ a, a:hover, a:active {
 }
 
 .container-prices .one-price.bg-color1::after {
-  -webkit-box-shadow: 0 0 10px #f3ad1d;
-          box-shadow: 0 0 10px #f3ad1d;
+  box-shadow: 0 0 10px #f3ad1d;
 }
 
 .container-prices .one-price.bg-color2 {
@@ -1454,8 +1447,7 @@ a, a:hover, a:active {
 }
 
 .container-prices .one-price.bg-color2::after {
-  -webkit-box-shadow: 0 0 10px #125fb7;
-          box-shadow: 0 0 10px #125fb7;
+  box-shadow: 0 0 10px #125fb7;
 }
 
 .container-prices .one-price.bg-color3 {
@@ -1466,15 +1458,13 @@ a, a:hover, a:active {
 }
 
 .container-prices .one-price.bg-color3::after {
-  -webkit-box-shadow: 0 0 10px #f3ad1d;
-          box-shadow: 0 0 10px #f3ad1d;
+  box-shadow: 0 0 10px #f3ad1d;
 }
 
 .container-prices .one-price::after {
   top: -7px;
   left: -7px;
   padding: 7px;
-  -webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
   transition: opacity 0.2s, -webkit-transform 0.2s;
   transition: transform 0.2s, opacity 0.2s;
   transition: transform 0.2s, opacity 0.2s, -webkit-transform 0.2s;
@@ -1487,8 +1477,7 @@ a, a:hover, a:active {
   height: 100%;
   border-radius: 50%;
   content: '';
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
 }
 
 .container-prices .one-price .price-header {
@@ -1612,8 +1601,7 @@ a, a:hover, a:active {
   background-image: url(../images/temps/casebg.png);
   background-size: cover !important;
   padding-bottom: 111px !important;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 100%;
   padding-left: 0 !important;
   padding-right: 0 !important;
@@ -1623,8 +1611,7 @@ a, a:hover, a:active {
 .container-contact .contain-swap .wp-contact .input-text, .container-contact .contain-swap .wp-contact .input-area {
   background-color: white;
   border-color: rgba(255, 255, 255, 0.01);
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   margin-bottom: 0;
   color: black;
   border-radius: 4px;
@@ -1649,7 +1636,6 @@ a, a:hover, a:active {
   color: white;
   font-weight: 700;
   border-radius: 3px;
-  -webkit-transition: all 300ms linear 0ms;
   transition: all 300ms linear 0ms;
   width: 100%;
   background-color: #125fb7;
@@ -1708,6 +1694,7 @@ a, a:hover, a:active {
   -ms-flex-preferred-size: 160px !important;
       flex-basis: 160px !important;
   -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
       align-self: stretch;
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -1765,17 +1752,12 @@ a, a:hover, a:active {
   height: 100%;
   width: 260px;
   background: white;
-  -webkit-transition: left 0.3s ease, -webkit-box-shadow 0.3s ease 0.2s;
-  transition: left 0.3s ease, -webkit-box-shadow 0.3s ease 0.2s;
   transition: left 0.3s ease, box-shadow 0.3s ease 0.2s;
-  transition: left 0.3s ease, box-shadow 0.3s ease 0.2s, -webkit-box-shadow 0.3s ease 0.2s;
-  -webkit-box-shadow: 0.5em 0 0 0 #1ba8ff, 0.6em 0 0 0 #1ba8ff;
   box-shadow: 0.5em 0 0 0 #1ba8ff, 0.6em 0 0 0 #1ba8ff;
 }
 
 .sidebar.closed {
   left: -260px;
-  -webkit-box-shadow: 0 0 0 #1ba8ff;
   box-shadow: 0 0 0 #1ba8ff;
 }
 
@@ -1862,7 +1844,6 @@ This class is added to the container
 (#blurMe) when the sidebar is open.
 -----------------------------------*/
 .blurred {
-  -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
   -webkit-filter: blur(10px);
           filter: blur(10px);
@@ -2250,7 +2231,6 @@ This class is added to the container
 }
 
 #website-design #tk-quy-trinh #tk-price .panel {
-  -webkit-transition: 0.2s all;
   transition: 0.2s all;
   border-radius: 0;
 }
@@ -2283,7 +2263,7 @@ This class is added to the container
   font-family: 'fontawesome';
   font-weight: normal;
   font-size: 18px;
-  content: '\F006';
+  content: '\f006';
   z-index: 2;
   color: white;
 }
@@ -2302,7 +2282,6 @@ This class is added to the container
   background: #eee;
   color: #333;
   position: relative;
-  -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
 }
 
@@ -2317,7 +2296,6 @@ This class is added to the container
   position: absolute;
   top: -24px;
   left: 0;
-  -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
 }
 
@@ -2334,8 +2312,7 @@ This class is added to the container
 }
 
 #website-design #tk-quy-trinh #tk-price .panel:hover {
-  -webkit-box-shadow: 0px 7px 6px 3px rgba(128, 128, 128, 0.34);
-          box-shadow: 0px 7px 6px 3px rgba(128, 128, 128, 0.34);
+  box-shadow: 0px 7px 6px 3px rgba(128, 128, 128, 0.34);
   background-color: #1f45a8;
   color: white;
 }
@@ -2525,8 +2502,7 @@ This class is added to the container
   padding: 10px;
   color: white;
   border: 1px solid white;
-  -webkit-box-shadow: 0px 0px 0px 5px #1f45a8;
-          box-shadow: 0px 0px 0px 5px #1f45a8;
+  box-shadow: 0px 0px 0px 5px #1f45a8;
   border-radius: 50%;
   font-size: xx-large;
 }
@@ -2624,7 +2600,7 @@ This class is added to the container
   font-size: 25px;
   top: 10px;
   position: relative;
-  content: '\F10E';
+  content: '\f10e';
   font-style: normal;
   vertical-align: bottom;
 }
@@ -2658,7 +2634,6 @@ This class is added to the container
 
 #tin-tuc #tt-content #tt-group-info .one-item {
   margin-bottom: 20px;
-  -webkit-transition: 0.2s all;
   transition: 0.2s all;
 }
 
@@ -2672,8 +2647,7 @@ This class is added to the container
 }
 
 #tin-tuc #tt-content #tt-group-info .one-item a:hover {
-  -webkit-box-shadow: 0px 4px 14px 0px #ddd;
-          box-shadow: 0px 4px 14px 0px #ddd;
+  box-shadow: 0px 4px 14px 0px #ddd;
 }
 
 #tt-detail #tt-dt-content #tt-dt-content-right h3 {
@@ -2702,8 +2676,7 @@ This class is added to the container
 }
 
 #tt-detail #tt-dt-content #tt-dt-content-right .one-item:hover {
-  -webkit-box-shadow: 0px 4px 14px 0px #ddd;
-          box-shadow: 0px 4px 14px 0px #ddd;
+  box-shadow: 0px 4px 14px 0px #ddd;
 }
 
 #hoi-dap #hd-content {
@@ -2761,7 +2734,6 @@ This class is added to the container
   background: url("http://arielbeninca.com/Storage/plus_minus.png") 0px -24px no-repeat;
   width: 24px;
   height: 24px;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   margin: 20px;
   right: 0;
@@ -3077,7 +3049,6 @@ This class is added to the container
   z-index: 200000 !important;
   -webkit-backface-visibility: hidden;
   -webkit-transform: translateZ(0);
-  -webkit-transition: visibility .5s;
   transition: visibility .5s;
   visibility: visible;
   margin: 0 auto;
@@ -3099,7 +3070,6 @@ This class is added to the container
   opacity: 0.5;
   -webkit-animation: coccoc-alo-circle-anim 1.2s infinite ease-in-out;
           animation: coccoc-alo-circle-anim 1.2s infinite ease-in-out;
-  -webkit-transition: all .5s;
   transition: all .5s;
   -webkit-transform-origin: 50% 50%;
           transform-origin: 50% 50%;
@@ -3118,7 +3088,6 @@ This class is added to the container
   opacity: .2;
   -webkit-animation: coccoc-alo-circle-fill-anim 2.3s infinite ease-in-out;
           animation: coccoc-alo-circle-fill-anim 2.3s infinite ease-in-out;
-  -webkit-transition: all .5s;
   transition: all .5s;
   -webkit-transform-origin: 50% 50%;
           transform-origin: 50% 50%;
@@ -3398,7 +3367,6 @@ This class is added to the container
 #footer2 .footer__jumpTop > a .fa {
   color: white;
   padding-top: 10px;
-  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
@@ -3462,7 +3430,6 @@ This class is added to the container
 }
 
 #xlnt-menu {
-  background: -webkit-gradient(linear, left top, left bottom, from(#e4e4e4), to(white));
   background: linear-gradient(to bottom, #e4e4e4, white);
 }
 
@@ -3524,7 +3491,6 @@ This class is added to the container
   padding-left: 30px;
   font-weight: bold;
   position: relative;
-  -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
 
@@ -3535,7 +3501,7 @@ This class is added to the container
 #xlnt-01 #xlnt-01-left ul li a:before {
   position: absolute;
   font-family: FontAwesome;
-  content: '\F1B8';
+  content: '\f1b8';
   top: 0;
   left: -2px;
   color: #8ce05c;
@@ -3589,7 +3555,6 @@ This class is added to the container
 .xlnt-02 .xlnt-02-content .xlnt-02-one-item a {
   color: black;
   font-weight: bold;
-  -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
 
@@ -3637,7 +3602,6 @@ This class is added to the container
 
 #xlnt-04 #xlnt-04-left h2.xlnt-04-title-right a {
   color: black;
-  -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
 
@@ -3673,7 +3637,6 @@ This class is added to the container
 
 #xlnt-04 #xlnt-04-left .xlnt-04-one-item a {
   color: #5685c7;
-  -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
 

@@ -43,3 +43,15 @@
 .empty-space {
   height: 55px;
 }
+
+.table-style{
+  background-color: #f9f9f9;
+  line-height: 1.5;
+  tr,td{
+    border: 1px solid #eee;
+  }
+  td{
+    padding: 10px 0 10px 10px;
+    vertical-align: middle;
+  }
+}
